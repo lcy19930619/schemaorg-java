@@ -326,7 +326,7 @@ dependencies {
     compile 'com.google.code.findbugs:jsr305:3.0.1'
     compile 'com.google.guava:guava:19.0'
     compile 'com.google.code.gson:gson:2.5'
-    compile files('schema-org-client-1.0.0/schema-org-client-1.0.0.jar')
+    compile files('schema-org-java-1.0.0/schema-org-java-1.0.0.jar')
 }
 ```
 
@@ -334,8 +334,8 @@ dependencies {
 
 ```
 dependencies {
-    compile fileTree(dir: 'schema-org-client-1.0.0/lib', include: '*.jar')
-    compile files('schema-org-client-1.0.0/schema-org-client-1.0.0.jar')
+    compile fileTree(dir: 'schema-org-java-1.0.0/lib', include: '*.jar')
+    compile files('schema-org-java-1.0.0/schema-org-java-1.0.0.jar')
 }
 ```
 
