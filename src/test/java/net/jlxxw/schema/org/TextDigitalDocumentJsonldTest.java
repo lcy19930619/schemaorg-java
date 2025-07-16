@@ -64,4 +64,12 @@ public class TextDigitalDocumentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TextDigitalDocument obj = new TextDigitalDocument();
+        assertEquals("schema:TextDigitalDocument", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

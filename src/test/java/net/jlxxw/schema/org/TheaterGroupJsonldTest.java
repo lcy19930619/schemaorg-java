@@ -64,4 +64,12 @@ public class TheaterGroupJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TheaterGroup obj = new TheaterGroup();
+        assertEquals("schema:TheaterGroup", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

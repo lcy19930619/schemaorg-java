@@ -64,4 +64,12 @@ public class VisualArtsEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VisualArtsEvent obj = new VisualArtsEvent();
+        assertEquals("schema:VisualArtsEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

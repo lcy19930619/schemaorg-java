@@ -64,4 +64,12 @@ public class PersonJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Person obj = new Person();
+        assertEquals("schema:Person", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class MedicalSymptomJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalSymptom obj = new MedicalSymptom();
+        assertEquals("schema:MedicalSymptom", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

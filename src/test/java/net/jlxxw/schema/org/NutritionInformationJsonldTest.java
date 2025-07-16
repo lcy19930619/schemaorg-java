@@ -64,4 +64,12 @@ public class NutritionInformationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        NutritionInformation obj = new NutritionInformation();
+        assertEquals("schema:NutritionInformation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class ShippingDeliveryTimeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ShippingDeliveryTime obj = new ShippingDeliveryTime();
+        assertEquals("schema:ShippingDeliveryTime", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

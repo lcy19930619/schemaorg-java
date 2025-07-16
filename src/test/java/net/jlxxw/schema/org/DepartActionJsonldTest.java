@@ -64,4 +64,12 @@ public class DepartActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DepartAction obj = new DepartAction();
+        assertEquals("schema:DepartAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

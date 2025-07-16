@@ -64,4 +64,12 @@ public class ComputerLanguageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ComputerLanguage obj = new ComputerLanguage();
+        assertEquals("schema:ComputerLanguage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

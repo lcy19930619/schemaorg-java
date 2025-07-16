@@ -64,4 +64,12 @@ public class FilmActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FilmAction obj = new FilmAction();
+        assertEquals("schema:FilmAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

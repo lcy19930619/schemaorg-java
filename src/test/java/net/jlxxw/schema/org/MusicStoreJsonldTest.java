@@ -64,4 +64,12 @@ public class MusicStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicStore obj = new MusicStore();
+        assertEquals("schema:MusicStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class WarrantyPromiseJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WarrantyPromise obj = new WarrantyPromise();
+        assertEquals("schema:WarrantyPromise", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

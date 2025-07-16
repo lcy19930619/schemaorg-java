@@ -64,4 +64,12 @@ public class ProductGroupJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ProductGroup obj = new ProductGroup();
+        assertEquals("schema:ProductGroup", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

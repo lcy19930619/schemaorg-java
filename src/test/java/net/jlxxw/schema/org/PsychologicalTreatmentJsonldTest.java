@@ -64,4 +64,12 @@ public class PsychologicalTreatmentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PsychologicalTreatment obj = new PsychologicalTreatment();
+        assertEquals("schema:PsychologicalTreatment", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

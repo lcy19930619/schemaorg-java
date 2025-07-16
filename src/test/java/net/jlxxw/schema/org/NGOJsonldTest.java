@@ -64,4 +64,12 @@ public class NGOJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        NGO obj = new NGO();
+        assertEquals("schema:NGO", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

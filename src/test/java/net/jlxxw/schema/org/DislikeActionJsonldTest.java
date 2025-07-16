@@ -64,4 +64,12 @@ public class DislikeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DislikeAction obj = new DislikeAction();
+        assertEquals("schema:DislikeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

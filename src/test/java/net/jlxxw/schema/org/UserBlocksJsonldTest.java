@@ -64,4 +64,12 @@ public class UserBlocksJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserBlocks obj = new UserBlocks();
+        assertEquals("schema:UserBlocks", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

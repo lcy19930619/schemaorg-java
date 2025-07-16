@@ -64,4 +64,12 @@ public class LiteraryEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LiteraryEvent obj = new LiteraryEvent();
+        assertEquals("schema:LiteraryEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

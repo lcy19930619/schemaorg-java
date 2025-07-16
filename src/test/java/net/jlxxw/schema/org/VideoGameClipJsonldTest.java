@@ -64,4 +64,12 @@ public class VideoGameClipJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VideoGameClip obj = new VideoGameClip();
+        assertEquals("schema:VideoGameClip", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

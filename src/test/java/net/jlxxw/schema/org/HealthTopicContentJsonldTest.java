@@ -64,4 +64,12 @@ public class HealthTopicContentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HealthTopicContent obj = new HealthTopicContent();
+        assertEquals("schema:HealthTopicContent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

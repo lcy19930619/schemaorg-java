@@ -64,4 +64,12 @@ public class HospitalJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Hospital obj = new Hospital();
+        assertEquals("schema:Hospital", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class ResortJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Resort obj = new Resort();
+        assertEquals("schema:Resort", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

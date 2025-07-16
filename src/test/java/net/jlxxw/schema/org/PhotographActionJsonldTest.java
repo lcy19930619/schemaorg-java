@@ -64,4 +64,12 @@ public class PhotographActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PhotographAction obj = new PhotographAction();
+        assertEquals("schema:PhotographAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

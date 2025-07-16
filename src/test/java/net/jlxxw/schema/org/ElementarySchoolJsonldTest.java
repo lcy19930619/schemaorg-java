@@ -64,4 +64,12 @@ public class ElementarySchoolJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ElementarySchool obj = new ElementarySchool();
+        assertEquals("schema:ElementarySchool", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

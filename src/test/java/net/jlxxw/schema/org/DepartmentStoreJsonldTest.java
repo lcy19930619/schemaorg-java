@@ -64,4 +64,12 @@ public class DepartmentStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DepartmentStore obj = new DepartmentStore();
+        assertEquals("schema:DepartmentStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

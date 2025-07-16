@@ -64,4 +64,12 @@ public class RoleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Role obj = new Role();
+        assertEquals("schema:Role", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

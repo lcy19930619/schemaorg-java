@@ -64,4 +64,12 @@ public class InvestmentFundJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        InvestmentFund obj = new InvestmentFund();
+        assertEquals("schema:InvestmentFund", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

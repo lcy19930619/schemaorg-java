@@ -64,4 +64,12 @@ public class LocationFeatureSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LocationFeatureSpecification obj = new LocationFeatureSpecification();
+        assertEquals("schema:LocationFeatureSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

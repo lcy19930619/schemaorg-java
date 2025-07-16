@@ -64,4 +64,12 @@ public class HobbyShopJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HobbyShop obj = new HobbyShop();
+        assertEquals("schema:HobbyShop", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

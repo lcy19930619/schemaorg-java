@@ -64,4 +64,12 @@ public class WebPageElementJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WebPageElement obj = new WebPageElement();
+        assertEquals("schema:WebPageElement", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

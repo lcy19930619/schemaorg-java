@@ -64,4 +64,12 @@ public class SendActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SendAction obj = new SendAction();
+        assertEquals("schema:SendAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

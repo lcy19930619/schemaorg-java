@@ -64,4 +64,12 @@ public class PrependActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PrependAction obj = new PrependAction();
+        assertEquals("schema:PrependAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

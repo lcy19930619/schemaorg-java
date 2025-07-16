@@ -64,4 +64,12 @@ public class FurnitureStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FurnitureStore obj = new FurnitureStore();
+        assertEquals("schema:FurnitureStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

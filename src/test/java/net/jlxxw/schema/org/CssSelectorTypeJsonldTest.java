@@ -64,4 +64,12 @@ public class CssSelectorTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CssSelectorType obj = new CssSelectorType();
+        assertEquals("schema:CssSelectorType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

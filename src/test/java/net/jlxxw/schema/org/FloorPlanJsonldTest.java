@@ -64,4 +64,12 @@ public class FloorPlanJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FloorPlan obj = new FloorPlan();
+        assertEquals("schema:FloorPlan", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

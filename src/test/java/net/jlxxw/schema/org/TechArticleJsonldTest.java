@@ -64,4 +64,12 @@ public class TechArticleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TechArticle obj = new TechArticle();
+        assertEquals("schema:TechArticle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

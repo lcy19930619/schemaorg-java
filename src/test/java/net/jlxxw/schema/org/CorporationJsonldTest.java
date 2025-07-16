@@ -64,4 +64,12 @@ public class CorporationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Corporation obj = new Corporation();
+        assertEquals("schema:Corporation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class MerchantReturnPolicySeasonalOverrideJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MerchantReturnPolicySeasonalOverride obj = new MerchantReturnPolicySeasonalOverride();
+        assertEquals("schema:MerchantReturnPolicySeasonalOverride", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

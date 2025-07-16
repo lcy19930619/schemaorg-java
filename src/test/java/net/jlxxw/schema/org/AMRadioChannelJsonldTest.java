@@ -64,4 +64,12 @@ public class AMRadioChannelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AMRadioChannel obj = new AMRadioChannel();
+        assertEquals("schema:AMRadioChannel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class PeriodicalJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Periodical obj = new Periodical();
+        assertEquals("schema:Periodical", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

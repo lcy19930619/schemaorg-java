@@ -64,4 +64,12 @@ public class TouristInformationCenterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TouristInformationCenter obj = new TouristInformationCenter();
+        assertEquals("schema:TouristInformationCenter", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

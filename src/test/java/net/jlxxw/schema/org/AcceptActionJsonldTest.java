@@ -64,4 +64,12 @@ public class AcceptActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AcceptAction obj = new AcceptAction();
+        assertEquals("schema:AcceptAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

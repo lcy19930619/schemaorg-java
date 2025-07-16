@@ -64,4 +64,12 @@ public class QuantityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Quantity obj = new Quantity();
+        assertEquals("schema:Quantity", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

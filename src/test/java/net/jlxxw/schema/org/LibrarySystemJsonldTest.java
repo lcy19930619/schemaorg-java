@@ -64,4 +64,12 @@ public class LibrarySystemJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LibrarySystem obj = new LibrarySystem();
+        assertEquals("schema:LibrarySystem", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

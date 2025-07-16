@@ -64,4 +64,12 @@ public class MovingCompanyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MovingCompany obj = new MovingCompany();
+        assertEquals("schema:MovingCompany", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

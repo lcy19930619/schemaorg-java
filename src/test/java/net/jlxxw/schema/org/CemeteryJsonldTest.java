@@ -64,4 +64,12 @@ public class CemeteryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Cemetery obj = new Cemetery();
+        assertEquals("schema:Cemetery", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

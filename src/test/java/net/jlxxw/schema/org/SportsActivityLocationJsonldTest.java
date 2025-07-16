@@ -64,4 +64,12 @@ public class SportsActivityLocationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SportsActivityLocation obj = new SportsActivityLocation();
+        assertEquals("schema:SportsActivityLocation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

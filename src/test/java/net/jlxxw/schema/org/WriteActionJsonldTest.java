@@ -64,4 +64,12 @@ public class WriteActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WriteAction obj = new WriteAction();
+        assertEquals("schema:WriteAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class AccountingServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AccountingService obj = new AccountingService();
+        assertEquals("schema:AccountingService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

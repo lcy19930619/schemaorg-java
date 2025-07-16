@@ -64,4 +64,12 @@ public class DatasetJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Dataset obj = new Dataset();
+        assertEquals("schema:Dataset", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

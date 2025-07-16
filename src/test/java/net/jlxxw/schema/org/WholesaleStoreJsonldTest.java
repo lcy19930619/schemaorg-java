@@ -64,4 +64,12 @@ public class WholesaleStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WholesaleStore obj = new WholesaleStore();
+        assertEquals("schema:WholesaleStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

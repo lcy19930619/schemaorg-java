@@ -64,4 +64,12 @@ public class VesselJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Vessel obj = new Vessel();
+        assertEquals("schema:Vessel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

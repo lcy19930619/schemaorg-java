@@ -64,4 +64,12 @@ public class FMRadioChannelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FMRadioChannel obj = new FMRadioChannel();
+        assertEquals("schema:FMRadioChannel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

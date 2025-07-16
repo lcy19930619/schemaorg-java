@@ -64,4 +64,12 @@ public class ScreeningEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ScreeningEvent obj = new ScreeningEvent();
+        assertEquals("schema:ScreeningEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

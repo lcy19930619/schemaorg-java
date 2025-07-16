@@ -64,4 +64,12 @@ public class ReceiveActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReceiveAction obj = new ReceiveAction();
+        assertEquals("schema:ReceiveAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

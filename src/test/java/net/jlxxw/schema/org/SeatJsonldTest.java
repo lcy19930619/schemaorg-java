@@ -64,4 +64,12 @@ public class SeatJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Seat obj = new Seat();
+        assertEquals("schema:Seat", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

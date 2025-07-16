@@ -64,4 +64,12 @@ public class MarryActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MarryAction obj = new MarryAction();
+        assertEquals("schema:MarryAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

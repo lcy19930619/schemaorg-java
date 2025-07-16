@@ -64,4 +64,12 @@ public class ResearchOrganizationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ResearchOrganization obj = new ResearchOrganization();
+        assertEquals("schema:ResearchOrganization", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

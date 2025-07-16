@@ -64,4 +64,12 @@ public class DiscoverActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DiscoverAction obj = new DiscoverAction();
+        assertEquals("schema:DiscoverAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

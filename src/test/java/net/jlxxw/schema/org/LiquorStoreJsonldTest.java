@@ -64,4 +64,12 @@ public class LiquorStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LiquorStore obj = new LiquorStore();
+        assertEquals("schema:LiquorStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

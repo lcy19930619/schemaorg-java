@@ -64,4 +64,12 @@ public class DemandJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Demand obj = new Demand();
+        assertEquals("schema:Demand", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

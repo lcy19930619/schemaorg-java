@@ -64,4 +64,12 @@ public class PreventionIndicationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PreventionIndication obj = new PreventionIndication();
+        assertEquals("schema:PreventionIndication", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

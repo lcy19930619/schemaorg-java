@@ -64,4 +64,12 @@ public class AddActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AddAction obj = new AddAction();
+        assertEquals("schema:AddAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

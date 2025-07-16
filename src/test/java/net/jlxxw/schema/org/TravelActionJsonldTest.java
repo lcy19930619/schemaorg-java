@@ -64,4 +64,12 @@ public class TravelActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TravelAction obj = new TravelAction();
+        assertEquals("schema:TravelAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class AboutPageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AboutPage obj = new AboutPage();
+        assertEquals("schema:AboutPage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

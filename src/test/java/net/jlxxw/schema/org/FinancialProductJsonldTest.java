@@ -64,4 +64,12 @@ public class FinancialProductJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FinancialProduct obj = new FinancialProduct();
+        assertEquals("schema:FinancialProduct", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

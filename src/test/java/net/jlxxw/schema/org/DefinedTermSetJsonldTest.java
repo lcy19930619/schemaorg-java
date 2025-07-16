@@ -64,4 +64,12 @@ public class DefinedTermSetJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DefinedTermSet obj = new DefinedTermSet();
+        assertEquals("schema:DefinedTermSet", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

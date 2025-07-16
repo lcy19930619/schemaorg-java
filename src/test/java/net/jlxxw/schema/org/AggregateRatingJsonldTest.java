@@ -64,4 +64,12 @@ public class AggregateRatingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AggregateRating obj = new AggregateRating();
+        assertEquals("schema:aggregateRating", obj.getId());
+        assertEquals("rdf:Property", obj.getType());
+    }
+
+}

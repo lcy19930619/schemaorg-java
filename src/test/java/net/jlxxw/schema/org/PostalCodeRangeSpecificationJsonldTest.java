@@ -64,4 +64,12 @@ public class PostalCodeRangeSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PostalCodeRangeSpecification obj = new PostalCodeRangeSpecification();
+        assertEquals("schema:PostalCodeRangeSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

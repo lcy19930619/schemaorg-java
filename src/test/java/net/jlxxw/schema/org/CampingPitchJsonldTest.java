@@ -64,4 +64,12 @@ public class CampingPitchJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CampingPitch obj = new CampingPitch();
+        assertEquals("schema:CampingPitch", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

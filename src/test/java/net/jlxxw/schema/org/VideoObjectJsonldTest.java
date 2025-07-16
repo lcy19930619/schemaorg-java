@@ -64,4 +64,12 @@ public class VideoObjectJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VideoObject obj = new VideoObject();
+        assertEquals("schema:VideoObject", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

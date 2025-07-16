@@ -64,4 +64,12 @@ public class JobPostingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        JobPosting obj = new JobPosting();
+        assertEquals("schema:JobPosting", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

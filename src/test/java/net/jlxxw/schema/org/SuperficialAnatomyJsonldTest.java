@@ -64,4 +64,12 @@ public class SuperficialAnatomyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SuperficialAnatomy obj = new SuperficialAnatomy();
+        assertEquals("schema:SuperficialAnatomy", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

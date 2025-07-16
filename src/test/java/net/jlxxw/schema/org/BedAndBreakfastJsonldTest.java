@@ -64,4 +64,12 @@ public class BedAndBreakfastJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BedAndBreakfast obj = new BedAndBreakfast();
+        assertEquals("schema:BedAndBreakfast", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

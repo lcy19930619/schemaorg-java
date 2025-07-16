@@ -64,4 +64,12 @@ public class ComputerStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ComputerStore obj = new ComputerStore();
+        assertEquals("schema:ComputerStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

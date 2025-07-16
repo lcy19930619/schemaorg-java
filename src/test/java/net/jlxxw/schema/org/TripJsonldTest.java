@@ -64,4 +64,12 @@ public class TripJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Trip obj = new Trip();
+        assertEquals("schema:Trip", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

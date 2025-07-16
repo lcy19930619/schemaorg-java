@@ -64,4 +64,12 @@ public class MediaSubscriptionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MediaSubscription obj = new MediaSubscription();
+        assertEquals("schema:MediaSubscription", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

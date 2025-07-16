@@ -64,4 +64,12 @@ public class CreativeWorkSeasonJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CreativeWorkSeason obj = new CreativeWorkSeason();
+        assertEquals("schema:CreativeWorkSeason", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class FundingAgencyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FundingAgency obj = new FundingAgency();
+        assertEquals("schema:FundingAgency", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

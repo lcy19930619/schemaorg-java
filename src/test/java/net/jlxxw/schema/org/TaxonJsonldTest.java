@@ -64,4 +64,12 @@ public class TaxonJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Taxon obj = new Taxon();
+        assertEquals("schema:Taxon", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

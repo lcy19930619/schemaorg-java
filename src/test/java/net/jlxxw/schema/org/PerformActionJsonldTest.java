@@ -64,4 +64,12 @@ public class PerformActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PerformAction obj = new PerformAction();
+        assertEquals("schema:PerformAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

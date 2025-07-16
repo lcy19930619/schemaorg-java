@@ -64,4 +64,12 @@ public class MedicalImagingTechniqueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalImagingTechnique obj = new MedicalImagingTechnique();
+        assertEquals("schema:MedicalImagingTechnique", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

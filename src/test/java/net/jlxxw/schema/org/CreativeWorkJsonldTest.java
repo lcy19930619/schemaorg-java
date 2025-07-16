@@ -64,4 +64,12 @@ public class CreativeWorkJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CreativeWork obj = new CreativeWork();
+        assertEquals("schema:CreativeWork", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

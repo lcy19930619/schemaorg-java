@@ -64,4 +64,12 @@ public class EventStatusTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EventStatusType obj = new EventStatusType();
+        assertEquals("schema:EventStatusType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class MedicalWebPageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalWebPage obj = new MedicalWebPage();
+        assertEquals("schema:MedicalWebPage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

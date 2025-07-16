@@ -64,4 +64,12 @@ public class CertificationStatusEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CertificationStatusEnumeration obj = new CertificationStatusEnumeration();
+        assertEquals("schema:CertificationStatusEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

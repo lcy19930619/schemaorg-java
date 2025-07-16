@@ -64,4 +64,12 @@ public class MonetaryAmountDistributionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MonetaryAmountDistribution obj = new MonetaryAmountDistribution();
+        assertEquals("schema:MonetaryAmountDistribution", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

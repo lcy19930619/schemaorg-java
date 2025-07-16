@@ -64,4 +64,12 @@ public class LegislationObjectJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LegislationObject obj = new LegislationObject();
+        assertEquals("schema:LegislationObject", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

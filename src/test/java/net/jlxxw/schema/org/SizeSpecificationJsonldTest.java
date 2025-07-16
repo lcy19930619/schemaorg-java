@@ -64,4 +64,12 @@ public class SizeSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SizeSpecification obj = new SizeSpecification();
+        assertEquals("schema:SizeSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

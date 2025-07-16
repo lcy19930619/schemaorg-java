@@ -64,4 +64,12 @@ public class LearningResourceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LearningResource obj = new LearningResource();
+        assertEquals("schema:LearningResource", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

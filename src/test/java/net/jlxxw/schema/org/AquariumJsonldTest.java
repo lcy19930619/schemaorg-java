@@ -64,4 +64,12 @@ public class AquariumJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Aquarium obj = new Aquarium();
+        assertEquals("schema:Aquarium", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

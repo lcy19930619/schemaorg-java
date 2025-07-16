@@ -64,4 +64,12 @@ public class MovieClipJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MovieClip obj = new MovieClip();
+        assertEquals("schema:MovieClip", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class TherapeuticProcedureJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TherapeuticProcedure obj = new TherapeuticProcedure();
+        assertEquals("schema:TherapeuticProcedure", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

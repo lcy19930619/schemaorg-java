@@ -64,4 +64,12 @@ public class MedicalTherapyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalTherapy obj = new MedicalTherapy();
+        assertEquals("schema:MedicalTherapy", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

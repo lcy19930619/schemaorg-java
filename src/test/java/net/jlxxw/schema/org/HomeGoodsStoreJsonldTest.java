@@ -64,4 +64,12 @@ public class HomeGoodsStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HomeGoodsStore obj = new HomeGoodsStore();
+        assertEquals("schema:HomeGoodsStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

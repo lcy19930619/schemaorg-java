@@ -64,4 +64,12 @@ public class MuseumJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Museum obj = new Museum();
+        assertEquals("schema:Museum", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

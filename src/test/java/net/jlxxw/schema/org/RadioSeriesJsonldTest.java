@@ -64,4 +64,12 @@ public class RadioSeriesJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RadioSeries obj = new RadioSeries();
+        assertEquals("schema:RadioSeries", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

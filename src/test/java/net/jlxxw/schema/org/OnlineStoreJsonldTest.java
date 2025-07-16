@@ -64,4 +64,12 @@ public class OnlineStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OnlineStore obj = new OnlineStore();
+        assertEquals("schema:OnlineStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

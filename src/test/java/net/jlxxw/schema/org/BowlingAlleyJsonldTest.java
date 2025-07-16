@@ -64,4 +64,12 @@ public class BowlingAlleyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BowlingAlley obj = new BowlingAlley();
+        assertEquals("schema:BowlingAlley", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

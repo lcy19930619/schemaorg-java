@@ -64,4 +64,12 @@ public class RadiationTherapyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RadiationTherapy obj = new RadiationTherapy();
+        assertEquals("schema:RadiationTherapy", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

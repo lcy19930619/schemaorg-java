@@ -64,4 +64,12 @@ public class IPTCDigitalSourceEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        IPTCDigitalSourceEnumeration obj = new IPTCDigitalSourceEnumeration();
+        assertEquals("schema:IPTCDigitalSourceEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

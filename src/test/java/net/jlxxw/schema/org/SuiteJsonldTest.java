@@ -64,4 +64,12 @@ public class SuiteJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Suite obj = new Suite();
+        assertEquals("schema:Suite", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

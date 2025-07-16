@@ -64,4 +64,12 @@ public class BroadcastFrequencySpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BroadcastFrequencySpecification obj = new BroadcastFrequencySpecification();
+        assertEquals("schema:BroadcastFrequencySpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

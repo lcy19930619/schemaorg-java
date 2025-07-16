@@ -64,4 +64,12 @@ public class ArteryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Artery obj = new Artery();
+        assertEquals("schema:Artery", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class DeliveryEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DeliveryEvent obj = new DeliveryEvent();
+        assertEquals("schema:DeliveryEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

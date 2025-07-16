@@ -64,4 +64,12 @@ public class InteractionCounterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        InteractionCounter obj = new InteractionCounter();
+        assertEquals("schema:InteractionCounter", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

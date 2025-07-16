@@ -64,4 +64,12 @@ public class ChooseActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ChooseAction obj = new ChooseAction();
+        assertEquals("schema:ChooseAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

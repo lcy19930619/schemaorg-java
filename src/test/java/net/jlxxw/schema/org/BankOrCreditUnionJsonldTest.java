@@ -64,4 +64,12 @@ public class BankOrCreditUnionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BankOrCreditUnion obj = new BankOrCreditUnion();
+        assertEquals("schema:BankOrCreditUnion", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

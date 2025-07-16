@@ -64,4 +64,12 @@ public class HealthAspectEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HealthAspectEnumeration obj = new HealthAspectEnumeration();
+        assertEquals("schema:HealthAspectEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class VacationRentalJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VacationRental obj = new VacationRental();
+        assertEquals("schema:VacationRental", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class FastFoodRestaurantJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FastFoodRestaurant obj = new FastFoodRestaurant();
+        assertEquals("schema:FastFoodRestaurant", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

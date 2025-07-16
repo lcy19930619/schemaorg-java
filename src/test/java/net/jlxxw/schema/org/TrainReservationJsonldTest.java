@@ -64,4 +64,12 @@ public class TrainReservationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TrainReservation obj = new TrainReservation();
+        assertEquals("schema:TrainReservation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

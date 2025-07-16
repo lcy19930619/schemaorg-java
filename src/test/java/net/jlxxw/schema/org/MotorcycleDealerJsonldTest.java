@@ -64,4 +64,12 @@ public class MotorcycleDealerJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MotorcycleDealer obj = new MotorcycleDealer();
+        assertEquals("schema:MotorcycleDealer", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

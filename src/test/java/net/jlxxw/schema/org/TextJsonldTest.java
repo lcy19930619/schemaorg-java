@@ -64,4 +64,12 @@ public class TextJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Text obj = new Text();
+        assertEquals("schema:Text", obj.getId());
+        assertEquals("['rdfs:Class', 'schema:DataType']", obj.getType());
+    }
+
+}

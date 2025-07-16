@@ -64,4 +64,12 @@ public class MedicalRiskEstimatorJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalRiskEstimator obj = new MedicalRiskEstimator();
+        assertEquals("schema:MedicalRiskEstimator", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

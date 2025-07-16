@@ -64,4 +64,12 @@ public class AlignmentObjectJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AlignmentObject obj = new AlignmentObject();
+        assertEquals("schema:AlignmentObject", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

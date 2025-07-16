@@ -64,4 +64,12 @@ public class ChildrensEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ChildrensEvent obj = new ChildrensEvent();
+        assertEquals("schema:ChildrensEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

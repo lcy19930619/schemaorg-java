@@ -64,4 +64,12 @@ public class CovidTestingFacilityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CovidTestingFacility obj = new CovidTestingFacility();
+        assertEquals("schema:CovidTestingFacility", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class BookJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Book obj = new Book();
+        assertEquals("schema:Book", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

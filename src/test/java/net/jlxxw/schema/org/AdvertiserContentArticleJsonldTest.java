@@ -64,4 +64,12 @@ public class AdvertiserContentArticleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AdvertiserContentArticle obj = new AdvertiserContentArticle();
+        assertEquals("schema:AdvertiserContentArticle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

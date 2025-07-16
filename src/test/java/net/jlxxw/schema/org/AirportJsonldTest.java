@@ -64,4 +64,12 @@ public class AirportJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Airport obj = new Airport();
+        assertEquals("schema:Airport", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

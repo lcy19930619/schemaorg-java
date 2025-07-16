@@ -64,4 +64,12 @@ public class StatisticalVariableJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        StatisticalVariable obj = new StatisticalVariable();
+        assertEquals("schema:StatisticalVariable", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

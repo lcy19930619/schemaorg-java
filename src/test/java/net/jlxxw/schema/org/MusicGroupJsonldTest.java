@@ -64,4 +64,12 @@ public class MusicGroupJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicGroup obj = new MusicGroup();
+        assertEquals("schema:MusicGroup", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

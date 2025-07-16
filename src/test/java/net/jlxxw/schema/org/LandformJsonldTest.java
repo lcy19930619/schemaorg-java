@@ -64,4 +64,12 @@ public class LandformJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Landform obj = new Landform();
+        assertEquals("schema:Landform", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

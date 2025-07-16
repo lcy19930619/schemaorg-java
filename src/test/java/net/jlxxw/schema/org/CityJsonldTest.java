@@ -64,4 +64,12 @@ public class CityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        City obj = new City();
+        assertEquals("schema:City", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

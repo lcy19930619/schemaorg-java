@@ -64,4 +64,12 @@ public class ReplaceActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReplaceAction obj = new ReplaceAction();
+        assertEquals("schema:ReplaceAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

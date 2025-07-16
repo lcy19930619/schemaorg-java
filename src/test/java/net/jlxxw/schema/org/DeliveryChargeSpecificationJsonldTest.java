@@ -64,4 +64,12 @@ public class DeliveryChargeSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DeliveryChargeSpecification obj = new DeliveryChargeSpecification();
+        assertEquals("schema:DeliveryChargeSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

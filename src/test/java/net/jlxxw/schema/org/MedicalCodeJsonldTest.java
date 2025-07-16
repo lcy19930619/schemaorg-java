@@ -64,4 +64,12 @@ public class MedicalCodeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalCode obj = new MedicalCode();
+        assertEquals("schema:MedicalCode", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

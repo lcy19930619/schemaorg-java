@@ -64,4 +64,12 @@ public class RecommendedDoseScheduleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RecommendedDoseSchedule obj = new RecommendedDoseSchedule();
+        assertEquals("schema:RecommendedDoseSchedule", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

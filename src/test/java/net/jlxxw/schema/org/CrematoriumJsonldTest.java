@@ -64,4 +64,12 @@ public class CrematoriumJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Crematorium obj = new Crematorium();
+        assertEquals("schema:Crematorium", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

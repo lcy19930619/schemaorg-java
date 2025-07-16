@@ -64,4 +64,12 @@ public class LandmarksOrHistoricalBuildingsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LandmarksOrHistoricalBuildings obj = new LandmarksOrHistoricalBuildings();
+        assertEquals("schema:LandmarksOrHistoricalBuildings", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

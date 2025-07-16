@@ -64,4 +64,12 @@ public class ExercisePlanJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ExercisePlan obj = new ExercisePlan();
+        assertEquals("schema:ExercisePlan", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

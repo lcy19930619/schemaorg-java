@@ -64,4 +64,12 @@ public class RsvpActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RsvpAction obj = new RsvpAction();
+        assertEquals("schema:RsvpAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

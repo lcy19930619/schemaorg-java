@@ -64,4 +64,12 @@ public class TakeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TakeAction obj = new TakeAction();
+        assertEquals("schema:TakeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

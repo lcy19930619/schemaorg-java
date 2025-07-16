@@ -64,4 +64,12 @@ public class MoveActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MoveAction obj = new MoveAction();
+        assertEquals("schema:MoveAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

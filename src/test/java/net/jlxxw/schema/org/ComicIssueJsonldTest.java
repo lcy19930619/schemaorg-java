@@ -64,4 +64,12 @@ public class ComicIssueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ComicIssue obj = new ComicIssue();
+        assertEquals("schema:ComicIssue", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

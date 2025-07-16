@@ -64,4 +64,12 @@ public class AutoRentalJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AutoRental obj = new AutoRental();
+        assertEquals("schema:AutoRental", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

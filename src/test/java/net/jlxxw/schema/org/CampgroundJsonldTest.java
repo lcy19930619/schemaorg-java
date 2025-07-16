@@ -64,4 +64,12 @@ public class CampgroundJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Campground obj = new Campground();
+        assertEquals("schema:Campground", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

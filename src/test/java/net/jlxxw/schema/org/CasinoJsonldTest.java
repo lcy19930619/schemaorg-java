@@ -64,4 +64,12 @@ public class CasinoJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Casino obj = new Casino();
+        assertEquals("schema:Casino", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

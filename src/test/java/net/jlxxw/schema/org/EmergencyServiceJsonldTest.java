@@ -64,4 +64,12 @@ public class EmergencyServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EmergencyService obj = new EmergencyService();
+        assertEquals("schema:EmergencyService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

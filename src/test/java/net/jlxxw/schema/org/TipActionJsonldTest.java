@@ -64,4 +64,12 @@ public class TipActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TipAction obj = new TipAction();
+        assertEquals("schema:TipAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class WatchActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WatchAction obj = new WatchAction();
+        assertEquals("schema:WatchAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

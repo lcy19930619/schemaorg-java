@@ -64,4 +64,12 @@ public class CoverArtJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CoverArt obj = new CoverArt();
+        assertEquals("schema:CoverArt", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

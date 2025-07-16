@@ -64,4 +64,12 @@ public class ElectronicsStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ElectronicsStore obj = new ElectronicsStore();
+        assertEquals("schema:ElectronicsStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

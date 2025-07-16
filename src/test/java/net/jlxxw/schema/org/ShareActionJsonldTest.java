@@ -64,4 +64,12 @@ public class ShareActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ShareAction obj = new ShareAction();
+        assertEquals("schema:ShareAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

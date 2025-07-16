@@ -64,4 +64,12 @@ public class BarOrPubJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BarOrPub obj = new BarOrPub();
+        assertEquals("schema:BarOrPub", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

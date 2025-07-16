@@ -64,4 +64,12 @@ public class GuideJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Guide obj = new Guide();
+        assertEquals("schema:Guide", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

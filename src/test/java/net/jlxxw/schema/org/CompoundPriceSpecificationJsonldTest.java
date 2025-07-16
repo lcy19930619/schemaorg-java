@@ -64,4 +64,12 @@ public class CompoundPriceSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CompoundPriceSpecification obj = new CompoundPriceSpecification();
+        assertEquals("schema:CompoundPriceSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

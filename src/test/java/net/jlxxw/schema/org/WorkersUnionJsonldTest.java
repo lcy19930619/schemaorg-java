@@ -64,4 +64,12 @@ public class WorkersUnionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WorkersUnion obj = new WorkersUnion();
+        assertEquals("schema:WorkersUnion", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

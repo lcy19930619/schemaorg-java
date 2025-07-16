@@ -64,4 +64,12 @@ public class EventSeriesJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EventSeries obj = new EventSeries();
+        assertEquals("schema:EventSeries", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

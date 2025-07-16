@@ -64,4 +64,12 @@ public class VitalSignJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VitalSign obj = new VitalSign();
+        assertEquals("schema:VitalSign", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class BarcodeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Barcode obj = new Barcode();
+        assertEquals("schema:Barcode", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

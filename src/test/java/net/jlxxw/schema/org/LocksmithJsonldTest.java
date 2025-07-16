@@ -64,4 +64,12 @@ public class LocksmithJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Locksmith obj = new Locksmith();
+        assertEquals("schema:Locksmith", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

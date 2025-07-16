@@ -64,4 +64,12 @@ public class HealthPlanFormularyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HealthPlanFormulary obj = new HealthPlanFormulary();
+        assertEquals("schema:HealthPlanFormulary", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

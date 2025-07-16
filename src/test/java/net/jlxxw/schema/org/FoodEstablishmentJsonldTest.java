@@ -64,4 +64,12 @@ public class FoodEstablishmentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FoodEstablishment obj = new FoodEstablishment();
+        assertEquals("schema:foodEstablishment", obj.getId());
+        assertEquals("rdf:Property", obj.getType());
+    }
+
+}

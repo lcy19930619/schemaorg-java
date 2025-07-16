@@ -64,4 +64,12 @@ public class UserCommentsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserComments obj = new UserComments();
+        assertEquals("schema:UserComments", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

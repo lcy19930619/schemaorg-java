@@ -64,4 +64,12 @@ public class PublicationIssueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PublicationIssue obj = new PublicationIssue();
+        assertEquals("schema:PublicationIssue", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class LocalBusinessJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LocalBusiness obj = new LocalBusiness();
+        assertEquals("schema:LocalBusiness", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

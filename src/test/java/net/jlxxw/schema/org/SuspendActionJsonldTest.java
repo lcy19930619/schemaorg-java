@@ -64,4 +64,12 @@ public class SuspendActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SuspendAction obj = new SuspendAction();
+        assertEquals("schema:SuspendAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

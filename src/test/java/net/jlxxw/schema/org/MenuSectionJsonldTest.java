@@ -64,4 +64,12 @@ public class MenuSectionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MenuSection obj = new MenuSection();
+        assertEquals("schema:MenuSection", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

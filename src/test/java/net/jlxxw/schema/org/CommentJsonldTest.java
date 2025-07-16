@@ -64,4 +64,12 @@ public class CommentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Comment obj = new Comment();
+        assertEquals("schema:Comment", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

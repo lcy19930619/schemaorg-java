@@ -64,4 +64,12 @@ public class PaintActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PaintAction obj = new PaintAction();
+        assertEquals("schema:PaintAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

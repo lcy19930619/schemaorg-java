@@ -64,4 +64,12 @@ public class DigitalPlatformEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DigitalPlatformEnumeration obj = new DigitalPlatformEnumeration();
+        assertEquals("schema:DigitalPlatformEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

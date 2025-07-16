@@ -64,4 +64,12 @@ public class EndorseActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EndorseAction obj = new EndorseAction();
+        assertEquals("schema:EndorseAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

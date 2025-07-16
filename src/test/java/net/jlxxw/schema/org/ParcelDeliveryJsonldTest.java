@@ -64,4 +64,12 @@ public class ParcelDeliveryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ParcelDelivery obj = new ParcelDelivery();
+        assertEquals("schema:ParcelDelivery", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class IgnoreActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        IgnoreAction obj = new IgnoreAction();
+        assertEquals("schema:IgnoreAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

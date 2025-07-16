@@ -64,4 +64,12 @@ public class EmploymentAgencyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EmploymentAgency obj = new EmploymentAgency();
+        assertEquals("schema:EmploymentAgency", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

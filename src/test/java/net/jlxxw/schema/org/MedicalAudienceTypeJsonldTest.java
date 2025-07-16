@@ -64,4 +64,12 @@ public class MedicalAudienceTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalAudienceType obj = new MedicalAudienceType();
+        assertEquals("schema:MedicalAudienceType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class HinduTempleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HinduTemple obj = new HinduTemple();
+        assertEquals("schema:HinduTemple", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

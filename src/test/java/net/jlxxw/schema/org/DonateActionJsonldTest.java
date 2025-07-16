@@ -64,4 +64,12 @@ public class DonateActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DonateAction obj = new DonateAction();
+        assertEquals("schema:DonateAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

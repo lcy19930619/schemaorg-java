@@ -64,4 +64,12 @@ public class SaleEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SaleEvent obj = new SaleEvent();
+        assertEquals("schema:SaleEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

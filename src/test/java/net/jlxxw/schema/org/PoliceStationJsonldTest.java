@@ -64,4 +64,12 @@ public class PoliceStationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PoliceStation obj = new PoliceStation();
+        assertEquals("schema:PoliceStation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

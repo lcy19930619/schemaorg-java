@@ -64,4 +64,12 @@ public class MerchantReturnEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MerchantReturnEnumeration obj = new MerchantReturnEnumeration();
+        assertEquals("schema:MerchantReturnEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

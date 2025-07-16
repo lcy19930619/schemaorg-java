@@ -64,4 +64,12 @@ public class BefriendActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BefriendAction obj = new BefriendAction();
+        assertEquals("schema:BefriendAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

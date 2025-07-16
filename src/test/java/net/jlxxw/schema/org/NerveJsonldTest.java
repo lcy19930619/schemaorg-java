@@ -64,4 +64,12 @@ public class NerveJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Nerve obj = new Nerve();
+        assertEquals("schema:Nerve", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class MeasurementMethodEnumJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MeasurementMethodEnum obj = new MeasurementMethodEnum();
+        assertEquals("schema:MeasurementMethodEnum", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

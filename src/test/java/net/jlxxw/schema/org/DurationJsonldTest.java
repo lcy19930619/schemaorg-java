@@ -64,4 +64,12 @@ public class DurationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Duration obj = new Duration();
+        assertEquals("schema:Duration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

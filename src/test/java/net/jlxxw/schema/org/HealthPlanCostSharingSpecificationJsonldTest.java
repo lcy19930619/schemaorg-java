@@ -64,4 +64,12 @@ public class HealthPlanCostSharingSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HealthPlanCostSharingSpecification obj = new HealthPlanCostSharingSpecification();
+        assertEquals("schema:HealthPlanCostSharingSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

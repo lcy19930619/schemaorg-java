@@ -64,4 +64,12 @@ public class ConversationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Conversation obj = new Conversation();
+        assertEquals("schema:Conversation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

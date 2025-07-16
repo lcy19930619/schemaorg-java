@@ -64,4 +64,12 @@ public class GeoCoordinatesJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GeoCoordinates obj = new GeoCoordinates();
+        assertEquals("schema:GeoCoordinates", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class CreditCardJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CreditCard obj = new CreditCard();
+        assertEquals("schema:CreditCard", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

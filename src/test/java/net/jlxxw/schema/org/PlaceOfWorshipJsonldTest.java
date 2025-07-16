@@ -64,4 +64,12 @@ public class PlaceOfWorshipJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PlaceOfWorship obj = new PlaceOfWorship();
+        assertEquals("schema:PlaceOfWorship", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

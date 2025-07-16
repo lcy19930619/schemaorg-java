@@ -64,4 +64,12 @@ public class FlightJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Flight obj = new Flight();
+        assertEquals("schema:Flight", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

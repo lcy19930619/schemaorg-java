@@ -64,4 +64,12 @@ public class BookFormatTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BookFormatType obj = new BookFormatType();
+        assertEquals("schema:BookFormatType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

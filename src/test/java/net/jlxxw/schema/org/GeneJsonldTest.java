@@ -64,4 +64,12 @@ public class GeneJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Gene obj = new Gene();
+        assertEquals("schema:Gene", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class DeleteActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DeleteAction obj = new DeleteAction();
+        assertEquals("schema:DeleteAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

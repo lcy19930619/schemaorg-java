@@ -64,4 +64,12 @@ public class MolecularEntityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MolecularEntity obj = new MolecularEntity();
+        assertEquals("schema:MolecularEntity", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

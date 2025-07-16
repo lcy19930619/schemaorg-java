@@ -64,4 +64,12 @@ public class BakeryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Bakery obj = new Bakery();
+        assertEquals("schema:Bakery", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class BoardingPolicyTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BoardingPolicyType obj = new BoardingPolicyType();
+        assertEquals("schema:BoardingPolicyType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

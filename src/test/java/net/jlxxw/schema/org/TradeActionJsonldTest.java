@@ -64,4 +64,12 @@ public class TradeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TradeAction obj = new TradeAction();
+        assertEquals("schema:TradeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

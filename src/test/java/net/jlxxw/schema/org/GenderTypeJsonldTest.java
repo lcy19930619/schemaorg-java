@@ -64,4 +64,12 @@ public class GenderTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GenderType obj = new GenderType();
+        assertEquals("schema:GenderType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

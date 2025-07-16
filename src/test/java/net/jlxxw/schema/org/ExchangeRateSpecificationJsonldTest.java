@@ -64,4 +64,12 @@ public class ExchangeRateSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ExchangeRateSpecification obj = new ExchangeRateSpecification();
+        assertEquals("schema:ExchangeRateSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

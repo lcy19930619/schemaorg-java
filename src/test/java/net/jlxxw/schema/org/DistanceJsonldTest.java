@@ -64,4 +64,12 @@ public class DistanceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Distance obj = new Distance();
+        assertEquals("schema:Distance", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

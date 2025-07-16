@@ -64,4 +64,12 @@ public class GovernmentBenefitsTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GovernmentBenefitsType obj = new GovernmentBenefitsType();
+        assertEquals("schema:GovernmentBenefitsType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

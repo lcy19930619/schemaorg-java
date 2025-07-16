@@ -64,4 +64,12 @@ public class MedicalObservationalStudyDesignJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalObservationalStudyDesign obj = new MedicalObservationalStudyDesign();
+        assertEquals("schema:MedicalObservationalStudyDesign", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

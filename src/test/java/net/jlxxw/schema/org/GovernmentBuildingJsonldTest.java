@@ -64,4 +64,12 @@ public class GovernmentBuildingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GovernmentBuilding obj = new GovernmentBuilding();
+        assertEquals("schema:GovernmentBuilding", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

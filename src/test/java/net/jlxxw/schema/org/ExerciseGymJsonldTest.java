@@ -64,4 +64,12 @@ public class ExerciseGymJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ExerciseGym obj = new ExerciseGym();
+        assertEquals("schema:ExerciseGym", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

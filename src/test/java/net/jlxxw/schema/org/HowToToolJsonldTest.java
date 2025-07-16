@@ -64,4 +64,12 @@ public class HowToToolJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HowToTool obj = new HowToTool();
+        assertEquals("schema:HowToTool", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

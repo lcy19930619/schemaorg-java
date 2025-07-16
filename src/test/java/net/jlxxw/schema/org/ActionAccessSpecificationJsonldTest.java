@@ -64,4 +64,12 @@ public class ActionAccessSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ActionAccessSpecification obj = new ActionAccessSpecification();
+        assertEquals("schema:ActionAccessSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

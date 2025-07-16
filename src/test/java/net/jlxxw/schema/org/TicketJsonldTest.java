@@ -64,4 +64,12 @@ public class TicketJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Ticket obj = new Ticket();
+        assertEquals("schema:Ticket", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

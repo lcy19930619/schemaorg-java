@@ -64,4 +64,12 @@ public class OrderActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OrderAction obj = new OrderAction();
+        assertEquals("schema:OrderAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

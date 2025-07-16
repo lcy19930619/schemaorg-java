@@ -64,4 +64,12 @@ public class MiddleSchoolJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MiddleSchool obj = new MiddleSchool();
+        assertEquals("schema:MiddleSchool", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

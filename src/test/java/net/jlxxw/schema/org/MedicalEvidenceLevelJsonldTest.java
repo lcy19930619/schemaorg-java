@@ -64,4 +64,12 @@ public class MedicalEvidenceLevelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalEvidenceLevel obj = new MedicalEvidenceLevel();
+        assertEquals("schema:MedicalEvidenceLevel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class AutoBodyShopJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AutoBodyShop obj = new AutoBodyShop();
+        assertEquals("schema:AutoBodyShop", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

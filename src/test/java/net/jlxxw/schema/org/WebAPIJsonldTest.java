@@ -64,4 +64,12 @@ public class WebAPIJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WebAPI obj = new WebAPI();
+        assertEquals("schema:WebAPI", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

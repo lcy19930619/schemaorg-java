@@ -64,4 +64,12 @@ public class MusicAlbumJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicAlbum obj = new MusicAlbum();
+        assertEquals("schema:MusicAlbum", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

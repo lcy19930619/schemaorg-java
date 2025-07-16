@@ -64,4 +64,12 @@ public class MeasurementTypeEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MeasurementTypeEnumeration obj = new MeasurementTypeEnumeration();
+        assertEquals("schema:MeasurementTypeEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

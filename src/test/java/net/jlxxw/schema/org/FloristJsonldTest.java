@@ -64,4 +64,12 @@ public class FloristJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Florist obj = new Florist();
+        assertEquals("schema:Florist", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

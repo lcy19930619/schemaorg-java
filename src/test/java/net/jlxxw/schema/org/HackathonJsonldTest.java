@@ -64,4 +64,12 @@ public class HackathonJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Hackathon obj = new Hackathon();
+        assertEquals("schema:Hackathon", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class MedicalEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalEnumeration obj = new MedicalEnumeration();
+        assertEquals("schema:MedicalEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

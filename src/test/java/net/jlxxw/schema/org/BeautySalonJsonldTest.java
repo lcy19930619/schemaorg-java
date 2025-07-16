@@ -64,4 +64,12 @@ public class BeautySalonJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BeautySalon obj = new BeautySalon();
+        assertEquals("schema:BeautySalon", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

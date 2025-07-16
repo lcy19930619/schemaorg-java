@@ -64,4 +64,12 @@ public class MedicalIndicationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalIndication obj = new MedicalIndication();
+        assertEquals("schema:MedicalIndication", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class DrugCostCategoryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DrugCostCategory obj = new DrugCostCategory();
+        assertEquals("schema:DrugCostCategory", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

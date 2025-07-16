@@ -64,4 +64,12 @@ public class HotelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Hotel obj = new Hotel();
+        assertEquals("schema:Hotel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class GroceryStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GroceryStore obj = new GroceryStore();
+        assertEquals("schema:GroceryStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

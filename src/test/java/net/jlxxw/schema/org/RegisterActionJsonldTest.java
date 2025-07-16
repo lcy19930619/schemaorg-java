@@ -64,4 +64,12 @@ public class RegisterActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RegisterAction obj = new RegisterAction();
+        assertEquals("schema:RegisterAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class AutoWashJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AutoWash obj = new AutoWash();
+        assertEquals("schema:AutoWash", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

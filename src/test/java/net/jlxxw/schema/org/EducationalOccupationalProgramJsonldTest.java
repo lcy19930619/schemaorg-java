@@ -64,4 +64,12 @@ public class EducationalOccupationalProgramJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EducationalOccupationalProgram obj = new EducationalOccupationalProgram();
+        assertEquals("schema:EducationalOccupationalProgram", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

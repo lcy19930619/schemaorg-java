@@ -64,4 +64,12 @@ public class RealEstateListingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RealEstateListing obj = new RealEstateListing();
+        assertEquals("schema:RealEstateListing", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

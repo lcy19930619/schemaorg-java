@@ -64,4 +64,12 @@ public class CivicStructureJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CivicStructure obj = new CivicStructure();
+        assertEquals("schema:CivicStructure", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class MapJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Map obj = new Map();
+        assertEquals("schema:Map", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

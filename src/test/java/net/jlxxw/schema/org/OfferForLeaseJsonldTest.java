@@ -64,4 +64,12 @@ public class OfferForLeaseJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OfferForLease obj = new OfferForLease();
+        assertEquals("schema:OfferForLease", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

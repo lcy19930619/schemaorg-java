@@ -64,4 +64,12 @@ public class MusicEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicEvent obj = new MusicEvent();
+        assertEquals("schema:MusicEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class HealthInsurancePlanJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HealthInsurancePlan obj = new HealthInsurancePlan();
+        assertEquals("schema:HealthInsurancePlan", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

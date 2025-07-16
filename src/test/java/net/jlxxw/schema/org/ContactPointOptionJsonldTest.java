@@ -64,4 +64,12 @@ public class ContactPointOptionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ContactPointOption obj = new ContactPointOption();
+        assertEquals("schema:ContactPointOption", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

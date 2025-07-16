@@ -64,4 +64,12 @@ public class MediaGalleryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MediaGallery obj = new MediaGallery();
+        assertEquals("schema:MediaGallery", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

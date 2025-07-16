@@ -64,4 +64,12 @@ public class GamePlayModeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GamePlayMode obj = new GamePlayMode();
+        assertEquals("schema:GamePlayMode", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

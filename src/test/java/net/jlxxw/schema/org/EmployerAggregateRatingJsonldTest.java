@@ -64,4 +64,12 @@ public class EmployerAggregateRatingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EmployerAggregateRating obj = new EmployerAggregateRating();
+        assertEquals("schema:EmployerAggregateRating", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

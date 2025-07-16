@@ -64,4 +64,12 @@ public class MapCategoryTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MapCategoryType obj = new MapCategoryType();
+        assertEquals("schema:MapCategoryType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

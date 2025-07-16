@@ -64,4 +64,12 @@ public class WinActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WinAction obj = new WinAction();
+        assertEquals("schema:WinAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

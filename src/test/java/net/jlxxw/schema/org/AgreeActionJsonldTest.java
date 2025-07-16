@@ -64,4 +64,12 @@ public class AgreeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AgreeAction obj = new AgreeAction();
+        assertEquals("schema:AgreeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

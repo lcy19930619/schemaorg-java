@@ -64,4 +64,12 @@ public class PropertyValueSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PropertyValueSpecification obj = new PropertyValueSpecification();
+        assertEquals("schema:PropertyValueSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

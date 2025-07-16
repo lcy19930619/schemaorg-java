@@ -64,4 +64,12 @@ public class UserInteractionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserInteraction obj = new UserInteraction();
+        assertEquals("schema:UserInteraction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

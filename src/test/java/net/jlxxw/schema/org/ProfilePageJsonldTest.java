@@ -64,4 +64,12 @@ public class ProfilePageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ProfilePage obj = new ProfilePage();
+        assertEquals("schema:ProfilePage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

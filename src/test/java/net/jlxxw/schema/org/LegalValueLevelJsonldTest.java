@@ -64,4 +64,12 @@ public class LegalValueLevelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LegalValueLevel obj = new LegalValueLevel();
+        assertEquals("schema:LegalValueLevel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

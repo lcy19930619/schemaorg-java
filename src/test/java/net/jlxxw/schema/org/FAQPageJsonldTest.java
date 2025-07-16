@@ -64,4 +64,12 @@ public class FAQPageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FAQPage obj = new FAQPage();
+        assertEquals("schema:FAQPage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

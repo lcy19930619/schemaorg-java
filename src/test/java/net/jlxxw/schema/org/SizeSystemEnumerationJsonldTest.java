@@ -64,4 +64,12 @@ public class SizeSystemEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SizeSystemEnumeration obj = new SizeSystemEnumeration();
+        assertEquals("schema:SizeSystemEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class EducationalAudienceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EducationalAudience obj = new EducationalAudience();
+        assertEquals("schema:EducationalAudience", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

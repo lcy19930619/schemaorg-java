@@ -64,4 +64,12 @@ public class PharmacyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Pharmacy obj = new Pharmacy();
+        assertEquals("schema:Pharmacy", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

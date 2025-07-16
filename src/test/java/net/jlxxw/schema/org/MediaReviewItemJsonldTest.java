@@ -64,4 +64,12 @@ public class MediaReviewItemJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MediaReviewItem obj = new MediaReviewItem();
+        assertEquals("schema:MediaReviewItem", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class PaymentChargeSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PaymentChargeSpecification obj = new PaymentChargeSpecification();
+        assertEquals("schema:PaymentChargeSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class MediaEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MediaEnumeration obj = new MediaEnumeration();
+        assertEquals("schema:MediaEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

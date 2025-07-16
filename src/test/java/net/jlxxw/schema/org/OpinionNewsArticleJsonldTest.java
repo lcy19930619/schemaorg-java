@@ -64,4 +64,12 @@ public class OpinionNewsArticleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OpinionNewsArticle obj = new OpinionNewsArticle();
+        assertEquals("schema:OpinionNewsArticle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

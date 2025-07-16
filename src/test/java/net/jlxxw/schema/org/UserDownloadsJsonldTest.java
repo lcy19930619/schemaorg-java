@@ -64,4 +64,12 @@ public class UserDownloadsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserDownloads obj = new UserDownloads();
+        assertEquals("schema:UserDownloads", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

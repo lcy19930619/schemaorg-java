@@ -64,4 +64,12 @@ public class DaySpaJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DaySpa obj = new DaySpa();
+        assertEquals("schema:DaySpa", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

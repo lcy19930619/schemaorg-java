@@ -64,4 +64,12 @@ public class RsvpResponseTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RsvpResponseType obj = new RsvpResponseType();
+        assertEquals("schema:RsvpResponseType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

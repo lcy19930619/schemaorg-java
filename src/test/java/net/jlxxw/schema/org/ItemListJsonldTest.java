@@ -64,4 +64,12 @@ public class ItemListJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ItemList obj = new ItemList();
+        assertEquals("schema:ItemList", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

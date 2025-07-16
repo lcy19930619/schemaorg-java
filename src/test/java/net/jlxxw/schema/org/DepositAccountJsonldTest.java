@@ -64,4 +64,12 @@ public class DepositAccountJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DepositAccount obj = new DepositAccount();
+        assertEquals("schema:DepositAccount", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class DrinkActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DrinkAction obj = new DrinkAction();
+        assertEquals("schema:DrinkAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

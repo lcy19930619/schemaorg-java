@@ -64,4 +64,12 @@ public class ProfessionalServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ProfessionalService obj = new ProfessionalService();
+        assertEquals("schema:ProfessionalService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

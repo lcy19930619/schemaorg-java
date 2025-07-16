@@ -64,4 +64,12 @@ public class CountryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Country obj = new Country();
+        assertEquals("schema:Country", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

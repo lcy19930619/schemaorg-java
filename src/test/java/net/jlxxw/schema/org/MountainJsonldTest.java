@@ -64,4 +64,12 @@ public class MountainJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Mountain obj = new Mountain();
+        assertEquals("schema:Mountain", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

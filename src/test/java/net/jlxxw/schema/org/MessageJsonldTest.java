@@ -64,4 +64,12 @@ public class MessageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Message obj = new Message();
+        assertEquals("schema:Message", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

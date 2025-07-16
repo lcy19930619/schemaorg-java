@@ -64,4 +64,12 @@ public class BusStationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BusStation obj = new BusStation();
+        assertEquals("schema:BusStation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

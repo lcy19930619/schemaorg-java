@@ -6,6 +6,8 @@ import java.util.List;
 
 public class SportsEvent extends Event {
     public SportsEvent() {
+        setId("schema:SportsEvent");
+        setType("rdfs:Class");
     }
 
     /**

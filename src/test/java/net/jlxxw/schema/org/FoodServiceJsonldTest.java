@@ -64,4 +64,12 @@ public class FoodServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FoodService obj = new FoodService();
+        assertEquals("schema:FoodService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

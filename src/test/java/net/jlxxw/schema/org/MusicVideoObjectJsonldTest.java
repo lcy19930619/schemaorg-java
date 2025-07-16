@@ -64,4 +64,12 @@ public class MusicVideoObjectJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicVideoObject obj = new MusicVideoObject();
+        assertEquals("schema:MusicVideoObject", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

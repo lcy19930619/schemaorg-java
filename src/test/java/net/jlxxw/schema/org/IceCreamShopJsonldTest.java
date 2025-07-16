@@ -64,4 +64,12 @@ public class IceCreamShopJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        IceCreamShop obj = new IceCreamShop();
+        assertEquals("schema:IceCreamShop", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

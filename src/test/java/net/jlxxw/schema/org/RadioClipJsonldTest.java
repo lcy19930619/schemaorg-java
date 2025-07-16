@@ -64,4 +64,12 @@ public class RadioClipJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RadioClip obj = new RadioClip();
+        assertEquals("schema:RadioClip", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

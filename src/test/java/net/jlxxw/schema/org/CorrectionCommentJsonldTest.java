@@ -64,4 +64,12 @@ public class CorrectionCommentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CorrectionComment obj = new CorrectionComment();
+        assertEquals("schema:CorrectionComment", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

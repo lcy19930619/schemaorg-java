@@ -64,4 +64,12 @@ public class PreschoolJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Preschool obj = new Preschool();
+        assertEquals("schema:Preschool", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

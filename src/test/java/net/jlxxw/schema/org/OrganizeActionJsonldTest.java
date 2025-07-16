@@ -64,4 +64,12 @@ public class OrganizeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OrganizeAction obj = new OrganizeAction();
+        assertEquals("schema:OrganizeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

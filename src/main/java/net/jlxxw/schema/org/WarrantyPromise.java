@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class WarrantyPromise extends StructuredValue {
     public WarrantyPromise() {
+        setId("schema:WarrantyPromise");
+        setType("rdfs:Class");
     }
 
     /**

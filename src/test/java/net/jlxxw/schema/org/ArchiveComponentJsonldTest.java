@@ -26,6 +26,7 @@ public class ArchiveComponentJsonldTest {
         String jsonld = new Scanner(is, StandardCharsets.UTF_8.name()).useDelimiter("\\A").next();
 
         // Deserialize to Java object
+        //
         ArchiveComponent acc = mapper.readValue(jsonld, ArchiveComponent.class);
         assertNotNull(acc);
 
@@ -64,4 +65,12 @@ public class ArchiveComponentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ArchiveComponent obj = new ArchiveComponent();
+        assertEquals("schema:ArchiveComponent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

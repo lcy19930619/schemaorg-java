@@ -64,4 +64,12 @@ public class RentalCarReservationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RentalCarReservation obj = new RentalCarReservation();
+        assertEquals("schema:RentalCarReservation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

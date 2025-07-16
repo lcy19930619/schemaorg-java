@@ -64,4 +64,12 @@ public class VeterinaryCareJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VeterinaryCare obj = new VeterinaryCare();
+        assertEquals("schema:VeterinaryCare", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

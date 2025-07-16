@@ -64,4 +64,12 @@ public class BrokerageAccountJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BrokerageAccount obj = new BrokerageAccount();
+        assertEquals("schema:BrokerageAccount", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

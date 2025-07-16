@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Game extends CreativeWork {
     public Game() {
+        setId("schema:Game");
+        setType("rdfs:Class");
     }
 
     /**

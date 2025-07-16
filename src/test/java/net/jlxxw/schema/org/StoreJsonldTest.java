@@ -64,4 +64,12 @@ public class StoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Store obj = new Store();
+        assertEquals("schema:Store", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

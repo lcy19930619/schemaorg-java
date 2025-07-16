@@ -6,6 +6,8 @@ import java.util.List;
 
 public class Event extends AbstractSchema {
     public Event() {
+        setId("schema:Event");
+        setType("rdfs:Class");
     }
 
     /**

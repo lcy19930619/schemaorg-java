@@ -64,4 +64,12 @@ public class IntangibleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Intangible obj = new Intangible();
+        assertEquals("schema:Intangible", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class OfferCatalogJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OfferCatalog obj = new OfferCatalog();
+        assertEquals("schema:OfferCatalog", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

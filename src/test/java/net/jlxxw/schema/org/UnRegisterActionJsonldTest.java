@@ -64,4 +64,12 @@ public class UnRegisterActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UnRegisterAction obj = new UnRegisterAction();
+        assertEquals("schema:UnRegisterAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

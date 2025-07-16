@@ -64,4 +64,12 @@ public class BusinessAudienceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BusinessAudience obj = new BusinessAudience();
+        assertEquals("schema:BusinessAudience", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

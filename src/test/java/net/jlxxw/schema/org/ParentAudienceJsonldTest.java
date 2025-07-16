@@ -64,4 +64,12 @@ public class ParentAudienceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ParentAudience obj = new ParentAudience();
+        assertEquals("schema:ParentAudience", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

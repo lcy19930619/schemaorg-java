@@ -64,4 +64,12 @@ public class ItemAvailabilityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ItemAvailability obj = new ItemAvailability();
+        assertEquals("schema:ItemAvailability", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

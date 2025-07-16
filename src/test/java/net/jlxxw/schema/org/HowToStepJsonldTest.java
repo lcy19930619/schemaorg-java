@@ -64,4 +64,12 @@ public class HowToStepJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HowToStep obj = new HowToStep();
+        assertEquals("schema:HowToStep", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

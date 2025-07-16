@@ -64,4 +64,12 @@ public class SingleFamilyResidenceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SingleFamilyResidence obj = new SingleFamilyResidence();
+        assertEquals("schema:SingleFamilyResidence", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

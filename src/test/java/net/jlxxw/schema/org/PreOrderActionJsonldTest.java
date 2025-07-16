@@ -64,4 +64,12 @@ public class PreOrderActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PreOrderAction obj = new PreOrderAction();
+        assertEquals("schema:PreOrderAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

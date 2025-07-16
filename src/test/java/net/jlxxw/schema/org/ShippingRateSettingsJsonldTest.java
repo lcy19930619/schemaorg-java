@@ -64,4 +64,12 @@ public class ShippingRateSettingsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ShippingRateSettings obj = new ShippingRateSettings();
+        assertEquals("schema:ShippingRateSettings", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

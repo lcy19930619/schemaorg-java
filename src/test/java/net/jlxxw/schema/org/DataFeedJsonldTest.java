@@ -64,4 +64,12 @@ public class DataFeedJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DataFeed obj = new DataFeed();
+        assertEquals("schema:DataFeed", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

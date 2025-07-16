@@ -64,4 +64,12 @@ public class USNonprofitTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        USNonprofitType obj = new USNonprofitType();
+        assertEquals("schema:USNonprofitType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

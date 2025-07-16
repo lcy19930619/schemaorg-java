@@ -64,4 +64,12 @@ public class FireStationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FireStation obj = new FireStation();
+        assertEquals("schema:FireStation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

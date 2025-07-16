@@ -64,4 +64,12 @@ public class PondJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Pond obj = new Pond();
+        assertEquals("schema:Pond", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

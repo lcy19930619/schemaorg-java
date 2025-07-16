@@ -64,4 +64,12 @@ public class GasStationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GasStation obj = new GasStation();
+        assertEquals("schema:GasStation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

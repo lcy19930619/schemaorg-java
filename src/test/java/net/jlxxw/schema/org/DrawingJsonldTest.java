@@ -64,4 +64,12 @@ public class DrawingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Drawing obj = new Drawing();
+        assertEquals("schema:Drawing", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

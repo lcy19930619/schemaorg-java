@@ -64,4 +64,12 @@ public class OrderJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Order obj = new Order();
+        assertEquals("schema:Order", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

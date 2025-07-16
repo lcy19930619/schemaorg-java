@@ -64,4 +64,12 @@ public class InstallActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        InstallAction obj = new InstallAction();
+        assertEquals("schema:InstallAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

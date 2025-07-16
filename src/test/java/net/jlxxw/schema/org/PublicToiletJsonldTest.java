@@ -64,4 +64,12 @@ public class PublicToiletJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PublicToilet obj = new PublicToilet();
+        assertEquals("schema:PublicToilet", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class EmbassyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Embassy obj = new Embassy();
+        assertEquals("schema:Embassy", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

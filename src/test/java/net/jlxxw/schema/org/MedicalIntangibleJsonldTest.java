@@ -64,4 +64,12 @@ public class MedicalIntangibleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalIntangible obj = new MedicalIntangible();
+        assertEquals("schema:MedicalIntangible", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

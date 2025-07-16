@@ -64,4 +64,12 @@ public class CurrencyConversionServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CurrencyConversionService obj = new CurrencyConversionService();
+        assertEquals("schema:CurrencyConversionService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

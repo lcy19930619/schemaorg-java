@@ -64,4 +64,12 @@ public class MobileApplicationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MobileApplication obj = new MobileApplication();
+        assertEquals("schema:MobileApplication", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

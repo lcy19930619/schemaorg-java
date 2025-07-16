@@ -64,4 +64,12 @@ public class ReadActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReadAction obj = new ReadAction();
+        assertEquals("schema:ReadAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

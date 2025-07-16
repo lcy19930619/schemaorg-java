@@ -64,4 +64,12 @@ public class TheaterEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TheaterEvent obj = new TheaterEvent();
+        assertEquals("schema:TheaterEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

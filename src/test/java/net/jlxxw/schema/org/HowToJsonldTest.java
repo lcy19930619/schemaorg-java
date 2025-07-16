@@ -64,4 +64,12 @@ public class HowToJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HowTo obj = new HowTo();
+        assertEquals("schema:HowTo", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

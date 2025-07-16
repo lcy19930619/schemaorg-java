@@ -64,4 +64,12 @@ public class AchieveActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AchieveAction obj = new AchieveAction();
+        assertEquals("schema:AchieveAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

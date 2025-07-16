@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Collection extends CreativeWork {
     public Collection() {
+        setId("schema:Collection");
+        setType("rdfs:Class");
     }
 
     /**

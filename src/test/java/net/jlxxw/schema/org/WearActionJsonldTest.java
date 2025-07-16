@@ -64,4 +64,12 @@ public class WearActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WearAction obj = new WearAction();
+        assertEquals("schema:WearAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

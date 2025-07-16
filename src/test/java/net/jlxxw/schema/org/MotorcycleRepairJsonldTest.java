@@ -64,4 +64,12 @@ public class MotorcycleRepairJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MotorcycleRepair obj = new MotorcycleRepair();
+        assertEquals("schema:MotorcycleRepair", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

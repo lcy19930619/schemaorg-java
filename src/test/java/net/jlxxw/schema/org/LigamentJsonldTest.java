@@ -64,4 +64,12 @@ public class LigamentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Ligament obj = new Ligament();
+        assertEquals("schema:Ligament", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

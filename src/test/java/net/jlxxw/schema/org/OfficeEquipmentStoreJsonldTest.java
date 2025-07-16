@@ -64,4 +64,12 @@ public class OfficeEquipmentStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OfficeEquipmentStore obj = new OfficeEquipmentStore();
+        assertEquals("schema:OfficeEquipmentStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

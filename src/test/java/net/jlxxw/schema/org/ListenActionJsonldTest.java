@@ -64,4 +64,12 @@ public class ListenActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ListenAction obj = new ListenAction();
+        assertEquals("schema:ListenAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

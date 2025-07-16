@@ -64,4 +64,12 @@ public class EventReservationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EventReservation obj = new EventReservation();
+        assertEquals("schema:EventReservation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

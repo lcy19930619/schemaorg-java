@@ -64,4 +64,12 @@ public class ImageGalleryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ImageGallery obj = new ImageGallery();
+        assertEquals("schema:ImageGallery", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

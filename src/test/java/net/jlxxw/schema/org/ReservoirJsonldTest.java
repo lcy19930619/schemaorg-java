@@ -64,4 +64,12 @@ public class ReservoirJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Reservoir obj = new Reservoir();
+        assertEquals("schema:Reservoir", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

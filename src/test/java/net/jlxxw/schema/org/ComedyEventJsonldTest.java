@@ -64,4 +64,12 @@ public class ComedyEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ComedyEvent obj = new ComedyEvent();
+        assertEquals("schema:ComedyEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

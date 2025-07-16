@@ -64,4 +64,12 @@ public class ComicStoryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ComicStory obj = new ComicStory();
+        assertEquals("schema:ComicStory", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

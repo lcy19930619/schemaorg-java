@@ -64,4 +64,12 @@ public class FestivalJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Festival obj = new Festival();
+        assertEquals("schema:Festival", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

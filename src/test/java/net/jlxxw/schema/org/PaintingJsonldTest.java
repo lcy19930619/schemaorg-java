@@ -64,4 +64,12 @@ public class PaintingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Painting obj = new Painting();
+        assertEquals("schema:Painting", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

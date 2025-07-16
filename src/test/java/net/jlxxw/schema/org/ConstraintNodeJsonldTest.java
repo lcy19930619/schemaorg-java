@@ -64,4 +64,12 @@ public class ConstraintNodeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ConstraintNode obj = new ConstraintNode();
+        assertEquals("schema:ConstraintNode", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

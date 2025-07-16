@@ -64,4 +64,12 @@ public class VolcanoJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Volcano obj = new Volcano();
+        assertEquals("schema:Volcano", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

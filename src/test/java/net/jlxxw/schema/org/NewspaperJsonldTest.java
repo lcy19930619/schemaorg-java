@@ -64,4 +64,12 @@ public class NewspaperJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Newspaper obj = new Newspaper();
+        assertEquals("schema:Newspaper", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

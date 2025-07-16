@@ -64,4 +64,12 @@ public class ArtGalleryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ArtGallery obj = new ArtGallery();
+        assertEquals("schema:ArtGallery", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class DiagnosticProcedureJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DiagnosticProcedure obj = new DiagnosticProcedure();
+        assertEquals("schema:DiagnosticProcedure", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

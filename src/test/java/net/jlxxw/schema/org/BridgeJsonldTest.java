@@ -64,4 +64,12 @@ public class BridgeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Bridge obj = new Bridge();
+        assertEquals("schema:Bridge", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

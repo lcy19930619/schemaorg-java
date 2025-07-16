@@ -64,4 +64,12 @@ public class BrainStructureJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BrainStructure obj = new BrainStructure();
+        assertEquals("schema:BrainStructure", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class WebApplicationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WebApplication obj = new WebApplication();
+        assertEquals("schema:WebApplication", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

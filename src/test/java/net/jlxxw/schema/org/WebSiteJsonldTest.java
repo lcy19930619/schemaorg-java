@@ -64,4 +64,12 @@ public class WebSiteJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WebSite obj = new WebSite();
+        assertEquals("schema:WebSite", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

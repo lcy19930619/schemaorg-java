@@ -64,4 +64,12 @@ public class SchoolJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        School obj = new School();
+        assertEquals("schema:School", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

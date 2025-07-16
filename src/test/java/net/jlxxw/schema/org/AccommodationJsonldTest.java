@@ -64,4 +64,12 @@ public class AccommodationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Accommodation obj = new Accommodation();
+        assertEquals("schema:Accommodation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class HowToSectionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HowToSection obj = new HowToSection();
+        assertEquals("schema:HowToSection", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

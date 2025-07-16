@@ -64,4 +64,12 @@ public class EntertainmentBusinessJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EntertainmentBusiness obj = new EntertainmentBusiness();
+        assertEquals("schema:EntertainmentBusiness", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

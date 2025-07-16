@@ -64,4 +64,12 @@ public class SolveMathActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SolveMathAction obj = new SolveMathAction();
+        assertEquals("schema:SolveMathAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

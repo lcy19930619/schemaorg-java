@@ -64,4 +64,12 @@ public class ConfirmActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ConfirmAction obj = new ConfirmAction();
+        assertEquals("schema:ConfirmAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

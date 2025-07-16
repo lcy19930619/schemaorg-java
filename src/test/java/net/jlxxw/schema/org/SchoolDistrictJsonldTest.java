@@ -64,4 +64,12 @@ public class SchoolDistrictJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SchoolDistrict obj = new SchoolDistrict();
+        assertEquals("schema:SchoolDistrict", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

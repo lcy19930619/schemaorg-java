@@ -64,4 +64,12 @@ public class PayActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PayAction obj = new PayAction();
+        assertEquals("schema:PayAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

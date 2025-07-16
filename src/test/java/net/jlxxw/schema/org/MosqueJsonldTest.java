@@ -64,4 +64,12 @@ public class MosqueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Mosque obj = new Mosque();
+        assertEquals("schema:Mosque", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

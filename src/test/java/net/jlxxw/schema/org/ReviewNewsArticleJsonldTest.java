@@ -64,4 +64,12 @@ public class ReviewNewsArticleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReviewNewsArticle obj = new ReviewNewsArticle();
+        assertEquals("schema:ReviewNewsArticle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

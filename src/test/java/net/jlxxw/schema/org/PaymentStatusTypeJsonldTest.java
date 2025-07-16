@@ -64,4 +64,12 @@ public class PaymentStatusTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PaymentStatusType obj = new PaymentStatusType();
+        assertEquals("schema:PaymentStatusType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

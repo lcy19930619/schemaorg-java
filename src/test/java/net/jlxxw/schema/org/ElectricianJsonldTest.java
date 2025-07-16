@@ -64,4 +64,12 @@ public class ElectricianJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Electrician obj = new Electrician();
+        assertEquals("schema:Electrician", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class GovernmentServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GovernmentService obj = new GovernmentService();
+        assertEquals("schema:GovernmentService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

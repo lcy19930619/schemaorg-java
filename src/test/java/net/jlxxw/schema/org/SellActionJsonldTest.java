@@ -64,4 +64,12 @@ public class SellActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SellAction obj = new SellAction();
+        assertEquals("schema:SellAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

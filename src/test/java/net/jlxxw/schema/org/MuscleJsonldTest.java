@@ -64,4 +64,12 @@ public class MuscleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Muscle obj = new Muscle();
+        assertEquals("schema:Muscle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

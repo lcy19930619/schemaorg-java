@@ -64,4 +64,12 @@ public class GatedResidenceCommunityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GatedResidenceCommunity obj = new GatedResidenceCommunity();
+        assertEquals("schema:GatedResidenceCommunity", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

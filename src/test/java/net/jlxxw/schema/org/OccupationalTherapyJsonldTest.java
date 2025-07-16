@@ -64,4 +64,12 @@ public class OccupationalTherapyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OccupationalTherapy obj = new OccupationalTherapy();
+        assertEquals("schema:OccupationalTherapy", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

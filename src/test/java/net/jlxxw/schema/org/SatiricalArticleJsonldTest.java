@@ -64,4 +64,12 @@ public class SatiricalArticleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SatiricalArticle obj = new SatiricalArticle();
+        assertEquals("schema:SatiricalArticle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

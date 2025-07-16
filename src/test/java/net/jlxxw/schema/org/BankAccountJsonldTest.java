@@ -64,4 +64,12 @@ public class BankAccountJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BankAccount obj = new BankAccount();
+        assertEquals("schema:BankAccount", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

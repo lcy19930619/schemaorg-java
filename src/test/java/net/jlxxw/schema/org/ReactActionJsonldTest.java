@@ -64,4 +64,12 @@ public class ReactActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReactAction obj = new ReactAction();
+        assertEquals("schema:ReactAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

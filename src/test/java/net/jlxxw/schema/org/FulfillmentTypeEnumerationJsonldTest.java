@@ -64,4 +64,12 @@ public class FulfillmentTypeEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FulfillmentTypeEnumeration obj = new FulfillmentTypeEnumeration();
+        assertEquals("schema:FulfillmentTypeEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

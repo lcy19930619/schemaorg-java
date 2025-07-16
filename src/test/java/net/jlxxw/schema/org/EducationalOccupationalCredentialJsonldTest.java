@@ -64,4 +64,12 @@ public class EducationalOccupationalCredentialJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EducationalOccupationalCredential obj = new EducationalOccupationalCredential();
+        assertEquals("schema:EducationalOccupationalCredential", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class ProjectJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Project obj = new Project();
+        assertEquals("schema:Project", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

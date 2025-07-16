@@ -64,4 +64,12 @@ public class TVSeriesJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TVSeries obj = new TVSeries();
+        assertEquals("schema:TVSeries", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class BusOrCoachJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BusOrCoach obj = new BusOrCoach();
+        assertEquals("schema:BusOrCoach", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

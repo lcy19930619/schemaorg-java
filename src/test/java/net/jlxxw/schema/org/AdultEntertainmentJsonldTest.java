@@ -64,4 +64,12 @@ public class AdultEntertainmentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AdultEntertainment obj = new AdultEntertainment();
+        assertEquals("schema:AdultEntertainment", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

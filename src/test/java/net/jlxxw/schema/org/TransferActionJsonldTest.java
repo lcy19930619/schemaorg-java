@@ -64,4 +64,12 @@ public class TransferActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TransferAction obj = new TransferAction();
+        assertEquals("schema:TransferAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

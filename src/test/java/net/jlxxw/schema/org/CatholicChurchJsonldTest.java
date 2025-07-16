@@ -64,4 +64,12 @@ public class CatholicChurchJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CatholicChurch obj = new CatholicChurch();
+        assertEquals("schema:CatholicChurch", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

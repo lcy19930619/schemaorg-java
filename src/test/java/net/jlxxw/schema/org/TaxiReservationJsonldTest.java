@@ -64,4 +64,12 @@ public class TaxiReservationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TaxiReservation obj = new TaxiReservation();
+        assertEquals("schema:TaxiReservation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

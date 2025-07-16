@@ -64,4 +64,12 @@ public class ParkingFacilityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ParkingFacility obj = new ParkingFacility();
+        assertEquals("schema:ParkingFacility", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

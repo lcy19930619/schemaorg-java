@@ -64,4 +64,12 @@ public class DigitalDocumentPermissionTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DigitalDocumentPermissionType obj = new DigitalDocumentPermissionType();
+        assertEquals("schema:DigitalDocumentPermissionType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

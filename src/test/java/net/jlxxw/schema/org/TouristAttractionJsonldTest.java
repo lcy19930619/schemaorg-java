@@ -64,4 +64,12 @@ public class TouristAttractionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TouristAttraction obj = new TouristAttraction();
+        assertEquals("schema:TouristAttraction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

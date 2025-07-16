@@ -64,4 +64,12 @@ public class QualitativeValueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        QualitativeValue obj = new QualitativeValue();
+        assertEquals("schema:QualitativeValue", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

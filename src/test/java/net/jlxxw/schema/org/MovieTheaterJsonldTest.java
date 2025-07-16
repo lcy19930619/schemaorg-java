@@ -64,4 +64,12 @@ public class MovieTheaterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MovieTheater obj = new MovieTheater();
+        assertEquals("schema:MovieTheater", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

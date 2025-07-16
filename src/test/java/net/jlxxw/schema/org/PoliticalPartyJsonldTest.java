@@ -64,4 +64,12 @@ public class PoliticalPartyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PoliticalParty obj = new PoliticalParty();
+        assertEquals("schema:PoliticalParty", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

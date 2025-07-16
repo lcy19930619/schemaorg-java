@@ -64,4 +64,12 @@ public class PaymentMethodTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PaymentMethodType obj = new PaymentMethodType();
+        assertEquals("schema:PaymentMethodType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

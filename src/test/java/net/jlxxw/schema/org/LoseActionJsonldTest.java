@@ -64,4 +64,12 @@ public class LoseActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LoseAction obj = new LoseAction();
+        assertEquals("schema:LoseAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

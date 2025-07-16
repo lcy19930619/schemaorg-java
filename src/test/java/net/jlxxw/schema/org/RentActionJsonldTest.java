@@ -64,4 +64,12 @@ public class RentActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RentAction obj = new RentAction();
+        assertEquals("schema:RentAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

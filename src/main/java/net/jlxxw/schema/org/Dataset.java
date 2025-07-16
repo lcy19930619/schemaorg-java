@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Dataset extends CreativeWork {
     public Dataset() {
+        setId("schema:Dataset");
+        setType("rdfs:Class");
     }
 
     /**

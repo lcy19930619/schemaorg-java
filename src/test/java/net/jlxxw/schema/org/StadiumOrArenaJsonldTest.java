@@ -64,4 +64,12 @@ public class StadiumOrArenaJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        StadiumOrArena obj = new StadiumOrArena();
+        assertEquals("schema:StadiumOrArena", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

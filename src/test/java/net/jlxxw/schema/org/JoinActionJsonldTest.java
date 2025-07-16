@@ -64,4 +64,12 @@ public class JoinActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        JoinAction obj = new JoinAction();
+        assertEquals("schema:JoinAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

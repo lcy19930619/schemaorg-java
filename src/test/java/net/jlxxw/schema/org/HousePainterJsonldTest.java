@@ -64,4 +64,12 @@ public class HousePainterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HousePainter obj = new HousePainter();
+        assertEquals("schema:HousePainter", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

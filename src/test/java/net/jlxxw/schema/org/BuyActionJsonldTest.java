@@ -64,4 +64,12 @@ public class BuyActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BuyAction obj = new BuyAction();
+        assertEquals("schema:BuyAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

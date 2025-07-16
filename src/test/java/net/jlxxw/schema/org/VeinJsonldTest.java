@@ -64,4 +64,12 @@ public class VeinJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Vein obj = new Vein();
+        assertEquals("schema:Vein", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class MovieSeriesJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MovieSeries obj = new MovieSeries();
+        assertEquals("schema:MovieSeries", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

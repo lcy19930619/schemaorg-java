@@ -64,4 +64,12 @@ public class PhysicalExamJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PhysicalExam obj = new PhysicalExam();
+        assertEquals("schema:PhysicalExam", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

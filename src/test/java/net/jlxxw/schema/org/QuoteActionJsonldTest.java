@@ -64,4 +64,12 @@ public class QuoteActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        QuoteAction obj = new QuoteAction();
+        assertEquals("schema:QuoteAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

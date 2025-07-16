@@ -64,4 +64,12 @@ public class PriceSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PriceSpecification obj = new PriceSpecification();
+        assertEquals("schema:priceSpecification", obj.getId());
+        assertEquals("rdf:Property", obj.getType());
+    }
+
+}

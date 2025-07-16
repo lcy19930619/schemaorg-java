@@ -64,4 +64,12 @@ public class HealthClubJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HealthClub obj = new HealthClub();
+        assertEquals("schema:HealthClub", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

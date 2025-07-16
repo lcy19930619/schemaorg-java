@@ -64,4 +64,12 @@ public class CafeOrCoffeeShopJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CafeOrCoffeeShop obj = new CafeOrCoffeeShop();
+        assertEquals("schema:CafeOrCoffeeShop", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

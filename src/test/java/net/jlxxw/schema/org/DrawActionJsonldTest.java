@@ -64,4 +64,12 @@ public class DrawActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DrawAction obj = new DrawAction();
+        assertEquals("schema:DrawAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

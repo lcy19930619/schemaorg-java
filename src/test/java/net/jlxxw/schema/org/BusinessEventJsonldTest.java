@@ -64,4 +64,12 @@ public class BusinessEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BusinessEvent obj = new BusinessEvent();
+        assertEquals("schema:BusinessEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

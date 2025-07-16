@@ -64,4 +64,12 @@ public class ApartmentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Apartment obj = new Apartment();
+        assertEquals("schema:Apartment", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

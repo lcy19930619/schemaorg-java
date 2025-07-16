@@ -64,4 +64,12 @@ public class RadioChannelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RadioChannel obj = new RadioChannel();
+        assertEquals("schema:RadioChannel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

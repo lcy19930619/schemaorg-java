@@ -64,4 +64,12 @@ public class VisualArtworkJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VisualArtwork obj = new VisualArtwork();
+        assertEquals("schema:VisualArtwork", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

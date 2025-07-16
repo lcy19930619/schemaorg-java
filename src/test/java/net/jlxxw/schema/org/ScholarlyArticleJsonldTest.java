@@ -64,4 +64,12 @@ public class ScholarlyArticleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ScholarlyArticle obj = new ScholarlyArticle();
+        assertEquals("schema:ScholarlyArticle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

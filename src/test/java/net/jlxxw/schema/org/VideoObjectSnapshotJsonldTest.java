@@ -64,4 +64,12 @@ public class VideoObjectSnapshotJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VideoObjectSnapshot obj = new VideoObjectSnapshot();
+        assertEquals("schema:VideoObjectSnapshot", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

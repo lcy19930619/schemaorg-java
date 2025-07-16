@@ -64,4 +64,12 @@ public class DownloadActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DownloadAction obj = new DownloadAction();
+        assertEquals("schema:DownloadAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

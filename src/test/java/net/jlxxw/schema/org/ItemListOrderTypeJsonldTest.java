@@ -64,4 +64,12 @@ public class ItemListOrderTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ItemListOrderType obj = new ItemListOrderType();
+        assertEquals("schema:ItemListOrderType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

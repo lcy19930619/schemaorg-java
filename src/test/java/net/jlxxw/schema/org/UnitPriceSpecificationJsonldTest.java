@@ -64,4 +64,12 @@ public class UnitPriceSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UnitPriceSpecification obj = new UnitPriceSpecification();
+        assertEquals("schema:UnitPriceSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

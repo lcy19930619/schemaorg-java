@@ -64,4 +64,12 @@ public class AnatomicalSystemJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AnatomicalSystem obj = new AnatomicalSystem();
+        assertEquals("schema:AnatomicalSystem", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

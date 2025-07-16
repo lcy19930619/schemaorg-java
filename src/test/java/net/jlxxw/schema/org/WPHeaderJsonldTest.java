@@ -64,4 +64,12 @@ public class WPHeaderJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WPHeader obj = new WPHeader();
+        assertEquals("schema:WPHeader", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

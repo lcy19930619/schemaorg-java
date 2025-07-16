@@ -64,4 +64,12 @@ public class TennisComplexJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TennisComplex obj = new TennisComplex();
+        assertEquals("schema:TennisComplex", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class CarUsageTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CarUsageType obj = new CarUsageType();
+        assertEquals("schema:CarUsageType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

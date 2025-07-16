@@ -64,4 +64,12 @@ public class EnergyEfficiencyEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EnergyEfficiencyEnumeration obj = new EnergyEfficiencyEnumeration();
+        assertEquals("schema:EnergyEfficiencyEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class CDCPMDRecordJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CDCPMDRecord obj = new CDCPMDRecord();
+        assertEquals("schema:CDCPMDRecord", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

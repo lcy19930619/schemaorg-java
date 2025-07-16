@@ -64,4 +64,12 @@ public class SomeProductsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SomeProducts obj = new SomeProducts();
+        assertEquals("schema:SomeProducts", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class DiagnosticLabJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DiagnosticLab obj = new DiagnosticLab();
+        assertEquals("schema:DiagnosticLab", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

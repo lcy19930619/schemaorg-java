@@ -64,4 +64,12 @@ public class AutoRepairJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AutoRepair obj = new AutoRepair();
+        assertEquals("schema:AutoRepair", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

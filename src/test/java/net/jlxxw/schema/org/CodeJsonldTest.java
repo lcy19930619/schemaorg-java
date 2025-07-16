@@ -64,4 +64,12 @@ public class CodeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Code obj = new Code();
+        assertEquals("schema:Code", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

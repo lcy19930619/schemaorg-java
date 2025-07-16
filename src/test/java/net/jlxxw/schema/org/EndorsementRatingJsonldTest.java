@@ -64,4 +64,12 @@ public class EndorsementRatingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EndorsementRating obj = new EndorsementRating();
+        assertEquals("schema:EndorsementRating", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

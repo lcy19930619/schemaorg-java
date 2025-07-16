@@ -64,4 +64,12 @@ public class AtlasJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Atlas obj = new Atlas();
+        assertEquals("schema:Atlas", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

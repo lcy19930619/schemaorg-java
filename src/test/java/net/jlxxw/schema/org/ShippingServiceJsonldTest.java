@@ -64,4 +64,12 @@ public class ShippingServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ShippingService obj = new ShippingService();
+        assertEquals("schema:ShippingService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

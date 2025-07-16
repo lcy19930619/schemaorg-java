@@ -64,4 +64,12 @@ public class ConvenienceStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ConvenienceStore obj = new ConvenienceStore();
+        assertEquals("schema:ConvenienceStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

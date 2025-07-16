@@ -64,4 +64,12 @@ public class MusicVenueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicVenue obj = new MusicVenue();
+        assertEquals("schema:MusicVenue", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

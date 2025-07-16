@@ -64,4 +64,12 @@ public class MedicalGuidelineContraindicationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalGuidelineContraindication obj = new MedicalGuidelineContraindication();
+        assertEquals("schema:MedicalGuidelineContraindication", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

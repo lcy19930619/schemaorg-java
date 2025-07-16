@@ -64,4 +64,12 @@ public class PosterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Poster obj = new Poster();
+        assertEquals("schema:Poster", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

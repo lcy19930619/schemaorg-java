@@ -64,4 +64,12 @@ public class MusicPlaylistJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicPlaylist obj = new MusicPlaylist();
+        assertEquals("schema:MusicPlaylist", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

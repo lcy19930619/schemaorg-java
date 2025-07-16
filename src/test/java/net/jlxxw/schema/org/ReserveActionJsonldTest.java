@@ -64,4 +64,12 @@ public class ReserveActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReserveAction obj = new ReserveAction();
+        assertEquals("schema:ReserveAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

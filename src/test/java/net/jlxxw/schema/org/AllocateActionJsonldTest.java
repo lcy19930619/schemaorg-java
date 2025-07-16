@@ -64,4 +64,12 @@ public class AllocateActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AllocateAction obj = new AllocateAction();
+        assertEquals("schema:AllocateAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

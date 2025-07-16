@@ -64,4 +64,12 @@ public class MeetingRoomJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MeetingRoom obj = new MeetingRoom();
+        assertEquals("schema:MeetingRoom", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

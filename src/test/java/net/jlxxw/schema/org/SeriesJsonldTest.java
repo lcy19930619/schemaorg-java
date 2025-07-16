@@ -64,4 +64,12 @@ public class SeriesJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Series obj = new Series();
+        assertEquals("schema:Series", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

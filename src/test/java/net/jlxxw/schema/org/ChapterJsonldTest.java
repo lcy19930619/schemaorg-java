@@ -64,4 +64,12 @@ public class ChapterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Chapter obj = new Chapter();
+        assertEquals("schema:Chapter", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

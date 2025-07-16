@@ -64,4 +64,12 @@ public class AnimalShelterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AnimalShelter obj = new AnimalShelter();
+        assertEquals("schema:AnimalShelter", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

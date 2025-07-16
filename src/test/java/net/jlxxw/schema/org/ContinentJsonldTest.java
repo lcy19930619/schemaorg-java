@@ -64,4 +64,12 @@ public class ContinentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Continent obj = new Continent();
+        assertEquals("schema:Continent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

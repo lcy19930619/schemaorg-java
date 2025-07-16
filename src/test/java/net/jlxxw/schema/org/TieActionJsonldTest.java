@@ -64,4 +64,12 @@ public class TieActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TieAction obj = new TieAction();
+        assertEquals("schema:TieAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

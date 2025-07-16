@@ -64,4 +64,12 @@ public class TravelAgencyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TravelAgency obj = new TravelAgency();
+        assertEquals("schema:TravelAgency", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class ViewActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ViewAction obj = new ViewAction();
+        assertEquals("schema:ViewAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

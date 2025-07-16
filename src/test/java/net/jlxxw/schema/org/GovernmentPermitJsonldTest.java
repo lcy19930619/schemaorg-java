@@ -64,4 +64,12 @@ public class GovernmentPermitJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GovernmentPermit obj = new GovernmentPermit();
+        assertEquals("schema:GovernmentPermit", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

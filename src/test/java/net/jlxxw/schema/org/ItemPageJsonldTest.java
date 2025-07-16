@@ -64,4 +64,12 @@ public class ItemPageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ItemPage obj = new ItemPage();
+        assertEquals("schema:ItemPage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

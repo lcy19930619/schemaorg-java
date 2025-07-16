@@ -64,4 +64,12 @@ public class ZooJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Zoo obj = new Zoo();
+        assertEquals("schema:Zoo", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

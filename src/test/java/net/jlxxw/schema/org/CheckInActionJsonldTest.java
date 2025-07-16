@@ -64,4 +64,12 @@ public class CheckInActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CheckInAction obj = new CheckInAction();
+        assertEquals("schema:CheckInAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

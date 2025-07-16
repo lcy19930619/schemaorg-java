@@ -64,4 +64,12 @@ public class ImageObjectSnapshotJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ImageObjectSnapshot obj = new ImageObjectSnapshot();
+        assertEquals("schema:ImageObjectSnapshot", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

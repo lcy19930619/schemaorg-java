@@ -64,4 +64,12 @@ public class BorrowActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BorrowAction obj = new BorrowAction();
+        assertEquals("schema:BorrowAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

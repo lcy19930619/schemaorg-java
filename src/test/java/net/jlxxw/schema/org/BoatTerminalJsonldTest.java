@@ -64,4 +64,12 @@ public class BoatTerminalJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BoatTerminal obj = new BoatTerminal();
+        assertEquals("schema:BoatTerminal", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

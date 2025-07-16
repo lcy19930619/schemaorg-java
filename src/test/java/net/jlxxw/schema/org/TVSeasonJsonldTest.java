@@ -64,4 +64,12 @@ public class TVSeasonJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TVSeason obj = new TVSeason();
+        assertEquals("schema:TVSeason", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

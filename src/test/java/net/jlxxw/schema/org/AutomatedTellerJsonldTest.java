@@ -64,4 +64,12 @@ public class AutomatedTellerJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AutomatedTeller obj = new AutomatedTeller();
+        assertEquals("schema:AutomatedTeller", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

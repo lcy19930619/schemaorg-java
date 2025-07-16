@@ -64,4 +64,12 @@ public class PurchaseTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PurchaseType obj = new PurchaseType();
+        assertEquals("schema:PurchaseType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

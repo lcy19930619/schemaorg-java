@@ -64,4 +64,12 @@ public class NoteDigitalDocumentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        NoteDigitalDocument obj = new NoteDigitalDocument();
+        assertEquals("schema:NoteDigitalDocument", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class BoneJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Bone obj = new Bone();
+        assertEquals("schema:Bone", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

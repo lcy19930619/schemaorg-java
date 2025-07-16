@@ -64,4 +64,12 @@ public class TrainTripJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TrainTrip obj = new TrainTrip();
+        assertEquals("schema:TrainTrip", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class MathSolverJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MathSolver obj = new MathSolver();
+        assertEquals("schema:MathSolver", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

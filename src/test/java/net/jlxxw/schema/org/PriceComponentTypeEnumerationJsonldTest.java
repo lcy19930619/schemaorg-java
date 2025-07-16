@@ -64,4 +64,12 @@ public class PriceComponentTypeEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PriceComponentTypeEnumeration obj = new PriceComponentTypeEnumeration();
+        assertEquals("schema:PriceComponentTypeEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

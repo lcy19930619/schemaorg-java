@@ -64,4 +64,12 @@ public class EventVenueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EventVenue obj = new EventVenue();
+        assertEquals("schema:EventVenue", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

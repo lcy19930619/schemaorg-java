@@ -64,4 +64,12 @@ public class MedicalRiskFactorJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalRiskFactor obj = new MedicalRiskFactor();
+        assertEquals("schema:MedicalRiskFactor", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

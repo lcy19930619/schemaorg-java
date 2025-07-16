@@ -64,4 +64,12 @@ public class CourseInstanceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CourseInstance obj = new CourseInstance();
+        assertEquals("schema:CourseInstance", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

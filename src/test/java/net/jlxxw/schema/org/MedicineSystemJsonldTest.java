@@ -64,4 +64,12 @@ public class MedicineSystemJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicineSystem obj = new MedicineSystem();
+        assertEquals("schema:MedicineSystem", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

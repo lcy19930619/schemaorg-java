@@ -64,4 +64,12 @@ public class AutomotiveBusinessJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AutomotiveBusiness obj = new AutomotiveBusiness();
+        assertEquals("schema:AutomotiveBusiness", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

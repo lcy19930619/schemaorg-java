@@ -64,4 +64,12 @@ public class SeekToActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SeekToAction obj = new SeekToAction();
+        assertEquals("schema:SeekToAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

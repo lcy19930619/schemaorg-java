@@ -64,4 +64,12 @@ public class TattooParlorJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TattooParlor obj = new TattooParlor();
+        assertEquals("schema:TattooParlor", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

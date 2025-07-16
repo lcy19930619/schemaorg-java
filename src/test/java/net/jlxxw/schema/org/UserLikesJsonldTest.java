@@ -64,4 +64,12 @@ public class UserLikesJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserLikes obj = new UserLikes();
+        assertEquals("schema:UserLikes", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

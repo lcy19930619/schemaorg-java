@@ -64,4 +64,12 @@ public class TextObjectJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TextObject obj = new TextObject();
+        assertEquals("schema:TextObject", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

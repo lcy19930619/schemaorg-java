@@ -64,4 +64,12 @@ public class JewelryStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        JewelryStore obj = new JewelryStore();
+        assertEquals("schema:JewelryStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class WPFooterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WPFooter obj = new WPFooter();
+        assertEquals("schema:WPFooter", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

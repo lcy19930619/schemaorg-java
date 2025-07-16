@@ -64,4 +64,12 @@ public class GeospatialGeometryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GeospatialGeometry obj = new GeospatialGeometry();
+        assertEquals("schema:GeospatialGeometry", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

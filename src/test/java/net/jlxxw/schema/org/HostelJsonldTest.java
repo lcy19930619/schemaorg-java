@@ -64,4 +64,12 @@ public class HostelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Hostel obj = new Hostel();
+        assertEquals("schema:Hostel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

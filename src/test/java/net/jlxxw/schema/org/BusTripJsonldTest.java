@@ -64,4 +64,12 @@ public class BusTripJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BusTrip obj = new BusTrip();
+        assertEquals("schema:BusTrip", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

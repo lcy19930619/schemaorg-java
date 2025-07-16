@@ -64,4 +64,12 @@ public class RoomJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Room obj = new Room();
+        assertEquals("schema:Room", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

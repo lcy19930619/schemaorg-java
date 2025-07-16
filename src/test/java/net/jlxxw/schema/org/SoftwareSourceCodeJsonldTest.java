@@ -64,4 +64,12 @@ public class SoftwareSourceCodeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SoftwareSourceCode obj = new SoftwareSourceCode();
+        assertEquals("schema:SoftwareSourceCode", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

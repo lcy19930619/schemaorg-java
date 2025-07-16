@@ -64,4 +64,12 @@ public class MedicalSignJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalSign obj = new MedicalSign();
+        assertEquals("schema:MedicalSign", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

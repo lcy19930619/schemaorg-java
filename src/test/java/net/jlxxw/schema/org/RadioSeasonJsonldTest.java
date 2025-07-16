@@ -64,4 +64,12 @@ public class RadioSeasonJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RadioSeason obj = new RadioSeason();
+        assertEquals("schema:RadioSeason", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

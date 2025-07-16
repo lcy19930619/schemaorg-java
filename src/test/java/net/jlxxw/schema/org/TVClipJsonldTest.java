@@ -64,4 +64,12 @@ public class TVClipJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TVClip obj = new TVClip();
+        assertEquals("schema:TVClip", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

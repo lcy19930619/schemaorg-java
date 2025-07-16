@@ -64,4 +64,12 @@ public class GeneralContractorJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GeneralContractor obj = new GeneralContractor();
+        assertEquals("schema:GeneralContractor", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class ShortStoryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ShortStory obj = new ShortStory();
+        assertEquals("schema:ShortStory", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

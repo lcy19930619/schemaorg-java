@@ -64,4 +64,12 @@ public class LegalServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LegalService obj = new LegalService();
+        assertEquals("schema:LegalService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

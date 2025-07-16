@@ -64,4 +64,12 @@ public class LendActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LendAction obj = new LendAction();
+        assertEquals("schema:LendAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

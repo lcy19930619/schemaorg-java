@@ -64,4 +64,12 @@ public class SportsOrganizationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SportsOrganization obj = new SportsOrganization();
+        assertEquals("schema:SportsOrganization", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

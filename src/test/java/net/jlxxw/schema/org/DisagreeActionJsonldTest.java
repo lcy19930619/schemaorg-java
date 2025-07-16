@@ -64,4 +64,12 @@ public class DisagreeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DisagreeAction obj = new DisagreeAction();
+        assertEquals("schema:DisagreeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class VideoGameJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VideoGame obj = new VideoGame();
+        assertEquals("schema:VideoGame", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

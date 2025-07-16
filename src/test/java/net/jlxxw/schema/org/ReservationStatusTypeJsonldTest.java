@@ -64,4 +64,12 @@ public class ReservationStatusTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReservationStatusType obj = new ReservationStatusType();
+        assertEquals("schema:ReservationStatusType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

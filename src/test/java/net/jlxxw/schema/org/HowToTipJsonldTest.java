@@ -64,4 +64,12 @@ public class HowToTipJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HowToTip obj = new HowToTip();
+        assertEquals("schema:HowToTip", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

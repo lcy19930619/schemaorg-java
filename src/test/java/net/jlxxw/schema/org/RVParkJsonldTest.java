@@ -64,4 +64,12 @@ public class RVParkJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RVPark obj = new RVPark();
+        assertEquals("schema:RVPark", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

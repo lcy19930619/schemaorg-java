@@ -64,4 +64,12 @@ public class LakeBodyOfWaterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LakeBodyOfWater obj = new LakeBodyOfWater();
+        assertEquals("schema:LakeBodyOfWater", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

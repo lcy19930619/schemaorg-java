@@ -64,4 +64,12 @@ public class AssignActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AssignAction obj = new AssignAction();
+        assertEquals("schema:AssignAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

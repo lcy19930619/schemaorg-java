@@ -64,4 +64,12 @@ public class AggregateOfferJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AggregateOffer obj = new AggregateOffer();
+        assertEquals("schema:AggregateOffer", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

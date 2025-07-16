@@ -64,4 +64,12 @@ public class MusicCompositionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicComposition obj = new MusicComposition();
+        assertEquals("schema:MusicComposition", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

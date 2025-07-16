@@ -64,4 +64,12 @@ public class BreweryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Brewery obj = new Brewery();
+        assertEquals("schema:Brewery", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

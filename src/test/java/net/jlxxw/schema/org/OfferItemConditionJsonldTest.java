@@ -64,4 +64,12 @@ public class OfferItemConditionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OfferItemCondition obj = new OfferItemCondition();
+        assertEquals("schema:OfferItemCondition", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

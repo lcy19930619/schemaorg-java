@@ -64,4 +64,12 @@ public class BloodTestJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BloodTest obj = new BloodTest();
+        assertEquals("schema:BloodTest", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

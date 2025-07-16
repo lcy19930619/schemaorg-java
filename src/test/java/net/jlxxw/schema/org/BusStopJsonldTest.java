@@ -64,4 +64,12 @@ public class BusStopJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BusStop obj = new BusStop();
+        assertEquals("schema:BusStop", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

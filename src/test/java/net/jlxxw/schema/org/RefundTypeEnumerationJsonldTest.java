@@ -64,4 +64,12 @@ public class RefundTypeEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RefundTypeEnumeration obj = new RefundTypeEnumeration();
+        assertEquals("schema:RefundTypeEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

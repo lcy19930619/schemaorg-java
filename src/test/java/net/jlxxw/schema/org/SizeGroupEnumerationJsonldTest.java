@@ -64,4 +64,12 @@ public class SizeGroupEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SizeGroupEnumeration obj = new SizeGroupEnumeration();
+        assertEquals("schema:SizeGroupEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

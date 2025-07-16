@@ -64,4 +64,12 @@ public class ClipJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Clip obj = new Clip();
+        assertEquals("schema:Clip", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

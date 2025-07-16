@@ -64,4 +64,12 @@ public class CableOrSatelliteServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CableOrSatelliteService obj = new CableOrSatelliteService();
+        assertEquals("schema:CableOrSatelliteService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

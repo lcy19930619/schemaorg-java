@@ -64,4 +64,12 @@ public class InfectiousDiseaseJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        InfectiousDisease obj = new InfectiousDisease();
+        assertEquals("schema:InfectiousDisease", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

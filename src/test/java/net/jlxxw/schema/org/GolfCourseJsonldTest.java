@@ -64,4 +64,12 @@ public class GolfCourseJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GolfCourse obj = new GolfCourse();
+        assertEquals("schema:GolfCourse", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

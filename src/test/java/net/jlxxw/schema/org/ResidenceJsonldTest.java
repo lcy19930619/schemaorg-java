@@ -64,4 +64,12 @@ public class ResidenceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Residence obj = new Residence();
+        assertEquals("schema:Residence", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

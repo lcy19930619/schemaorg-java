@@ -64,4 +64,12 @@ public class DryCleaningOrLaundryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DryCleaningOrLaundry obj = new DryCleaningOrLaundry();
+        assertEquals("schema:DryCleaningOrLaundry", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

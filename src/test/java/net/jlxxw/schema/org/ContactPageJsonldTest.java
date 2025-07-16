@@ -64,4 +64,12 @@ public class ContactPageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ContactPage obj = new ContactPage();
+        assertEquals("schema:ContactPage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

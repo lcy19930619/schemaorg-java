@@ -64,4 +64,12 @@ public class LymphaticVesselJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LymphaticVessel obj = new LymphaticVessel();
+        assertEquals("schema:LymphaticVessel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

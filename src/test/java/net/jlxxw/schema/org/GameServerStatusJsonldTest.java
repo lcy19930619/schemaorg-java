@@ -64,4 +64,12 @@ public class GameServerStatusJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GameServerStatus obj = new GameServerStatus();
+        assertEquals("schema:GameServerStatus", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

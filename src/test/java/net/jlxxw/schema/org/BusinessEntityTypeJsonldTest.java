@@ -64,4 +64,12 @@ public class BusinessEntityTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BusinessEntityType obj = new BusinessEntityType();
+        assertEquals("schema:BusinessEntityType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -24,4 +24,12 @@ public class AccommodationTest {
         acc.setName("Test");
         assertEquals("Test", acc.getName());
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Accommodation obj = new Accommodation();
+        assertEquals("schema:Accommodation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

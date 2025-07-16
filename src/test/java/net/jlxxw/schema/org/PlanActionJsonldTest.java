@@ -64,4 +64,12 @@ public class PlanActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PlanAction obj = new PlanAction();
+        assertEquals("schema:PlanAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

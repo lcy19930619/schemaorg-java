@@ -64,4 +64,12 @@ public class OnlineBusinessJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OnlineBusiness obj = new OnlineBusiness();
+        assertEquals("schema:OnlineBusiness", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

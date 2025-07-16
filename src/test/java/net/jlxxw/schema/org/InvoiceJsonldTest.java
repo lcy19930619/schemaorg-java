@@ -64,4 +64,12 @@ public class InvoiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Invoice obj = new Invoice();
+        assertEquals("schema:Invoice", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

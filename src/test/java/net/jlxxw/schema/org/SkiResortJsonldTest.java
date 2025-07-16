@@ -64,4 +64,12 @@ public class SkiResortJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SkiResort obj = new SkiResort();
+        assertEquals("schema:SkiResort", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

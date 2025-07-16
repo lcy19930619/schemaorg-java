@@ -64,4 +64,12 @@ public class RecyclingCenterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RecyclingCenter obj = new RecyclingCenter();
+        assertEquals("schema:RecyclingCenter", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

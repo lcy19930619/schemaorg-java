@@ -64,4 +64,12 @@ public class CreateActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CreateAction obj = new CreateAction();
+        assertEquals("schema:CreateAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class DriveWheelConfigurationValueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DriveWheelConfigurationValue obj = new DriveWheelConfigurationValue();
+        assertEquals("schema:DriveWheelConfigurationValue", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

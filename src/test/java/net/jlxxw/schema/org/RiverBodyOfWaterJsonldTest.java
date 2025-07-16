@@ -64,4 +64,12 @@ public class RiverBodyOfWaterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RiverBodyOfWater obj = new RiverBodyOfWater();
+        assertEquals("schema:RiverBodyOfWater", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

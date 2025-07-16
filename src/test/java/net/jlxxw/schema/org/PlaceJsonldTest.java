@@ -64,4 +64,12 @@ public class PlaceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Place obj = new Place();
+        assertEquals("schema:Place", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

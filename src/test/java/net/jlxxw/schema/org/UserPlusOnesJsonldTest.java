@@ -64,4 +64,12 @@ public class UserPlusOnesJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserPlusOnes obj = new UserPlusOnes();
+        assertEquals("schema:UserPlusOnes", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

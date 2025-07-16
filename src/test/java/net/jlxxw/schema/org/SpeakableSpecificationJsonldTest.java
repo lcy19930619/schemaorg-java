@@ -64,4 +64,12 @@ public class SpeakableSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SpeakableSpecification obj = new SpeakableSpecification();
+        assertEquals("schema:SpeakableSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

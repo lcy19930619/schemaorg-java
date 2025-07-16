@@ -64,4 +64,12 @@ public class PlayActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PlayAction obj = new PlayAction();
+        assertEquals("schema:PlayAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

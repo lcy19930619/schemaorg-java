@@ -64,4 +64,12 @@ public class TreatmentIndicationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TreatmentIndication obj = new TreatmentIndication();
+        assertEquals("schema:TreatmentIndication", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

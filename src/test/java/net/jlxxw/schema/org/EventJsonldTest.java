@@ -64,4 +64,12 @@ public class EventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Event obj = new Event();
+        assertEquals("schema:Event", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

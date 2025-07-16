@@ -64,4 +64,12 @@ public class BoatTripJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BoatTrip obj = new BoatTrip();
+        assertEquals("schema:BoatTrip", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

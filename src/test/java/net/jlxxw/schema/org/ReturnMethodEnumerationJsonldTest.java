@@ -64,4 +64,12 @@ public class ReturnMethodEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReturnMethodEnumeration obj = new ReturnMethodEnumeration();
+        assertEquals("schema:ReturnMethodEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

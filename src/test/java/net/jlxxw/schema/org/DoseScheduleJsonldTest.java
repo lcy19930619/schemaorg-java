@@ -64,4 +64,12 @@ public class DoseScheduleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DoseSchedule obj = new DoseSchedule();
+        assertEquals("schema:doseSchedule", obj.getId());
+        assertEquals("rdf:Property", obj.getType());
+    }
+
+}

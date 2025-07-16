@@ -64,4 +64,12 @@ public class OpticianJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Optician obj = new Optician();
+        assertEquals("schema:Optician", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

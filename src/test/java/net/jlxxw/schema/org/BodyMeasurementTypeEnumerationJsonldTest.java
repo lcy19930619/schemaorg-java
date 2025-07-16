@@ -64,4 +64,12 @@ public class BodyMeasurementTypeEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BodyMeasurementTypeEnumeration obj = new BodyMeasurementTypeEnumeration();
+        assertEquals("schema:BodyMeasurementTypeEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

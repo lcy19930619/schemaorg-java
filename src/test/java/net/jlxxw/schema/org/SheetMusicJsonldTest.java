@@ -64,4 +64,12 @@ public class SheetMusicJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SheetMusic obj = new SheetMusic();
+        assertEquals("schema:SheetMusic", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

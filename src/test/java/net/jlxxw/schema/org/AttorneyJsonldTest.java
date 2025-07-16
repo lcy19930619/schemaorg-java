@@ -64,4 +64,12 @@ public class AttorneyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Attorney obj = new Attorney();
+        assertEquals("schema:Attorney", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

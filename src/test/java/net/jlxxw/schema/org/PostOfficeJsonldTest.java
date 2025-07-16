@@ -64,4 +64,12 @@ public class PostOfficeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PostOffice obj = new PostOffice();
+        assertEquals("schema:PostOffice", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -6,6 +6,8 @@ import java.util.List;
 
 public class Comment extends CreativeWork {
     public Comment() {
+        setId("schema:Comment");
+        setType("rdfs:Class");
     }
 
     /**

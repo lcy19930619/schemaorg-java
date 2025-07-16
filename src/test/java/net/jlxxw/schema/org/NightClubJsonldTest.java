@@ -64,4 +64,12 @@ public class NightClubJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        NightClub obj = new NightClub();
+        assertEquals("schema:NightClub", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

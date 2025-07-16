@@ -64,4 +64,12 @@ public class GeoCircleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GeoCircle obj = new GeoCircle();
+        assertEquals("schema:GeoCircle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

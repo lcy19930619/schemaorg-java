@@ -64,4 +64,12 @@ public class DrugStrengthJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DrugStrength obj = new DrugStrength();
+        assertEquals("schema:DrugStrength", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

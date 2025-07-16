@@ -64,4 +64,12 @@ public class BreadcrumbListJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BreadcrumbList obj = new BreadcrumbList();
+        assertEquals("schema:BreadcrumbList", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class CategoryCodeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CategoryCode obj = new CategoryCode();
+        assertEquals("schema:CategoryCode", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

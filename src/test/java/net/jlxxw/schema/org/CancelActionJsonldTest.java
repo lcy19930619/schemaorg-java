@@ -64,4 +64,12 @@ public class CancelActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CancelAction obj = new CancelAction();
+        assertEquals("schema:CancelAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

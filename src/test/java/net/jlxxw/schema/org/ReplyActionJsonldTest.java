@@ -64,4 +64,12 @@ public class ReplyActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReplyAction obj = new ReplyAction();
+        assertEquals("schema:ReplyAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

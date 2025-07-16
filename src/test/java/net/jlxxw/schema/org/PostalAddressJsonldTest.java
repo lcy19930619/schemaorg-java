@@ -64,4 +64,12 @@ public class PostalAddressJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PostalAddress obj = new PostalAddress();
+        assertEquals("schema:PostalAddress", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

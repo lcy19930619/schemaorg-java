@@ -64,4 +64,12 @@ public class HighSchoolJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HighSchool obj = new HighSchool();
+        assertEquals("schema:HighSchool", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

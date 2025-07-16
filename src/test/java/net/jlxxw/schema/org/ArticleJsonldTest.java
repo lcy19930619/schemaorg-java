@@ -64,4 +64,12 @@ public class ArticleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Article obj = new Article();
+        assertEquals("schema:Article", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

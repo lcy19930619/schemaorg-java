@@ -64,4 +64,12 @@ public class MemberProgramJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MemberProgram obj = new MemberProgram();
+        assertEquals("schema:MemberProgram", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

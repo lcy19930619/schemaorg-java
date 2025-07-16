@@ -64,4 +64,12 @@ public class BikeStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BikeStore obj = new BikeStore();
+        assertEquals("schema:BikeStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

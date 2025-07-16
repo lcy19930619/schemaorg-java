@@ -64,4 +64,12 @@ public class PublicSwimmingPoolJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PublicSwimmingPool obj = new PublicSwimmingPool();
+        assertEquals("schema:PublicSwimmingPool", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

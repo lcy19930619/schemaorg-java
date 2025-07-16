@@ -64,4 +64,12 @@ public class WineryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Winery obj = new Winery();
+        assertEquals("schema:Winery", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

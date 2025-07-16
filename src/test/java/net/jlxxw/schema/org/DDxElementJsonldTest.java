@@ -64,4 +64,12 @@ public class DDxElementJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DDxElement obj = new DDxElement();
+        assertEquals("schema:DDxElement", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

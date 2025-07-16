@@ -64,4 +64,12 @@ public class CanalJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Canal obj = new Canal();
+        assertEquals("schema:Canal", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

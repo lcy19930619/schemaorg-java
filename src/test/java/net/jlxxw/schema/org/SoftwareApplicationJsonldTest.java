@@ -64,4 +64,12 @@ public class SoftwareApplicationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SoftwareApplication obj = new SoftwareApplication();
+        assertEquals("schema:SoftwareApplication", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

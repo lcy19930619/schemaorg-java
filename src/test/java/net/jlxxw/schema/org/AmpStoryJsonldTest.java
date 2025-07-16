@@ -64,4 +64,12 @@ public class AmpStoryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AmpStory obj = new AmpStory();
+        assertEquals("schema:AmpStory", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

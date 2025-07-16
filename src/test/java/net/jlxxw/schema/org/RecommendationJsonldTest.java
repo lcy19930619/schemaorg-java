@@ -64,4 +64,12 @@ public class RecommendationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Recommendation obj = new Recommendation();
+        assertEquals("schema:Recommendation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

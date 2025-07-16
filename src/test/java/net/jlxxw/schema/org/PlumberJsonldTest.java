@@ -64,4 +64,12 @@ public class PlumberJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Plumber obj = new Plumber();
+        assertEquals("schema:Plumber", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

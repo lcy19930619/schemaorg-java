@@ -64,4 +64,12 @@ public class MassJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Mass obj = new Mass();
+        assertEquals("schema:Mass", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

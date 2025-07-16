@@ -64,4 +64,12 @@ public class TrackActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TrackAction obj = new TrackAction();
+        assertEquals("schema:TrackAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

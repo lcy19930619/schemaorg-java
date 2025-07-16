@@ -64,4 +64,12 @@ public class MortgageLoanJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MortgageLoan obj = new MortgageLoan();
+        assertEquals("schema:MortgageLoan", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

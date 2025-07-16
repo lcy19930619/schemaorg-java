@@ -64,4 +64,12 @@ public class SearchRescueOrganizationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SearchRescueOrganization obj = new SearchRescueOrganization();
+        assertEquals("schema:SearchRescueOrganization", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

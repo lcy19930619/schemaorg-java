@@ -64,4 +64,12 @@ public class SyllabusJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Syllabus obj = new Syllabus();
+        assertEquals("schema:Syllabus", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

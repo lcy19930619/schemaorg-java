@@ -64,4 +64,12 @@ public class FundingSchemeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FundingScheme obj = new FundingScheme();
+        assertEquals("schema:FundingScheme", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

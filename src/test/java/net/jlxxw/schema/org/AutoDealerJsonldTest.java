@@ -64,4 +64,12 @@ public class AutoDealerJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AutoDealer obj = new AutoDealer();
+        assertEquals("schema:AutoDealer", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

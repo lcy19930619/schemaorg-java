@@ -64,4 +64,12 @@ public class OwnershipInfoJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OwnershipInfo obj = new OwnershipInfo();
+        assertEquals("schema:OwnershipInfo", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

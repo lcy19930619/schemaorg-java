@@ -64,4 +64,12 @@ public class ActionStatusTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ActionStatusType obj = new ActionStatusType();
+        assertEquals("schema:ActionStatusType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

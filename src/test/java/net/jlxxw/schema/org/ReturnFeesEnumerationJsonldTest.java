@@ -64,4 +64,12 @@ public class ReturnFeesEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReturnFeesEnumeration obj = new ReturnFeesEnumeration();
+        assertEquals("schema:ReturnFeesEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

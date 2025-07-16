@@ -64,4 +64,12 @@ public class InsertActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        InsertAction obj = new InsertAction();
+        assertEquals("schema:InsertAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

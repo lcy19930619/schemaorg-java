@@ -64,4 +64,12 @@ public class MedicalProcedureJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalProcedure obj = new MedicalProcedure();
+        assertEquals("schema:MedicalProcedure", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class ImageObjectJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ImageObject obj = new ImageObject();
+        assertEquals("schema:ImageObject", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class IncentiveQualifiedExpenseTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        IncentiveQualifiedExpenseType obj = new IncentiveQualifiedExpenseType();
+        assertEquals("schema:IncentiveQualifiedExpenseType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

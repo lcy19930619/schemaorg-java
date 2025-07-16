@@ -64,4 +64,12 @@ public class MedicalConditionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalCondition obj = new MedicalCondition();
+        assertEquals("schema:MedicalCondition", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

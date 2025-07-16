@@ -64,4 +64,12 @@ public class LoanOrCreditJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LoanOrCredit obj = new LoanOrCredit();
+        assertEquals("schema:LoanOrCredit", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

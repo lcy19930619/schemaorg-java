@@ -64,4 +64,12 @@ public class InviteActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        InviteAction obj = new InviteAction();
+        assertEquals("schema:InviteAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

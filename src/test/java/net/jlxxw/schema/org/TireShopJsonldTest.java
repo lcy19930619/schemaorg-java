@@ -64,4 +64,12 @@ public class TireShopJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TireShop obj = new TireShop();
+        assertEquals("schema:TireShop", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class ThesisJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Thesis obj = new Thesis();
+        assertEquals("schema:Thesis", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

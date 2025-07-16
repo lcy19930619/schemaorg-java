@@ -64,4 +64,12 @@ public class InsuranceAgencyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        InsuranceAgency obj = new InsuranceAgency();
+        assertEquals("schema:InsuranceAgency", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

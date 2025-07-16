@@ -64,4 +64,12 @@ public class SpreadsheetDigitalDocumentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SpreadsheetDigitalDocument obj = new SpreadsheetDigitalDocument();
+        assertEquals("schema:SpreadsheetDigitalDocument", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

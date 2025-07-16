@@ -64,4 +64,12 @@ public class ProteinJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Protein obj = new Protein();
+        assertEquals("schema:Protein", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class MedicalScholarlyArticleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalScholarlyArticle obj = new MedicalScholarlyArticle();
+        assertEquals("schema:MedicalScholarlyArticle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

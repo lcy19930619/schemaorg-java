@@ -64,4 +64,12 @@ public class LifestyleModificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LifestyleModification obj = new LifestyleModification();
+        assertEquals("schema:LifestyleModification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

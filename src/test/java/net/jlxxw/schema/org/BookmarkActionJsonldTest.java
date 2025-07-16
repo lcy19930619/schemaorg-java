@@ -64,4 +64,12 @@ public class BookmarkActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BookmarkAction obj = new BookmarkAction();
+        assertEquals("schema:BookmarkAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

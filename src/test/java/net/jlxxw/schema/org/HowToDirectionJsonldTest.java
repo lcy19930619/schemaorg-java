@@ -64,4 +64,12 @@ public class HowToDirectionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HowToDirection obj = new HowToDirection();
+        assertEquals("schema:HowToDirection", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

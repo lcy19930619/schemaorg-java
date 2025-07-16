@@ -64,4 +64,12 @@ public class PaymentServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PaymentService obj = new PaymentService();
+        assertEquals("schema:PaymentService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

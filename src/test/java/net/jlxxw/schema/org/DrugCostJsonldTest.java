@@ -64,4 +64,12 @@ public class DrugCostJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DrugCost obj = new DrugCost();
+        assertEquals("schema:DrugCost", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

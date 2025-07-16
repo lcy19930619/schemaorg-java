@@ -64,4 +64,12 @@ public class ExerciseActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ExerciseAction obj = new ExerciseAction();
+        assertEquals("schema:ExerciseAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

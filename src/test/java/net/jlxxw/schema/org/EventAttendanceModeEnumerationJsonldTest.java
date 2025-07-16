@@ -64,4 +64,12 @@ public class EventAttendanceModeEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EventAttendanceModeEnumeration obj = new EventAttendanceModeEnumeration();
+        assertEquals("schema:EventAttendanceModeEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

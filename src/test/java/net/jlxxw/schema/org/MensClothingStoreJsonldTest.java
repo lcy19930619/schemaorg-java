@@ -64,4 +64,12 @@ public class MensClothingStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MensClothingStore obj = new MensClothingStore();
+        assertEquals("schema:MensClothingStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

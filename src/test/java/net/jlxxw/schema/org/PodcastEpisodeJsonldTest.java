@@ -64,4 +64,12 @@ public class PodcastEpisodeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PodcastEpisode obj = new PodcastEpisode();
+        assertEquals("schema:PodcastEpisode", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

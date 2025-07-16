@@ -64,4 +64,12 @@ public class ClaimReviewJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ClaimReview obj = new ClaimReview();
+        assertEquals("schema:ClaimReview", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

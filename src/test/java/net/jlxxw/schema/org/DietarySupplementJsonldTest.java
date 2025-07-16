@@ -64,4 +64,12 @@ public class DietarySupplementJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DietarySupplement obj = new DietarySupplement();
+        assertEquals("schema:DietarySupplement", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

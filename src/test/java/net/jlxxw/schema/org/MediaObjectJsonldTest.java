@@ -64,4 +64,12 @@ public class MediaObjectJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MediaObject obj = new MediaObject();
+        assertEquals("schema:MediaObject", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

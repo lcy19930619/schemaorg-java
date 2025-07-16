@@ -64,4 +64,12 @@ public class NailSalonJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        NailSalon obj = new NailSalon();
+        assertEquals("schema:NailSalon", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

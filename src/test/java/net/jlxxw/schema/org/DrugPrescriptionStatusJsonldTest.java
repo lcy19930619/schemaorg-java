@@ -64,4 +64,12 @@ public class DrugPrescriptionStatusJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DrugPrescriptionStatus obj = new DrugPrescriptionStatus();
+        assertEquals("schema:DrugPrescriptionStatus", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

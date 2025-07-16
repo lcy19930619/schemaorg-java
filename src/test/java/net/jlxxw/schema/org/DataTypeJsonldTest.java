@@ -64,4 +64,12 @@ public class DataTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DataType obj = new DataType();
+        assertEquals("schema:DataType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class QuizJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Quiz obj = new Quiz();
+        assertEquals("schema:Quiz", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

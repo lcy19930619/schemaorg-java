@@ -64,4 +64,12 @@ public class SelfStorageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SelfStorage obj = new SelfStorage();
+        assertEquals("schema:SelfStorage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

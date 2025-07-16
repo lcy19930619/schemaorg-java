@@ -64,4 +64,12 @@ public class OutletStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OutletStore obj = new OutletStore();
+        assertEquals("schema:OutletStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

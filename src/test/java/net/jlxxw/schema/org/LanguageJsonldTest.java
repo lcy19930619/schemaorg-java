@@ -64,4 +64,12 @@ public class LanguageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Language obj = new Language();
+        assertEquals("schema:Language", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

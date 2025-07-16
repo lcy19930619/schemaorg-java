@@ -64,4 +64,12 @@ public class DayOfWeekJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DayOfWeek obj = new DayOfWeek();
+        assertEquals("schema:DayOfWeek", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

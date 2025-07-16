@@ -64,4 +64,12 @@ public class ReturnLabelSourceEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReturnLabelSourceEnumeration obj = new ReturnLabelSourceEnumeration();
+        assertEquals("schema:ReturnLabelSourceEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class CertificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Certification obj = new Certification();
+        assertEquals("schema:Certification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class EpisodeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Episode obj = new Episode();
+        assertEquals("schema:episode", obj.getId());
+        assertEquals("rdf:Property", obj.getType());
+    }
+
+}

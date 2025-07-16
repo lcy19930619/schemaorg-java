@@ -64,4 +64,12 @@ public class LinkRoleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LinkRole obj = new LinkRole();
+        assertEquals("schema:LinkRole", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

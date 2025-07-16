@@ -64,4 +64,12 @@ public class DrugPregnancyCategoryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DrugPregnancyCategory obj = new DrugPregnancyCategory();
+        assertEquals("schema:DrugPregnancyCategory", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

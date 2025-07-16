@@ -64,4 +64,12 @@ public class BusReservationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BusReservation obj = new BusReservation();
+        assertEquals("schema:BusReservation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

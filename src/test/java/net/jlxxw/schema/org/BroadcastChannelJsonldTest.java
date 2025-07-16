@@ -64,4 +64,12 @@ public class BroadcastChannelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BroadcastChannel obj = new BroadcastChannel();
+        assertEquals("schema:BroadcastChannel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

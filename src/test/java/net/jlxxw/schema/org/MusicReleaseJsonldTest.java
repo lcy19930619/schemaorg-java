@@ -64,4 +64,12 @@ public class MusicReleaseJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicRelease obj = new MusicRelease();
+        assertEquals("schema:MusicRelease", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

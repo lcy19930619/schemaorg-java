@@ -64,4 +64,12 @@ public class SocialMediaPostingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SocialMediaPosting obj = new SocialMediaPosting();
+        assertEquals("schema:SocialMediaPosting", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

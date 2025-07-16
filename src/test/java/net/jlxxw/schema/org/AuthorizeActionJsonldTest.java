@@ -64,4 +64,12 @@ public class AuthorizeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AuthorizeAction obj = new AuthorizeAction();
+        assertEquals("schema:AuthorizeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

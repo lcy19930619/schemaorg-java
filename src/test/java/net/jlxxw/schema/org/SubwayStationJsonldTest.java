@@ -64,4 +64,12 @@ public class SubwayStationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SubwayStation obj = new SubwayStation();
+        assertEquals("schema:SubwayStation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

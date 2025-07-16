@@ -64,4 +64,12 @@ public class ApprovedIndicationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ApprovedIndication obj = new ApprovedIndication();
+        assertEquals("schema:ApprovedIndication", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

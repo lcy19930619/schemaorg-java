@@ -64,4 +64,12 @@ public class WaterfallJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Waterfall obj = new Waterfall();
+        assertEquals("schema:Waterfall", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

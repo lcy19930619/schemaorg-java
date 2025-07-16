@@ -64,4 +64,12 @@ public class LikeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LikeAction obj = new LikeAction();
+        assertEquals("schema:LikeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

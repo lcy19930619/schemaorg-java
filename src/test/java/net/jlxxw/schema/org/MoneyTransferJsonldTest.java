@@ -64,4 +64,12 @@ public class MoneyTransferJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MoneyTransfer obj = new MoneyTransfer();
+        assertEquals("schema:MoneyTransfer", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class RepaymentSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RepaymentSpecification obj = new RepaymentSpecification();
+        assertEquals("schema:RepaymentSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

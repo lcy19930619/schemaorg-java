@@ -64,4 +64,12 @@ public class PublicationVolumeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PublicationVolume obj = new PublicationVolume();
+        assertEquals("schema:PublicationVolume", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

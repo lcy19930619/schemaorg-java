@@ -64,4 +64,12 @@ public class ControlActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ControlAction obj = new ControlAction();
+        assertEquals("schema:ControlAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

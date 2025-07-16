@@ -6,6 +6,8 @@ import java.util.List;
 
 public class Nerve extends AnatomicalStructure {
     public Nerve() {
+        setId("schema:Nerve");
+        setType("rdfs:Class");
     }
 
     /**

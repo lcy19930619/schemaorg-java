@@ -64,4 +64,12 @@ public class StatusEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        StatusEnumeration obj = new StatusEnumeration();
+        assertEquals("schema:StatusEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

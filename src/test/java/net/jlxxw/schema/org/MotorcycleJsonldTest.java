@@ -64,4 +64,12 @@ public class MotorcycleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Motorcycle obj = new Motorcycle();
+        assertEquals("schema:Motorcycle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class PathologyTestJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PathologyTest obj = new PathologyTest();
+        assertEquals("schema:PathologyTest", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

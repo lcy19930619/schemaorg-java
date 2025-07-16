@@ -64,4 +64,12 @@ public class ConsumeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ConsumeAction obj = new ConsumeAction();
+        assertEquals("schema:ConsumeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

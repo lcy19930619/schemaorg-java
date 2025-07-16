@@ -64,4 +64,12 @@ public class DataDownloadJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DataDownload obj = new DataDownload();
+        assertEquals("schema:DataDownload", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

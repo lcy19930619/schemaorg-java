@@ -64,4 +64,12 @@ public class DataCatalogJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DataCatalog obj = new DataCatalog();
+        assertEquals("schema:DataCatalog", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

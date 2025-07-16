@@ -64,4 +64,12 @@ public class TypeAndQuantityNodeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TypeAndQuantityNode obj = new TypeAndQuantityNode();
+        assertEquals("schema:TypeAndQuantityNode", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

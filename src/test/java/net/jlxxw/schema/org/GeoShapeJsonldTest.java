@@ -64,4 +64,12 @@ public class GeoShapeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GeoShape obj = new GeoShape();
+        assertEquals("schema:GeoShape", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

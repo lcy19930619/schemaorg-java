@@ -64,4 +64,12 @@ public class ToyStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ToyStore obj = new ToyStore();
+        assertEquals("schema:ToyStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

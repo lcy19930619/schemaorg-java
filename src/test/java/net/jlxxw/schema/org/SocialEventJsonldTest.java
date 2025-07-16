@@ -64,4 +64,12 @@ public class SocialEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SocialEvent obj = new SocialEvent();
+        assertEquals("schema:SocialEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

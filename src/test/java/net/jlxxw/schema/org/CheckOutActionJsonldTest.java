@@ -64,4 +64,12 @@ public class CheckOutActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CheckOutAction obj = new CheckOutAction();
+        assertEquals("schema:CheckOutAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class GrantJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Grant obj = new Grant();
+        assertEquals("schema:Grant", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

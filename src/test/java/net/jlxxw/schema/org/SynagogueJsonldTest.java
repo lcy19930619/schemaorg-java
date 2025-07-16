@@ -64,4 +64,12 @@ public class SynagogueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Synagogue obj = new Synagogue();
+        assertEquals("schema:Synagogue", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

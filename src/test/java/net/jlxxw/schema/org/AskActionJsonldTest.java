@@ -64,4 +64,12 @@ public class AskActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AskAction obj = new AskAction();
+        assertEquals("schema:AskAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

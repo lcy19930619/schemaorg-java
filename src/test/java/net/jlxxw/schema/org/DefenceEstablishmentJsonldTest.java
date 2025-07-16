@@ -64,4 +64,12 @@ public class DefenceEstablishmentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DefenceEstablishment obj = new DefenceEstablishment();
+        assertEquals("schema:DefenceEstablishment", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

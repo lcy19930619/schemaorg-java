@@ -64,4 +64,12 @@ public class SpecialAnnouncementJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SpecialAnnouncement obj = new SpecialAnnouncement();
+        assertEquals("schema:SpecialAnnouncement", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

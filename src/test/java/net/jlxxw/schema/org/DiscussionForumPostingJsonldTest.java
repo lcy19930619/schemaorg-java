@@ -64,4 +64,12 @@ public class DiscussionForumPostingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DiscussionForumPosting obj = new DiscussionForumPosting();
+        assertEquals("schema:DiscussionForumPosting", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

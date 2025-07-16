@@ -64,4 +64,12 @@ public class MedicalEntityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalEntity obj = new MedicalEntity();
+        assertEquals("schema:MedicalEntity", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

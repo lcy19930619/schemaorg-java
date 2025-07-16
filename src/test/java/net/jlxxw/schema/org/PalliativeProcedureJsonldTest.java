@@ -64,4 +64,12 @@ public class PalliativeProcedureJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PalliativeProcedure obj = new PalliativeProcedure();
+        assertEquals("schema:PalliativeProcedure", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

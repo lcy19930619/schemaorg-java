@@ -64,4 +64,12 @@ public class ChurchJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Church obj = new Church();
+        assertEquals("schema:Church", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

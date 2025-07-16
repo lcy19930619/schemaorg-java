@@ -64,4 +64,12 @@ public class NotaryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Notary obj = new Notary();
+        assertEquals("schema:Notary", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class RestrictedDietJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RestrictedDiet obj = new RestrictedDiet();
+        assertEquals("schema:RestrictedDiet", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

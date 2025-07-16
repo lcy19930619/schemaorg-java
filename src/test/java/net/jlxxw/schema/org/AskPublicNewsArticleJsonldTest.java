@@ -64,4 +64,12 @@ public class AskPublicNewsArticleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AskPublicNewsArticle obj = new AskPublicNewsArticle();
+        assertEquals("schema:AskPublicNewsArticle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

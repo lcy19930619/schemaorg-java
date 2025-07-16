@@ -64,4 +64,12 @@ public class StructuredValueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        StructuredValue obj = new StructuredValue();
+        assertEquals("schema:StructuredValue", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

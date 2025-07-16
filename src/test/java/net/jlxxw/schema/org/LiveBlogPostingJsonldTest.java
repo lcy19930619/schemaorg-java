@@ -64,4 +64,12 @@ public class LiveBlogPostingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LiveBlogPosting obj = new LiveBlogPosting();
+        assertEquals("schema:LiveBlogPosting", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

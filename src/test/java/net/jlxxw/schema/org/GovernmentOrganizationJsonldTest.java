@@ -64,4 +64,12 @@ public class GovernmentOrganizationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GovernmentOrganization obj = new GovernmentOrganization();
+        assertEquals("schema:GovernmentOrganization", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

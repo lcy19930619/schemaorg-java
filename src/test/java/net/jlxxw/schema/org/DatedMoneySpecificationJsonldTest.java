@@ -64,4 +64,12 @@ public class DatedMoneySpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DatedMoneySpecification obj = new DatedMoneySpecification();
+        assertEquals("schema:DatedMoneySpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

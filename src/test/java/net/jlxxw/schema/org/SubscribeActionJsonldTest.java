@@ -64,4 +64,12 @@ public class SubscribeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SubscribeAction obj = new SubscribeAction();
+        assertEquals("schema:SubscribeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

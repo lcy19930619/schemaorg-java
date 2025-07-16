@@ -64,4 +64,12 @@ public class MedicalBusinessJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalBusiness obj = new MedicalBusiness();
+        assertEquals("schema:MedicalBusiness", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

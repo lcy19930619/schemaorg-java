@@ -64,4 +64,12 @@ public class GardenStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GardenStore obj = new GardenStore();
+        assertEquals("schema:GardenStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

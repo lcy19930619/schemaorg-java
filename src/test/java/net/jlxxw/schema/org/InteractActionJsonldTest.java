@@ -64,4 +64,12 @@ public class InteractActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        InteractAction obj = new InteractAction();
+        assertEquals("schema:InteractAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

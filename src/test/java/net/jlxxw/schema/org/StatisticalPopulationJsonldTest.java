@@ -64,4 +64,12 @@ public class StatisticalPopulationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        StatisticalPopulation obj = new StatisticalPopulation();
+        assertEquals("schema:StatisticalPopulation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

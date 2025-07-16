@@ -64,4 +64,12 @@ public class AudioObjectSnapshotJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AudioObjectSnapshot obj = new AudioObjectSnapshot();
+        assertEquals("schema:AudioObjectSnapshot", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

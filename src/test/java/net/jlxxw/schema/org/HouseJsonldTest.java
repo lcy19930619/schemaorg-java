@@ -64,4 +64,12 @@ public class HouseJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        House obj = new House();
+        assertEquals("schema:House", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

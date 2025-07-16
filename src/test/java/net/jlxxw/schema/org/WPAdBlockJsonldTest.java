@@ -64,4 +64,12 @@ public class WPAdBlockJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WPAdBlock obj = new WPAdBlock();
+        assertEquals("schema:WPAdBlock", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class EUEnergyEfficiencyEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EUEnergyEfficiencyEnumeration obj = new EUEnergyEfficiencyEnumeration();
+        assertEquals("schema:EUEnergyEfficiencyEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

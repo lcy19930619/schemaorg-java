@@ -64,4 +64,12 @@ public class VirtualLocationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VirtualLocation obj = new VirtualLocation();
+        assertEquals("schema:VirtualLocation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

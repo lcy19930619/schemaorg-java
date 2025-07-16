@@ -64,4 +64,12 @@ public class URLJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        URL obj = new URL();
+        assertEquals("schema:URL", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

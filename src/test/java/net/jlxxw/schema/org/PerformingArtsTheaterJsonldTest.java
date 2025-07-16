@@ -64,4 +64,12 @@ public class PerformingArtsTheaterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PerformingArtsTheater obj = new PerformingArtsTheater();
+        assertEquals("schema:PerformingArtsTheater", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

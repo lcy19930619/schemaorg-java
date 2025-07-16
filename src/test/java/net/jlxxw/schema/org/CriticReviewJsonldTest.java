@@ -64,4 +64,12 @@ public class CriticReviewJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CriticReview obj = new CriticReview();
+        assertEquals("schema:CriticReview", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class ReservationPackageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReservationPackage obj = new ReservationPackage();
+        assertEquals("schema:ReservationPackage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

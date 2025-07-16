@@ -64,4 +64,12 @@ public class ArchiveOrganizationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ArchiveOrganization obj = new ArchiveOrganization();
+        assertEquals("schema:ArchiveOrganization", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

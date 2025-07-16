@@ -64,4 +64,12 @@ public class DefinedTermJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DefinedTerm obj = new DefinedTerm();
+        assertEquals("schema:DefinedTerm", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

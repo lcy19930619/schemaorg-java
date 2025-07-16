@@ -64,4 +64,12 @@ public class PhysicianJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Physician obj = new Physician();
+        assertEquals("schema:Physician", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

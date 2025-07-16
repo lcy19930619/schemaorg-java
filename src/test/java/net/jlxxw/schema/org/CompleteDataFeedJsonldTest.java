@@ -64,4 +64,12 @@ public class CompleteDataFeedJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CompleteDataFeed obj = new CompleteDataFeed();
+        assertEquals("schema:CompleteDataFeed", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

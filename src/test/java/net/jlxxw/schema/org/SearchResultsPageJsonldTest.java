@@ -64,4 +64,12 @@ public class SearchResultsPageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SearchResultsPage obj = new SearchResultsPage();
+        assertEquals("schema:SearchResultsPage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

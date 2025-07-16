@@ -64,4 +64,12 @@ public class ComicCoverArtJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ComicCoverArt obj = new ComicCoverArt();
+        assertEquals("schema:ComicCoverArt", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

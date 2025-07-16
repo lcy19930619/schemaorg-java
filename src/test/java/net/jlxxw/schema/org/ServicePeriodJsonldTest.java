@@ -64,4 +64,12 @@ public class ServicePeriodJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ServicePeriod obj = new ServicePeriod();
+        assertEquals("schema:ServicePeriod", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class AutoPartsStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AutoPartsStore obj = new AutoPartsStore();
+        assertEquals("schema:AutoPartsStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class UserTweetsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserTweets obj = new UserTweets();
+        assertEquals("schema:UserTweets", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

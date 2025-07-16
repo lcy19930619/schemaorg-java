@@ -64,4 +64,12 @@ public class PerformingGroupJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PerformingGroup obj = new PerformingGroup();
+        assertEquals("schema:PerformingGroup", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

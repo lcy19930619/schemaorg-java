@@ -8,7 +8,18 @@ public class PronounceableText extends Text {
         setType("rdfs:Class");
 
     }
+    @JsonProperty("@type")
+    private String type;
 
+    @Override
+    public String getType() {
+        return type;
+    }
+
+    @Override
+    public void setType(String type) {
+        this.type = type;
+    }
     /**
      * Form of markup used. eg. [SSML](https://www.w3.org/TR/speech-synthesis11) or [IPA](https://www.wikidata.org/wiki/Property:P898).
      */

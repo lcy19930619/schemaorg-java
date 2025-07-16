@@ -64,4 +64,12 @@ public class ConsortiumJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Consortium obj = new Consortium();
+        assertEquals("schema:Consortium", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

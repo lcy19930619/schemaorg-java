@@ -64,4 +64,12 @@ public class PermitJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Permit obj = new Permit();
+        assertEquals("schema:Permit", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

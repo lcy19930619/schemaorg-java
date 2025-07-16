@@ -64,4 +64,12 @@ public class GiveActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GiveAction obj = new GiveAction();
+        assertEquals("schema:GiveAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

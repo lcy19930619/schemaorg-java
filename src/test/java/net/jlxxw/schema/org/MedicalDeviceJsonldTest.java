@@ -64,4 +64,12 @@ public class MedicalDeviceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalDevice obj = new MedicalDevice();
+        assertEquals("schema:MedicalDevice", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

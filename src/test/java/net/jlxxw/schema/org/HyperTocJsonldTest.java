@@ -64,4 +64,12 @@ public class HyperTocJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HyperToc obj = new HyperToc();
+        assertEquals("schema:HyperToc", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

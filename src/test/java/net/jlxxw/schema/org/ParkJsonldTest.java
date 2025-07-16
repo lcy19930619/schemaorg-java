@@ -64,4 +64,12 @@ public class ParkJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Park obj = new Park();
+        assertEquals("schema:Park", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

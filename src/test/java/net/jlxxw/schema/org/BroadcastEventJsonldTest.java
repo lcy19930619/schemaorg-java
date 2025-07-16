@@ -64,4 +64,12 @@ public class BroadcastEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BroadcastEvent obj = new BroadcastEvent();
+        assertEquals("schema:BroadcastEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

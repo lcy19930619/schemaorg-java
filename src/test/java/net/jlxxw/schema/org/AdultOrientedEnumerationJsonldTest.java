@@ -64,4 +64,12 @@ public class AdultOrientedEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AdultOrientedEnumeration obj = new AdultOrientedEnumeration();
+        assertEquals("schema:AdultOrientedEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

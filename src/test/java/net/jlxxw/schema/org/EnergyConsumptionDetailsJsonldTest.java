@@ -64,4 +64,12 @@ public class EnergyConsumptionDetailsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EnergyConsumptionDetails obj = new EnergyConsumptionDetails();
+        assertEquals("schema:EnergyConsumptionDetails", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

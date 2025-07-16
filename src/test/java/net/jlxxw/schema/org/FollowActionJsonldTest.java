@@ -64,4 +64,12 @@ public class FollowActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FollowAction obj = new FollowAction();
+        assertEquals("schema:FollowAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

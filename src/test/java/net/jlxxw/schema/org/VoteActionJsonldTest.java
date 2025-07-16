@@ -64,4 +64,12 @@ public class VoteActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        VoteAction obj = new VoteAction();
+        assertEquals("schema:VoteAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

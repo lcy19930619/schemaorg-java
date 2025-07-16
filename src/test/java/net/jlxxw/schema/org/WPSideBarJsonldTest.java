@@ -64,4 +64,12 @@ public class WPSideBarJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WPSideBar obj = new WPSideBar();
+        assertEquals("schema:WPSideBar", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

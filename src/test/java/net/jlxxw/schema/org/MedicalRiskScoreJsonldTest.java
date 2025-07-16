@@ -64,4 +64,12 @@ public class MedicalRiskScoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalRiskScore obj = new MedicalRiskScore();
+        assertEquals("schema:MedicalRiskScore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

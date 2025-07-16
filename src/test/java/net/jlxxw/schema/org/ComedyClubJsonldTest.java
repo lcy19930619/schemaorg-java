@@ -64,4 +64,12 @@ public class ComedyClubJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ComedyClub obj = new ComedyClub();
+        assertEquals("schema:ComedyClub", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

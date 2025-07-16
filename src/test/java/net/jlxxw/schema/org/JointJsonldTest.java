@@ -64,4 +64,12 @@ public class JointJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Joint obj = new Joint();
+        assertEquals("schema:Joint", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

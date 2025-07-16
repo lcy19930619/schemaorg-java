@@ -64,4 +64,12 @@ public class QuantitativeValueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        QuantitativeValue obj = new QuantitativeValue();
+        assertEquals("schema:QuantitativeValue", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class SportingGoodsStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SportingGoodsStore obj = new SportingGoodsStore();
+        assertEquals("schema:SportingGoodsStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class ResumeActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ResumeAction obj = new ResumeAction();
+        assertEquals("schema:ResumeAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

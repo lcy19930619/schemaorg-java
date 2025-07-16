@@ -64,4 +64,12 @@ public class OfferShippingDetailsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OfferShippingDetails obj = new OfferShippingDetails();
+        assertEquals("schema:OfferShippingDetails", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

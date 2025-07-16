@@ -64,4 +64,12 @@ public class AudioObjectJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AudioObject obj = new AudioObject();
+        assertEquals("schema:AudioObject", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

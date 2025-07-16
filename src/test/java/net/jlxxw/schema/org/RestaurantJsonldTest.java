@@ -64,4 +64,12 @@ public class RestaurantJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Restaurant obj = new Restaurant();
+        assertEquals("schema:Restaurant", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

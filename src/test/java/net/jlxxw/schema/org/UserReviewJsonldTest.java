@@ -64,4 +64,12 @@ public class UserReviewJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserReview obj = new UserReview();
+        assertEquals("schema:UserReview", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

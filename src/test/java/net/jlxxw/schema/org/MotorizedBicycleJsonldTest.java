@@ -64,4 +64,12 @@ public class MotorizedBicycleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MotorizedBicycle obj = new MotorizedBicycle();
+        assertEquals("schema:MotorizedBicycle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

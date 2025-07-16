@@ -64,4 +64,12 @@ public class BedDetailsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BedDetails obj = new BedDetails();
+        assertEquals("schema:BedDetails", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

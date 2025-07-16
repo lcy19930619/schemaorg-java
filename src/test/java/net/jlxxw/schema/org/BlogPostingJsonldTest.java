@@ -64,4 +64,12 @@ public class BlogPostingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BlogPosting obj = new BlogPosting();
+        assertEquals("schema:BlogPosting", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

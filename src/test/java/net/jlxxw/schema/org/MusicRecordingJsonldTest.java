@@ -64,4 +64,12 @@ public class MusicRecordingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicRecording obj = new MusicRecording();
+        assertEquals("schema:MusicRecording", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

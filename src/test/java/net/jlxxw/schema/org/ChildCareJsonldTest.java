@@ -64,4 +64,12 @@ public class ChildCareJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ChildCare obj = new ChildCare();
+        assertEquals("schema:ChildCare", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

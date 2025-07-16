@@ -64,4 +64,12 @@ public class MedicalTestPanelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalTestPanel obj = new MedicalTestPanel();
+        assertEquals("schema:MedicalTestPanel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

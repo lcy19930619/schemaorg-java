@@ -64,4 +64,12 @@ public class LeaveActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LeaveAction obj = new LeaveAction();
+        assertEquals("schema:LeaveAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

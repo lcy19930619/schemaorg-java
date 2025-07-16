@@ -64,4 +64,12 @@ public class MobilePhoneStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MobilePhoneStore obj = new MobilePhoneStore();
+        assertEquals("schema:MobilePhoneStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

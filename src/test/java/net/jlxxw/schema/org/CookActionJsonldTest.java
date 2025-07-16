@@ -64,4 +64,12 @@ public class CookActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CookAction obj = new CookAction();
+        assertEquals("schema:CookAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

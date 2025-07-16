@@ -64,4 +64,12 @@ public class FindActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FindAction obj = new FindAction();
+        assertEquals("schema:FindAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

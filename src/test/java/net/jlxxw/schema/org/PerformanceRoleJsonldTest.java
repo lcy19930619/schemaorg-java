@@ -64,4 +64,12 @@ public class PerformanceRoleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PerformanceRole obj = new PerformanceRole();
+        assertEquals("schema:PerformanceRole", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class ActivateActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ActivateAction obj = new ActivateAction();
+        assertEquals("schema:ActivateAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

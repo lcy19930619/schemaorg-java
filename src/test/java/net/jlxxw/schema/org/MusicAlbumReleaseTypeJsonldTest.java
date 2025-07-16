@@ -64,4 +64,12 @@ public class MusicAlbumReleaseTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicAlbumReleaseType obj = new MusicAlbumReleaseType();
+        assertEquals("schema:MusicAlbumReleaseType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

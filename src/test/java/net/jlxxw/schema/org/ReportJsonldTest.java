@@ -64,4 +64,12 @@ public class ReportJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Report obj = new Report();
+        assertEquals("schema:Report", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

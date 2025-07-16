@@ -64,4 +64,12 @@ public class ServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Service obj = new Service();
+        assertEquals("schema:Service", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

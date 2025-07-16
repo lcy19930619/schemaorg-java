@@ -64,4 +64,12 @@ public class OceanBodyOfWaterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OceanBodyOfWater obj = new OceanBodyOfWater();
+        assertEquals("schema:OceanBodyOfWater", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

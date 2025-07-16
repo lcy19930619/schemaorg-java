@@ -64,4 +64,12 @@ public class LodgingReservationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LodgingReservation obj = new LodgingReservation();
+        assertEquals("schema:LodgingReservation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

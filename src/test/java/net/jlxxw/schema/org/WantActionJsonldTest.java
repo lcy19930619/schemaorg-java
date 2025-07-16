@@ -64,4 +64,12 @@ public class WantActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WantAction obj = new WantAction();
+        assertEquals("schema:WantAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

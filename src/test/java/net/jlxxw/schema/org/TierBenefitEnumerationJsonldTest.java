@@ -64,4 +64,12 @@ public class TierBenefitEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TierBenefitEnumeration obj = new TierBenefitEnumeration();
+        assertEquals("schema:TierBenefitEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

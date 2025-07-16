@@ -64,4 +64,12 @@ public class BioChemEntityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BioChemEntity obj = new BioChemEntity();
+        assertEquals("schema:BioChemEntity", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

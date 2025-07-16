@@ -64,4 +64,12 @@ public class MedicalGuidelineRecommendationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalGuidelineRecommendation obj = new MedicalGuidelineRecommendation();
+        assertEquals("schema:MedicalGuidelineRecommendation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

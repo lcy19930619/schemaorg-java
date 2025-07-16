@@ -64,4 +64,12 @@ public class UserPageVisitsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserPageVisits obj = new UserPageVisits();
+        assertEquals("schema:UserPageVisits", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

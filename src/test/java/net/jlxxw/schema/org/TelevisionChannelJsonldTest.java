@@ -64,4 +64,12 @@ public class TelevisionChannelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        TelevisionChannel obj = new TelevisionChannel();
+        assertEquals("schema:TelevisionChannel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

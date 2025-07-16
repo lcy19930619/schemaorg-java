@@ -64,4 +64,12 @@ public class PhysicalActivityCategoryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PhysicalActivityCategory obj = new PhysicalActivityCategory();
+        assertEquals("schema:PhysicalActivityCategory", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

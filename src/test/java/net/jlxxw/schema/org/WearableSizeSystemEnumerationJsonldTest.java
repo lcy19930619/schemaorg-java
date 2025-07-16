@@ -64,4 +64,12 @@ public class WearableSizeSystemEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WearableSizeSystemEnumeration obj = new WearableSizeSystemEnumeration();
+        assertEquals("schema:WearableSizeSystemEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

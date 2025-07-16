@@ -64,4 +64,12 @@ public class MenuItemJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MenuItem obj = new MenuItem();
+        assertEquals("schema:MenuItem", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

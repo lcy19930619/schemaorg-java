@@ -64,4 +64,12 @@ public class InternetCafeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        InternetCafe obj = new InternetCafe();
+        assertEquals("schema:InternetCafe", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

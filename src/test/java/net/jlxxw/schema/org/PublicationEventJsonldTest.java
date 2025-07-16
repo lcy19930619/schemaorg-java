@@ -64,4 +64,12 @@ public class PublicationEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PublicationEvent obj = new PublicationEvent();
+        assertEquals("schema:PublicationEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

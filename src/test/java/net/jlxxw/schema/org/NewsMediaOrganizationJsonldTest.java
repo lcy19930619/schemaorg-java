@@ -64,4 +64,12 @@ public class NewsMediaOrganizationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        NewsMediaOrganization obj = new NewsMediaOrganization();
+        assertEquals("schema:NewsMediaOrganization", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

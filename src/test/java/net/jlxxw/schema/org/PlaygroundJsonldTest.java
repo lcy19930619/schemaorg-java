@@ -64,4 +64,12 @@ public class PlaygroundJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Playground obj = new Playground();
+        assertEquals("schema:Playground", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

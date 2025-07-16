@@ -64,4 +64,12 @@ public class ScheduleActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ScheduleAction obj = new ScheduleAction();
+        assertEquals("schema:ScheduleAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

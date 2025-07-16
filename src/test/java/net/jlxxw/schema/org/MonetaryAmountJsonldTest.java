@@ -64,4 +64,12 @@ public class MonetaryAmountJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MonetaryAmount obj = new MonetaryAmount();
+        assertEquals("schema:MonetaryAmount", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

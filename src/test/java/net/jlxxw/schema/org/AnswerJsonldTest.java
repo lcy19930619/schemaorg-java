@@ -64,4 +64,12 @@ public class AnswerJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Answer obj = new Answer();
+        assertEquals("schema:Answer", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

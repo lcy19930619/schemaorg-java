@@ -64,4 +64,12 @@ public class OfferForPurchaseJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OfferForPurchase obj = new OfferForPurchase();
+        assertEquals("schema:OfferForPurchase", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

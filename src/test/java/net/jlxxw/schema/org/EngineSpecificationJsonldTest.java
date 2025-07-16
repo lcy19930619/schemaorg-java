@@ -64,4 +64,12 @@ public class EngineSpecificationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EngineSpecification obj = new EngineSpecification();
+        assertEquals("schema:EngineSpecification", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

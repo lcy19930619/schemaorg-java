@@ -64,4 +64,12 @@ public class EntryPointJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EntryPoint obj = new EntryPoint();
+        assertEquals("schema:EntryPoint", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

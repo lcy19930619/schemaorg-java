@@ -64,4 +64,12 @@ public class FoodEstablishmentReservationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FoodEstablishmentReservation obj = new FoodEstablishmentReservation();
+        assertEquals("schema:FoodEstablishmentReservation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

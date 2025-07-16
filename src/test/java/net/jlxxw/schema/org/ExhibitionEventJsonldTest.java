@@ -64,4 +64,12 @@ public class ExhibitionEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ExhibitionEvent obj = new ExhibitionEvent();
+        assertEquals("schema:ExhibitionEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

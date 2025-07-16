@@ -64,4 +64,12 @@ public class QAPageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        QAPage obj = new QAPage();
+        assertEquals("schema:QAPage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

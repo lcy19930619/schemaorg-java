@@ -64,4 +64,12 @@ public class HealthPlanNetworkJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HealthPlanNetwork obj = new HealthPlanNetwork();
+        assertEquals("schema:HealthPlanNetwork", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class WebContentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WebContent obj = new WebContent();
+        assertEquals("schema:WebContent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

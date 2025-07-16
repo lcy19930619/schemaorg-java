@@ -64,4 +64,12 @@ public class ShoppingCenterJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ShoppingCenter obj = new ShoppingCenter();
+        assertEquals("schema:ShoppingCenter", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

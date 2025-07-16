@@ -64,4 +64,12 @@ public class GameAvailabilityEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        GameAvailabilityEnumeration obj = new GameAvailabilityEnumeration();
+        assertEquals("schema:GameAvailabilityEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

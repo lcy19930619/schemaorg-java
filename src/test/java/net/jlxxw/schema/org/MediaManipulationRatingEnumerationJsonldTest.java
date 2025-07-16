@@ -64,4 +64,12 @@ public class MediaManipulationRatingEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MediaManipulationRatingEnumeration obj = new MediaManipulationRatingEnumeration();
+        assertEquals("schema:MediaManipulationRatingEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

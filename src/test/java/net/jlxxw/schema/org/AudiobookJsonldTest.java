@@ -64,4 +64,12 @@ public class AudiobookJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Audiobook obj = new Audiobook();
+        assertEquals("schema:Audiobook", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

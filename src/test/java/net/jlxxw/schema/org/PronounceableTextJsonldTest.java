@@ -64,4 +64,12 @@ public class PronounceableTextJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PronounceableText obj = new PronounceableText();
+        assertEquals("schema:PronounceableText", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

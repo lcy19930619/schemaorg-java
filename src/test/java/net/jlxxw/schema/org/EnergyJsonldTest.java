@@ -64,4 +64,12 @@ public class EnergyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Energy obj = new Energy();
+        assertEquals("schema:Energy", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

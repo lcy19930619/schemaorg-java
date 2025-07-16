@@ -64,4 +64,12 @@ public class CooperativeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Cooperative obj = new Cooperative();
+        assertEquals("schema:Cooperative", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

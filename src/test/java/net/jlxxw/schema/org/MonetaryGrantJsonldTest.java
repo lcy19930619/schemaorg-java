@@ -64,4 +64,12 @@ public class MonetaryGrantJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MonetaryGrant obj = new MonetaryGrant();
+        assertEquals("schema:MonetaryGrant", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class EmployerReviewJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EmployerReview obj = new EmployerReview();
+        assertEquals("schema:EmployerReview", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

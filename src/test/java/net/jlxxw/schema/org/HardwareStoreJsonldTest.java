@@ -64,4 +64,12 @@ public class HardwareStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HardwareStore obj = new HardwareStore();
+        assertEquals("schema:HardwareStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

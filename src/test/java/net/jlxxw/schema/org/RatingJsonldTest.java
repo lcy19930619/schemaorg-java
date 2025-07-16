@@ -64,4 +64,12 @@ public class RatingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Rating obj = new Rating();
+        assertEquals("schema:Rating", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

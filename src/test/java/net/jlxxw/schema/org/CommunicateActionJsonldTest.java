@@ -64,4 +64,12 @@ public class CommunicateActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CommunicateAction obj = new CommunicateAction();
+        assertEquals("schema:CommunicateAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

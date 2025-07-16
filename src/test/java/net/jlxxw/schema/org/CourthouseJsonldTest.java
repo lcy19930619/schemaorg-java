@@ -64,4 +64,12 @@ public class CourthouseJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Courthouse obj = new Courthouse();
+        assertEquals("schema:Courthouse", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class XPathTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        XPathType obj = new XPathType();
+        assertEquals("schema:XPathType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

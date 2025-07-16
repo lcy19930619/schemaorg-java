@@ -64,4 +64,12 @@ public class ChemicalSubstanceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ChemicalSubstance obj = new ChemicalSubstance();
+        assertEquals("schema:ChemicalSubstance", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

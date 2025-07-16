@@ -64,4 +64,12 @@ public class FlightReservationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FlightReservation obj = new FlightReservation();
+        assertEquals("schema:FlightReservation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

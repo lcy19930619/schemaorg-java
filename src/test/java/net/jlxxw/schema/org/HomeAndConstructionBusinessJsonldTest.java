@@ -64,4 +64,12 @@ public class HomeAndConstructionBusinessJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HomeAndConstructionBusiness obj = new HomeAndConstructionBusiness();
+        assertEquals("schema:HomeAndConstructionBusiness", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

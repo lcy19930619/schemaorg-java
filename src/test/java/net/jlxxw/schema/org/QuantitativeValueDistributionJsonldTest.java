@@ -64,4 +64,12 @@ public class QuantitativeValueDistributionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        QuantitativeValueDistribution obj = new QuantitativeValueDistribution();
+        assertEquals("schema:QuantitativeValueDistribution", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

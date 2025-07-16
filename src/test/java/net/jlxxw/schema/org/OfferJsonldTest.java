@@ -64,4 +64,12 @@ public class OfferJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Offer obj = new Offer();
+        assertEquals("schema:Offer", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

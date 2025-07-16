@@ -64,4 +64,12 @@ public class PhysicalTherapyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PhysicalTherapy obj = new PhysicalTherapy();
+        assertEquals("schema:PhysicalTherapy", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

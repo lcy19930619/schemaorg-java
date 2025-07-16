@@ -64,4 +64,12 @@ public class APIReferenceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        APIReference obj = new APIReference();
+        assertEquals("schema:APIReference", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

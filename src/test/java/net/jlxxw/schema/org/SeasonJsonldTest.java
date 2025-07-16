@@ -64,4 +64,12 @@ public class SeasonJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Season obj = new Season();
+        assertEquals("schema:Season", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

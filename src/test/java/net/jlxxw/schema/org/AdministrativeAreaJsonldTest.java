@@ -64,4 +64,12 @@ public class AdministrativeAreaJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AdministrativeArea obj = new AdministrativeArea();
+        assertEquals("schema:AdministrativeArea", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

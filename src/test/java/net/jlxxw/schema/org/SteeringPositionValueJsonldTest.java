@@ -64,4 +64,12 @@ public class SteeringPositionValueJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SteeringPositionValue obj = new SteeringPositionValue();
+        assertEquals("schema:SteeringPositionValue", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class OccupationalExperienceRequirementsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OccupationalExperienceRequirements obj = new OccupationalExperienceRequirements();
+        assertEquals("schema:OccupationalExperienceRequirements", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

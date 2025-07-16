@@ -64,4 +64,12 @@ public class HVACBusinessJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HVACBusiness obj = new HVACBusiness();
+        assertEquals("schema:HVACBusiness", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class LegislativeBuildingJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LegislativeBuilding obj = new LegislativeBuilding();
+        assertEquals("schema:LegislativeBuilding", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

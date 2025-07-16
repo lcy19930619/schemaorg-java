@@ -64,4 +64,12 @@ public class OnDemandEventJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        OnDemandEvent obj = new OnDemandEvent();
+        assertEquals("schema:OnDemandEvent", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

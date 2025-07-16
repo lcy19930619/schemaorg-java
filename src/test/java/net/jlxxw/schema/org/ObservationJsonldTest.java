@@ -64,4 +64,12 @@ public class ObservationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Observation obj = new Observation();
+        assertEquals("schema:Observation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

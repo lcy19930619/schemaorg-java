@@ -64,4 +64,12 @@ public class LegalForceStatusJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        LegalForceStatus obj = new LegalForceStatus();
+        assertEquals("schema:LegalForceStatus", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

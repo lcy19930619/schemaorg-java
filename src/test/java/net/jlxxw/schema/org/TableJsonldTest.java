@@ -64,4 +64,12 @@ public class TableJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Table obj = new Table();
+        assertEquals("schema:Table", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

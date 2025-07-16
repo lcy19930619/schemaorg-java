@@ -64,4 +64,12 @@ public class FinancialIncentiveJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        FinancialIncentive obj = new FinancialIncentive();
+        assertEquals("schema:FinancialIncentive", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

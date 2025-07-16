@@ -64,4 +64,12 @@ public class WorkBasedProgramJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WorkBasedProgram obj = new WorkBasedProgram();
+        assertEquals("schema:WorkBasedProgram", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

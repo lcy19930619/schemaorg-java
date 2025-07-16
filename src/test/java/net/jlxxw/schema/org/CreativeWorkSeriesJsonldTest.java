@@ -64,4 +64,12 @@ public class CreativeWorkSeriesJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CreativeWorkSeries obj = new CreativeWorkSeries();
+        assertEquals("schema:CreativeWorkSeries", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

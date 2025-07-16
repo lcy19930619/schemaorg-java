@@ -64,4 +64,12 @@ public class ServiceChannelJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ServiceChannel obj = new ServiceChannel();
+        assertEquals("schema:ServiceChannel", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

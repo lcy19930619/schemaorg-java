@@ -64,4 +64,12 @@ public class CollegeOrUniversityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CollegeOrUniversity obj = new CollegeOrUniversity();
+        assertEquals("schema:CollegeOrUniversity", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

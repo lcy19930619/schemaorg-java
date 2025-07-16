@@ -64,4 +64,12 @@ public class CollectionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Collection obj = new Collection();
+        assertEquals("schema:Collection", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

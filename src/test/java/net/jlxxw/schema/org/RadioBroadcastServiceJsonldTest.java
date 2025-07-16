@@ -64,4 +64,12 @@ public class RadioBroadcastServiceJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RadioBroadcastService obj = new RadioBroadcastService();
+        assertEquals("schema:RadioBroadcastService", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

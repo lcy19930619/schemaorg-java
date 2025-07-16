@@ -64,4 +64,12 @@ public class BeachJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Beach obj = new Beach();
+        assertEquals("schema:Beach", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

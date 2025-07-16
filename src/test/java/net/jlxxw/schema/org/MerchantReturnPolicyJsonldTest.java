@@ -64,4 +64,12 @@ public class MerchantReturnPolicyJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MerchantReturnPolicy obj = new MerchantReturnPolicy();
+        assertEquals("schema:MerchantReturnPolicy", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

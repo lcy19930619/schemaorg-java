@@ -64,4 +64,12 @@ public class PawnShopJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PawnShop obj = new PawnShop();
+        assertEquals("schema:PawnShop", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

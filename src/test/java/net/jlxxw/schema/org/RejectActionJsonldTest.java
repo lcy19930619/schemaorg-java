@@ -64,4 +64,12 @@ public class RejectActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RejectAction obj = new RejectAction();
+        assertEquals("schema:RejectAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

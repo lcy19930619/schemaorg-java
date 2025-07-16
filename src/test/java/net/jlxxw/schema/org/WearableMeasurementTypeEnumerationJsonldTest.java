@@ -64,4 +64,12 @@ public class WearableMeasurementTypeEnumerationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        WearableMeasurementTypeEnumeration obj = new WearableMeasurementTypeEnumeration();
+        assertEquals("schema:WearableMeasurementTypeEnumeration", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

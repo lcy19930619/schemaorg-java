@@ -64,4 +64,12 @@ public class UpdateActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UpdateAction obj = new UpdateAction();
+        assertEquals("schema:UpdateAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

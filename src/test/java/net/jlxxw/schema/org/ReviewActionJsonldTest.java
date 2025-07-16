@@ -64,4 +64,12 @@ public class ReviewActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReviewAction obj = new ReviewAction();
+        assertEquals("schema:ReviewAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

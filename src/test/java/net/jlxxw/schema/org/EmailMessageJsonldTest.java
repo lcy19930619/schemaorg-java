@@ -64,4 +64,12 @@ public class EmailMessageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EmailMessage obj = new EmailMessage();
+        assertEquals("schema:EmailMessage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

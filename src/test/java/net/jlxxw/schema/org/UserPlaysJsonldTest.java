@@ -64,4 +64,12 @@ public class UserPlaysJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserPlays obj = new UserPlays();
+        assertEquals("schema:UserPlays", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

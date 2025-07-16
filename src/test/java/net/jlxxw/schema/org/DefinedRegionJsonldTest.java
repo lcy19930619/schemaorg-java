@@ -64,4 +64,12 @@ public class DefinedRegionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DefinedRegion obj = new DefinedRegion();
+        assertEquals("schema:DefinedRegion", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

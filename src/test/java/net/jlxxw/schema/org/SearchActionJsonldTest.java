@@ -64,4 +64,12 @@ public class SearchActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SearchAction obj = new SearchAction();
+        assertEquals("schema:SearchAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

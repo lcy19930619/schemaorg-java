@@ -64,4 +64,12 @@ public class ReviewJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Review obj = new Review();
+        assertEquals("schema:review", obj.getId());
+        assertEquals("rdf:Property", obj.getType());
+    }
+
+}

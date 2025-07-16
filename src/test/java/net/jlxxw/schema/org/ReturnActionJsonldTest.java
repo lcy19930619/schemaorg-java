@@ -64,4 +64,12 @@ public class ReturnActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ReturnAction obj = new ReturnAction();
+        assertEquals("schema:ReturnAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

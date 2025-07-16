@@ -64,4 +64,12 @@ public class SiteNavigationElementJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        SiteNavigationElement obj = new SiteNavigationElement();
+        assertEquals("schema:SiteNavigationElement", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

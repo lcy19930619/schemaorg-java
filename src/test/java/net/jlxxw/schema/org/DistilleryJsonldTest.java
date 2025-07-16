@@ -64,4 +64,12 @@ public class DistilleryJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Distillery obj = new Distillery();
+        assertEquals("schema:Distillery", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

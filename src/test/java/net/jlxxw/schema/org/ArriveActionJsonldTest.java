@@ -64,4 +64,12 @@ public class ArriveActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        ArriveAction obj = new ArriveAction();
+        assertEquals("schema:ArriveAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

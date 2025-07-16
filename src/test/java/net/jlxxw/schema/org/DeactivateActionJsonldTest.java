@@ -64,4 +64,12 @@ public class DeactivateActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DeactivateAction obj = new DeactivateAction();
+        assertEquals("schema:DeactivateAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

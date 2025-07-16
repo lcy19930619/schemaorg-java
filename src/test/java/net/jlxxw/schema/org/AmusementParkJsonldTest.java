@@ -64,4 +64,12 @@ public class AmusementParkJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        AmusementPark obj = new AmusementPark();
+        assertEquals("schema:AmusementPark", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class BackgroundNewsArticleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BackgroundNewsArticle obj = new BackgroundNewsArticle();
+        assertEquals("schema:BackgroundNewsArticle", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

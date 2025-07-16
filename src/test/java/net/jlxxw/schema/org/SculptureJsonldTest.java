@@ -64,4 +64,12 @@ public class SculptureJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Sculpture obj = new Sculpture();
+        assertEquals("schema:Sculpture", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

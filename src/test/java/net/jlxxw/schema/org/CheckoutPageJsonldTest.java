@@ -64,4 +64,12 @@ public class CheckoutPageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CheckoutPage obj = new CheckoutPage();
+        assertEquals("schema:CheckoutPage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

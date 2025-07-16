@@ -64,4 +64,12 @@ public class RoofingContractorJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        RoofingContractor obj = new RoofingContractor();
+        assertEquals("schema:RoofingContractor", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

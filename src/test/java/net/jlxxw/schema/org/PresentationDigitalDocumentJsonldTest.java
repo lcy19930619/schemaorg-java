@@ -64,4 +64,12 @@ public class PresentationDigitalDocumentJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PresentationDigitalDocument obj = new PresentationDigitalDocument();
+        assertEquals("schema:PresentationDigitalDocument", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

@@ -64,4 +64,12 @@ public class PetStoreJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PetStore obj = new PetStore();
+        assertEquals("schema:PetStore", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

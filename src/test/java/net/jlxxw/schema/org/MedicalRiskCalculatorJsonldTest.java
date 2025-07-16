@@ -64,4 +64,12 @@ public class MedicalRiskCalculatorJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MedicalRiskCalculator obj = new MedicalRiskCalculator();
+        assertEquals("schema:MedicalRiskCalculator", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

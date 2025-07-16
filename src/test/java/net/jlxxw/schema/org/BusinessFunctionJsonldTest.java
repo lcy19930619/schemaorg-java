@@ -64,4 +64,12 @@ public class BusinessFunctionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        BusinessFunction obj = new BusinessFunction();
+        assertEquals("schema:BusinessFunction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

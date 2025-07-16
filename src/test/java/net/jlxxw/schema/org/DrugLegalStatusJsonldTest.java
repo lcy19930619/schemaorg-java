@@ -64,4 +64,12 @@ public class DrugLegalStatusJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DrugLegalStatus obj = new DrugLegalStatus();
+        assertEquals("schema:DrugLegalStatus", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

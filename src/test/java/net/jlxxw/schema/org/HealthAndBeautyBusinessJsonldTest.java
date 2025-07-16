@@ -64,4 +64,12 @@ public class HealthAndBeautyBusinessJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        HealthAndBeautyBusiness obj = new HealthAndBeautyBusiness();
+        assertEquals("schema:HealthAndBeautyBusiness", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

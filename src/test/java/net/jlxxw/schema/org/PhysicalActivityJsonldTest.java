@@ -64,4 +64,12 @@ public class PhysicalActivityJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        PhysicalActivity obj = new PhysicalActivity();
+        assertEquals("schema:PhysicalActivity", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

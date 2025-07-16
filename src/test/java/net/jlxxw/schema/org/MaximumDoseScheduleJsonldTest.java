@@ -64,4 +64,12 @@ public class MaximumDoseScheduleJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MaximumDoseSchedule obj = new MaximumDoseSchedule();
+        assertEquals("schema:MaximumDoseSchedule", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

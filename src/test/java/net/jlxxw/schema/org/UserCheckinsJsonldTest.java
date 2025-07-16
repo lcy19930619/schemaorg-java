@@ -64,4 +64,12 @@ public class UserCheckinsJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        UserCheckins obj = new UserCheckins();
+        assertEquals("schema:UserCheckins", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

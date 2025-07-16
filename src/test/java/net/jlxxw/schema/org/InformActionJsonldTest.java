@@ -64,4 +64,12 @@ public class InformActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        InformAction obj = new InformAction();
+        assertEquals("schema:InformAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

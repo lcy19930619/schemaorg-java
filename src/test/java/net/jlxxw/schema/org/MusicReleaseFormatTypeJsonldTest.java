@@ -64,4 +64,12 @@ public class MusicReleaseFormatTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        MusicReleaseFormatType obj = new MusicReleaseFormatType();
+        assertEquals("schema:MusicReleaseFormatType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

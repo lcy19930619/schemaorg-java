@@ -64,4 +64,12 @@ public class IncentiveTypeJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        IncentiveType obj = new IncentiveType();
+        assertEquals("schema:IncentiveType", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

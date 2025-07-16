@@ -64,4 +64,12 @@ public class EatActionJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        EatAction obj = new EatAction();
+        assertEquals("schema:EatAction", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

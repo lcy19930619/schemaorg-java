@@ -64,4 +64,12 @@ public class CollectionPageJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        CollectionPage obj = new CollectionPage();
+        assertEquals("schema:CollectionPage", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

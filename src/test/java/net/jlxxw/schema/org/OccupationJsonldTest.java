@@ -64,4 +64,12 @@ public class OccupationJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Occupation obj = new Occupation();
+        assertEquals("schema:Occupation", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

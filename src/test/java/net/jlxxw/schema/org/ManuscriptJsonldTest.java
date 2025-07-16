@@ -64,4 +64,12 @@ public class ManuscriptJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        Manuscript obj = new Manuscript();
+        assertEquals("schema:Manuscript", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}

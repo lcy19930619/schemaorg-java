@@ -64,4 +64,12 @@ public class DanceGroupJsonldTest {
             }
         }
     }
-} 
+
+    @Test
+    public void testDefaultIdAndType() {
+        DanceGroup obj = new DanceGroup();
+        assertEquals("schema:DanceGroup", obj.getId());
+        assertEquals("rdfs:Class", obj.getType());
+    }
+
+}
