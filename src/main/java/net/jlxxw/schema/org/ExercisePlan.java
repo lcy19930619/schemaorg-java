@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class ExercisePlan extends CreativeWork {
-    public ExercisePlan() {
+    {
         setId("schema:ExercisePlan");
         setType("rdfs:Class");
     }

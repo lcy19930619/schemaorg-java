@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class DrugCost extends MedicalEntity {
-    public DrugCost() {
+    {
         setId("schema:DrugCost");
         setType("rdfs:Class");
 

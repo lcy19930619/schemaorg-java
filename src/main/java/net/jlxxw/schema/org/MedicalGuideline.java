@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MedicalGuideline extends MedicalEntity {
-    public MedicalGuideline() {
+    {
         setId("schema:MedicalGuideline");
         setType("rdfs:Class");
 

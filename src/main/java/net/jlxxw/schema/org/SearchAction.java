@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class SearchAction extends Action {
-    public SearchAction() {
+    {
         setId("schema:SearchAction");
         setType("rdfs:Class");
 

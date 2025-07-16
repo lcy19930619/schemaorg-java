@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MerchantReturnPolicySeasonalOverride extends Intangible {
-    public MerchantReturnPolicySeasonalOverride() {
+    {
         setId("schema:MerchantReturnPolicySeasonalOverride");
         setType("rdfs:Class");
 

@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class ProgramMembership extends Intangible {
-    public ProgramMembership() {
+    {
         setId("schema:ProgramMembership");
         setType("rdfs:Class");
 

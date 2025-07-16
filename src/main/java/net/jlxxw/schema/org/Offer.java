@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Offer extends Intangible {
-    public Offer() {
+    {
         setId("schema:Offer");
         setType("rdfs:Class");
 

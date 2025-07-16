@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Occupation extends Intangible {
-    public Occupation() {
+    {
         setId("schema:Occupation");
         setType("rdfs:Class");
 

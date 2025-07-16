@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Thesis extends CreativeWork {
-    public Thesis() {
+    {
         setId("schema:Thesis");
         setType("rdfs:Class");
 

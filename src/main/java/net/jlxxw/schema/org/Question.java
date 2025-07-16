@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Question extends Comment {
-    public Question() {
+    {
         setId("schema:Question");
         setType("rdfs:Class");
     }

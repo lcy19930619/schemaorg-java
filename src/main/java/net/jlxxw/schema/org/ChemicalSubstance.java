@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ChemicalSubstance extends BioChemEntity {
-    public ChemicalSubstance() {
+    {
         setId("schema:ChemicalSubstance");
         setType("rdfs:Class");
 

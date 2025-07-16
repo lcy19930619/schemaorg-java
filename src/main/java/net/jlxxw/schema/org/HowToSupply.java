@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class HowToSupply extends HowToItem {
-    public HowToSupply() {
+    {
         setId("schema:HowToSupply");
         setType("rdfs:Class");
 

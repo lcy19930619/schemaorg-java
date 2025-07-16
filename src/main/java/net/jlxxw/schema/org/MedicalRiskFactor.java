@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MedicalRiskFactor extends MedicalEntity {
-    public MedicalRiskFactor() {
+    {
         setId("schema:MedicalRiskFactor");
         setType("rdfs:Class");
 

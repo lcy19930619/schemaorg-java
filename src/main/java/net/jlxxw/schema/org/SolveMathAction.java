@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class SolveMathAction extends Action {
-    public SolveMathAction() {
+    {
         setId("schema:SolveMathAction");
         setType("rdfs:Class");
 

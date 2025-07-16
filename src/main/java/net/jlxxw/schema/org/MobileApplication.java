@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MobileApplication extends SoftwareApplication {
-    public MobileApplication() {
+    {
         setId("schema:MobileApplication");
         setType("rdfs:Class");
 

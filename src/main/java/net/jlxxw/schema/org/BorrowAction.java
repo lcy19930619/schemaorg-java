@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class BorrowAction extends TransferAction {
-    public BorrowAction() {
+    {
         setId("schema:BorrowAction");
         setType("rdfs:Class");
 

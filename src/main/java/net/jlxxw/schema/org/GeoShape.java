@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class GeoShape extends StructuredValue {
-    public GeoShape() {
+    {
         setId("schema:GeoShape");
         setType("rdfs:Class");
 

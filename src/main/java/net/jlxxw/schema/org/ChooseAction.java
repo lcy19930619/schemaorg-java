@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ChooseAction extends AssessAction {
-    public ChooseAction() {
+    {
         setId("schema:ChooseAction");
         setType("rdfs:Class");
 

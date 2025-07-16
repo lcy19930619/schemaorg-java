@@ -1,7 +1,9 @@
 package net.jlxxw.schema.org;
 
+
+
 public class UserBlocks extends UserInteraction {
-    public UserBlocks() {
+    {
         setId("schema:UserBlocks");
         setType("rdfs:Class");
 

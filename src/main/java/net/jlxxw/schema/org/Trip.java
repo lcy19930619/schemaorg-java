@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Trip extends Intangible {
-    public Trip() {
+    {
         setId("schema:Trip");
         setType("rdfs:Class");
 

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class EmployeeRole extends OrganizationRole {
-    public EmployeeRole() {
+    {
         setId("schema:EmployeeRole");
         setType("rdfs:Class");
 

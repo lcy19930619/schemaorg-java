@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Airline extends Organization {
-    public Airline() {
+    {
         setId("schema:Airline");
         setType("rdfs:Class");
 

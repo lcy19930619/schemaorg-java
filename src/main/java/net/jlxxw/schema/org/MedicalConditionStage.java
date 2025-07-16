@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MedicalConditionStage extends MedicalIntangible {
-    public MedicalConditionStage() {
+    {
         setId("schema:MedicalConditionStage");
         setType("rdfs:Class");
 

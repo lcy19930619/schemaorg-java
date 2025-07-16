@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class ShippingRateSettings extends StructuredValue {
-    public ShippingRateSettings() {
+    {
         setId("schema:ShippingRateSettings");
         setType("rdfs:Class");
 

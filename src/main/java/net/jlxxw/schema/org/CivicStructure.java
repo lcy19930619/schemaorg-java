@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class CivicStructure extends Place {
-    public CivicStructure() {
+    {
         setId("schema:CivicStructure");
         setType("rdfs:Class");
 

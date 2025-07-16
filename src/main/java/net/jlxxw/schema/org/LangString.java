@@ -1,12 +1,14 @@
 package net.jlxxw.schema.org;
 
+
 import java.util.Objects;
+
 
 public class LangString {
     private String value;
     private String language;
 
-    public LangString() {
+    {
     }
 
     public LangString(String value) {

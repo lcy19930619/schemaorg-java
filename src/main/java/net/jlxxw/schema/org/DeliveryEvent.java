@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class DeliveryEvent extends Event {
-    public DeliveryEvent() {
+    {
         setId("schema:DeliveryEvent");
         setType("rdfs:Class");
 

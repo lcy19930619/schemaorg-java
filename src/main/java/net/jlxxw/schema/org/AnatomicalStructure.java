@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class AnatomicalStructure extends MedicalEntity {
-    public AnatomicalStructure() {
+    {
         setId("schema:AnatomicalStructure");
         setType("rdfs:Class");
 

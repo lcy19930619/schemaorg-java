@@ -1,7 +1,9 @@
 package net.jlxxw.schema.org;
 
+
+
 public class ContactPoint extends AbstractSchema {
-    public ContactPoint() {
+    {
         setId("schema:contactPoint");
         setType("rdf:Property");
 

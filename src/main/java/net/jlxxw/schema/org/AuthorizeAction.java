@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class AuthorizeAction extends AllocateAction {
-    public AuthorizeAction() {
+    {
         setId("schema:AuthorizeAction");
         setType("rdfs:Class");
 

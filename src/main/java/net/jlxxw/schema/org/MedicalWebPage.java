@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MedicalWebPage extends WebPage {
-    public MedicalWebPage() {
+    {
         setId("schema:MedicalWebPage");
         setType("rdfs:Class");
 

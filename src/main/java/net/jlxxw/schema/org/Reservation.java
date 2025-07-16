@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Reservation extends Intangible {
-    public Reservation() {
+    {
         setId("schema:Reservation");
         setType("rdfs:Class");
 

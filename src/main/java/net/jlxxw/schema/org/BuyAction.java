@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class BuyAction extends TradeAction {
-    public BuyAction() {
+    {
         setId("schema:BuyAction");
         setType("rdfs:Class");
 

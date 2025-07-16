@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Quotation extends CreativeWork {
-    public Quotation() {
+    {
         setId("schema:Quotation");
         setType("rdfs:Class");
 

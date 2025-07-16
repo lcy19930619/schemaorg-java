@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ImagingTest extends MedicalTest {
-    public ImagingTest() {
+    {
         setId("schema:ImagingTest");
         setType("rdfs:Class");
 

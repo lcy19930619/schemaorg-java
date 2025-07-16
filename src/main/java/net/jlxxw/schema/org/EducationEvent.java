@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class EducationEvent extends Event {
-    public EducationEvent() {
+    {
         setId("schema:EducationEvent");
         setType("rdfs:Class");
 

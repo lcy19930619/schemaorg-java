@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class OrderAction extends TradeAction {
-    public OrderAction() {
+    {
         setId("schema:OrderAction");
         setType("rdfs:Class");
 

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Taxon extends AbstractSchema {
-    public Taxon() {
+    {
         setId("schema:Taxon");
         setType("rdfs:Class");
 

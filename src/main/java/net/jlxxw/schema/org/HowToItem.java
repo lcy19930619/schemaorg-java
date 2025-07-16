@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class HowToItem extends ListItem {
-    public HowToItem() {
+    {
         setId("schema:HowToItem");
         setType("rdfs:Class");
 

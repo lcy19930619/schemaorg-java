@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Joint extends AnatomicalStructure {
-    public Joint() {
+    {
         setId("schema:Joint");
         setType("rdfs:Class");
 

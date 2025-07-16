@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Flight extends Trip {
-    public Flight() {
+    {
         setId("schema:Flight");
         setType("rdfs:Class");
 

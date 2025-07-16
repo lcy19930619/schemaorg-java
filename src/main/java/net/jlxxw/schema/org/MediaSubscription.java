@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MediaSubscription extends Intangible {
-    public MediaSubscription() {
+    {
         setId("schema:MediaSubscription");
         setType("rdfs:Class");
 

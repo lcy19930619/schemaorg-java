@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Residence extends Place {
-    public Residence() {
+    {
         setId("schema:Residence");
         setType("rdfs:Class");
 

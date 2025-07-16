@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class URL extends Text {
-    public URL() {
+    {
         setId("schema:URL");
         setType("rdfs:Class");
     }

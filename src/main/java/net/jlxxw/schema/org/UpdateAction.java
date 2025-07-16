@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class UpdateAction extends Action {
-    public UpdateAction() {
+    {
         setId("schema:UpdateAction");
         setType("rdfs:Class");
 

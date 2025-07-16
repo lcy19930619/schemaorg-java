@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class MovieSeries extends CreativeWorkSeries {
-    public MovieSeries() {
+    {
         setId("schema:MovieSeries");
         setType("rdfs:Class");
 

@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class AggregateOffer extends Offer {
-    public AggregateOffer() {
+    {
         setId("schema:AggregateOffer");
         setType("rdfs:Class");
 

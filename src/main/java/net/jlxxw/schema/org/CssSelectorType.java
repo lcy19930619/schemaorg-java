@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class CssSelectorType extends Text {
-    public CssSelectorType() {
+    {
         setId("schema:CssSelectorType");
         setType("rdfs:Class");
     }

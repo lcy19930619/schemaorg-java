@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MerchantReturnPolicy extends Intangible {
-    public MerchantReturnPolicy() {
+    {
         setId("schema:MerchantReturnPolicy");
         setType("rdfs:Class");
 

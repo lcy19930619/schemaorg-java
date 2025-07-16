@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ComicIssue extends PublicationIssue {
-    public ComicIssue() {
+    {
         setId("schema:ComicIssue");
         setType("rdfs:Class");
 

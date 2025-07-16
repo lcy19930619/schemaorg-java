@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Suite extends Accommodation {
-    public Suite() {
+    {
         setId("schema:Suite");
         setType("rdfs:Class");
 

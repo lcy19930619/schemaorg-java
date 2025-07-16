@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Hospital extends CivicStructure {
-    public Hospital() {
+    {
         setId("schema:Hospital");
         setType("rdfs:Class");
 

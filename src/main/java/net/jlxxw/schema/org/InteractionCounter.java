@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class InteractionCounter extends StructuredValue {
-    public InteractionCounter() {
+    {
         setId("schema:InteractionCounter");
         setType("rdfs:Class");
 

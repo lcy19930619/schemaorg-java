@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class HealthPlanCostSharingSpecification extends Intangible {
-    public HealthPlanCostSharingSpecification() {
+    {
         setId("schema:HealthPlanCostSharingSpecification");
         setType("rdfs:Class");
 

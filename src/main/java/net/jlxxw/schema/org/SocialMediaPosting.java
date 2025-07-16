@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class SocialMediaPosting extends Article {
-    public SocialMediaPosting() {
+    {
         setId("schema:SocialMediaPosting");
         setType("rdfs:Class");
 

@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Grant extends Intangible {
-    public Grant() {
+    {
         setId("schema:Grant");
         setType("rdfs:Class");
 

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class PerformanceRole extends Role {
-    public PerformanceRole() {
+    {
         setId("schema:PerformanceRole");
         setType("rdfs:Class");
 

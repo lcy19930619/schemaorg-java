@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class TipAction extends TradeAction {
-    public TipAction() {
+    {
         setId("schema:TipAction");
         setType("rdfs:Class");
 

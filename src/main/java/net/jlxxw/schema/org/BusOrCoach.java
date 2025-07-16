@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class BusOrCoach extends Vehicle {
-    public BusOrCoach() {
+    {
         setId("schema:BusOrCoach");
         setType("rdfs:Class");
 

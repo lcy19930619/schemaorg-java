@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ProductGroup extends Product {
-    public ProductGroup() {
+    {
         setId("schema:ProductGroup");
         setType("rdfs:Class");
 

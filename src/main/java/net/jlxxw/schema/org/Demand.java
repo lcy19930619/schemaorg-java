@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Demand extends Intangible {
-    public Demand() {
+    {
         setId("schema:Demand");
         setType("rdfs:Class");
 

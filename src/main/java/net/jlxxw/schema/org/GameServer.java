@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class GameServer extends Intangible {
-    public GameServer() {
+    {
         setId("schema:GameServer");
         setType("rdfs:Class");
     }

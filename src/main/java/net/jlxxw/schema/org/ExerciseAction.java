@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ExerciseAction extends PlayAction {
-    public ExerciseAction() {
+    {
         setId("schema:ExerciseAction");
         setType("rdfs:Class");
 

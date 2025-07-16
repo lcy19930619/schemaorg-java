@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Map extends CreativeWork {
-    public Map() {
+    {
         setId("schema:Map");
         setType("rdfs:Class");
     }

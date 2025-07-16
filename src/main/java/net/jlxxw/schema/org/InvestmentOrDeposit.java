@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class InvestmentOrDeposit extends FinancialProduct {
-    public InvestmentOrDeposit() {
+    {
         setId("schema:InvestmentOrDeposit");
         setType("rdfs:Class");
 

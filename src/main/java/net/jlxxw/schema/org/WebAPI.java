@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class WebAPI extends Service {
-    public WebAPI() {
+    {
         setId("schema:WebAPI");
         setType("rdfs:Class");
 

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MemberProgramTier extends Intangible {
-    public MemberProgramTier() {
+    {
         setId("schema:MemberProgramTier");
         setType("rdfs:Class");
 

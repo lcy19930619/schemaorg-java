@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class RealEstateListing extends WebPage {
-    public RealEstateListing() {
+    {
         setId("schema:RealEstateListing");
         setType("rdfs:Class");
 

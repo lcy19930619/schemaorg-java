@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Corporation extends Organization {
-    public Corporation() {
+    {
         setId("schema:Corporation");
         setType("rdfs:Class");
 

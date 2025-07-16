@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class FloorPlan extends Intangible {
-    public FloorPlan() {
+    {
         setId("schema:FloorPlan");
         setType("rdfs:Class");
 

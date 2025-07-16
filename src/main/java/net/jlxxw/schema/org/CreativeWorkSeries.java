@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class CreativeWorkSeries extends Series {
-    public CreativeWorkSeries() {
+    {
         setId("schema:CreativeWorkSeries");
         setType("rdfs:Class");
 

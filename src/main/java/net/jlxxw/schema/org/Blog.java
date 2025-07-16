@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Blog extends CreativeWork {
-    public Blog() {
+    {
         setId("schema:Blog");
         setType("rdfs:Class");
 

@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class ProductModel extends Product {
-    public ProductModel() {
+    {
         setId("schema:ProductModel");
         setType("rdfs:Class");
 

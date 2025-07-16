@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ReservationPackage extends Reservation {
-    public ReservationPackage() {
+    {
         setId("schema:ReservationPackage");
         setType("rdfs:Class");
 

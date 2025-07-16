@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class CommunicateAction extends InteractAction {
-    public CommunicateAction() {
+    {
         setId("schema:CommunicateAction");
         setType("rdfs:Class");
 

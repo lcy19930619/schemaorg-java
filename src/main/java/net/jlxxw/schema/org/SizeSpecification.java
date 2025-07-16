@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class SizeSpecification extends QualitativeValue {
-    public SizeSpecification() {
+    {
         setId("schema:SizeSpecification");
         setType("rdfs:Class");
 

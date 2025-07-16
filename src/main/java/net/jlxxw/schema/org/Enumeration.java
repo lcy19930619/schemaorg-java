@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Enumeration extends Intangible {
-    public Enumeration() {
+    {
         setId("schema:Enumeration");
         setType("rdfs:Class");
 

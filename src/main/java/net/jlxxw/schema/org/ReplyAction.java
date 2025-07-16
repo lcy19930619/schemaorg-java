@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ReplyAction extends CommunicateAction {
-    public ReplyAction() {
+    {
         setId("schema:ReplyAction");
         setType("rdfs:Class");
 

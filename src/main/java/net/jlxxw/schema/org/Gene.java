@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Gene extends BioChemEntity {
-    public Gene() {
+    {
         setId("schema:Gene");
         setType("rdfs:Class");
 

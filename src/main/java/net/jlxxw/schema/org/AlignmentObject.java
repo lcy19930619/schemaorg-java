@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class AlignmentObject extends Intangible {
-    public AlignmentObject() {
+    {
         setId("schema:AlignmentObject");
         setType("rdfs:Class");
 

@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class ServicePeriod extends StructuredValue {
-    public ServicePeriod() {
+    {
         setId("schema:ServicePeriod");
         setType("rdfs:Class");
 

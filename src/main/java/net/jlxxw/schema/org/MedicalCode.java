@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MedicalCode extends CategoryCode {
-    public MedicalCode() {
+    {
         setId("schema:MedicalCode");
         setType("rdfs:Class");
 

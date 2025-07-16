@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class BroadcastChannel extends Intangible {
-    public BroadcastChannel() {
+    {
         setId("schema:BroadcastChannel");
         setType("rdfs:Class");
 

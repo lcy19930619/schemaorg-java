@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ConsumeAction extends Action {
-    public ConsumeAction() {
+    {
         setId("schema:ConsumeAction");
         setType("rdfs:Class");
 

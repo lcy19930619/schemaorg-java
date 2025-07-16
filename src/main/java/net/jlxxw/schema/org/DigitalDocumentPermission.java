@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class DigitalDocumentPermission extends Intangible {
-    public DigitalDocumentPermission() {
+    {
         setId("schema:DigitalDocumentPermission");
         setType("rdfs:Class");
 

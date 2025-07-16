@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Person extends AbstractSchema {
-    public Person() {
+    {
         setId("schema:Person");
         setType("rdfs:Class");
 

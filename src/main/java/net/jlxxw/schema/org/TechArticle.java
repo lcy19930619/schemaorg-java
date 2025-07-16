@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class TechArticle extends Article {
-    public TechArticle() {
+    {
         setId("schema:TechArticle");
         setType("rdfs:Class");
 

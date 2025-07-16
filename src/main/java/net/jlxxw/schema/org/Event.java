@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Event extends AbstractSchema {
-    public Event() {
+    {
         setId("schema:Event");
         setType("rdfs:Class");
     }

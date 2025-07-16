@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MediaReviewItem extends CreativeWork {
-    public MediaReviewItem() {
+    {
         setId("schema:MediaReviewItem");
         setType("rdfs:Class");
 

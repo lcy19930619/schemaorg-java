@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Product extends AbstractSchema {
-    public Product() {
+    {
         setId("schema:Product");
         setType("rdfs:Class");
 

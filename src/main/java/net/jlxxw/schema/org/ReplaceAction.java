@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ReplaceAction extends UpdateAction {
-    public ReplaceAction() {
+    {
         setId("schema:ReplaceAction");
         setType("rdfs:Class");
 

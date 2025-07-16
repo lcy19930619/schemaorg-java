@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class StatisticalVariable extends ConstraintNode {
-    public StatisticalVariable() {
+    {
         setId("schema:StatisticalVariable");
         setType("rdfs:Class");
 

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MortgageLoan extends LoanOrCredit {
-    public MortgageLoan() {
+    {
         setId("schema:MortgageLoan");
         setType("rdfs:Class");
 

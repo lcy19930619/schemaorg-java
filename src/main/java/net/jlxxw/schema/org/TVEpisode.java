@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class TVEpisode extends Episode {
-    public TVEpisode() {
+    {
         setId("schema:TVEpisode");
         setType("rdfs:Class");
 

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class GeoCoordinates extends StructuredValue {
-    public GeoCoordinates() {
+    {
         setId("schema:GeoCoordinates");
         setType("rdfs:Class");
 

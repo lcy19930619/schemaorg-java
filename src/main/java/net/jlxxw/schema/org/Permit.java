@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Permit extends Intangible {
-    public Permit() {
+    {
         setId("schema:Permit");
         setType("rdfs:Class");
 

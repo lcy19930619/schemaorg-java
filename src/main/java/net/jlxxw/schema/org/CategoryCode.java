@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class CategoryCode extends DefinedTerm {
-    public CategoryCode() {
+    {
         setId("schema:CategoryCode");
         setType("rdfs:Class");
 

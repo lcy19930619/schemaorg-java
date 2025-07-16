@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class StatisticalPopulation extends Intangible {
-    public StatisticalPopulation() {
+    {
         setId("schema:StatisticalPopulation");
         setType("rdfs:Class");
 

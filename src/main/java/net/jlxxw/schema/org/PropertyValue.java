@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class PropertyValue extends StructuredValue {
-    public PropertyValue() {
+    {
         setId("schema:PropertyValue");
         setType("rdfs:Class");
 

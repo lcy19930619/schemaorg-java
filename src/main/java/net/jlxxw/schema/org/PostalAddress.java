@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class PostalAddress extends ContactPoint {
-    public PostalAddress() {
+    {
         setId("schema:PostalAddress");
         setType("rdfs:Class");
 

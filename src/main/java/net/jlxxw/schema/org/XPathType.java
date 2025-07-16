@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class XPathType extends Text {
-    public XPathType() {
+    {
         setId("schema:XPathType");
         setType("rdfs:Class");
 

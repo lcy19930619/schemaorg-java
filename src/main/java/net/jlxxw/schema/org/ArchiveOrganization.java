@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ArchiveOrganization extends LocalBusiness {
-    public ArchiveOrganization() {
+    {
         setId("schema:ArchiveOrganization");
         setType("rdfs:Class");
     }

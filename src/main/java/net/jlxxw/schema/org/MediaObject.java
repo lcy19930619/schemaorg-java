@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class MediaObject extends CreativeWork {
-    public MediaObject() {
+    {
         setId("schema:MediaObject");
         setType("rdfs:Class");
 

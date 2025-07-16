@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class DeliveryChargeSpecification extends PriceSpecification {
-    public DeliveryChargeSpecification() {
+    {
         setId("schema:DeliveryChargeSpecification");
         setType("rdfs:Class");
 

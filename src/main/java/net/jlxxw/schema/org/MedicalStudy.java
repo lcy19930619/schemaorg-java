@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class MedicalStudy extends MedicalEntity {
-    public MedicalStudy() {
+    {
         setId("schema:MedicalStudy");
         setType("rdfs:Class");
 

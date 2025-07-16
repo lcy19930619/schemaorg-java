@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class MedicalClinic extends MedicalBusiness {
-    public MedicalClinic() {
+    {
         setId("schema:MedicalClinic");
         setType("rdfs:Class");
 

@@ -1,7 +1,9 @@
 package net.jlxxw.schema.org;
 
+
+
 public class Episode extends AbstractSchema {
-    public Episode() {
+    {
         setId("schema:episode");
         setType("rdf:Property");
 

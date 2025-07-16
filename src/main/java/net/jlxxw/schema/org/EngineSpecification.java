@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class EngineSpecification extends StructuredValue {
-    public EngineSpecification() {
+    {
         setId("schema:EngineSpecification");
         setType("rdfs:Class");
 

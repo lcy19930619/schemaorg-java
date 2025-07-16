@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ItemList extends Intangible {
-    public ItemList() {
+    {
         setId("schema:ItemList");
         setType("rdfs:Class");
 

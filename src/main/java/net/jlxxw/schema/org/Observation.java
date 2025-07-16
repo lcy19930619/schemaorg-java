@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Observation extends QuantitativeValue {
-    public Observation() {
+    {
         setId("schema:Observation");
         setType("rdfs:Class");
 

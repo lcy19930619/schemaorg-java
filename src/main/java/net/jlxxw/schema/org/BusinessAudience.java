@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class BusinessAudience extends Audience {
-    public BusinessAudience() {
+    {
         setId("schema:BusinessAudience");
         setType("rdfs:Class");
 

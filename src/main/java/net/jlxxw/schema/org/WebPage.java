@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class WebPage extends CreativeWork {
-    public WebPage() {
+    {
         setId("schema:WebPage");
         setType("rdfs:Class");
 

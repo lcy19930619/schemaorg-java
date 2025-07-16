@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class SoftwareApplication extends CreativeWork {
-    public SoftwareApplication() {
+    {
         setId("schema:SoftwareApplication");
         setType("rdfs:Class");
 

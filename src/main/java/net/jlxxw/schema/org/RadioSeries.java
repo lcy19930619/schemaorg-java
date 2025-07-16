@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class RadioSeries extends CreativeWorkSeries {
-    public RadioSeries() {
+    {
         setId("schema:RadioSeries");
         setType("rdfs:Class");
 

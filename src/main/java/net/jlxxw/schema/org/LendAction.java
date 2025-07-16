@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class LendAction extends TransferAction {
-    public LendAction() {
+    {
         setId("schema:LendAction");
         setType("rdfs:Class");
 

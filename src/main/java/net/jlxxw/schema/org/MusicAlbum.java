@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class MusicAlbum extends MusicPlaylist {
-    public MusicAlbum() {
+    {
         setId("schema:MusicAlbum");
         setType("rdfs:Class");
 

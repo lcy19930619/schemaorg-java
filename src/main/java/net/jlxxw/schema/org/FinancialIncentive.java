@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class FinancialIncentive extends Intangible {
-    public FinancialIncentive() {
+    {
         setId("schema:FinancialIncentive");
         setType("rdfs:Class");
 

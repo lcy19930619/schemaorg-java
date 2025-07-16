@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Airport extends CivicStructure {
-    public Airport() {
+    {
         setId("schema:Airport");
         setType("rdfs:Class");
 

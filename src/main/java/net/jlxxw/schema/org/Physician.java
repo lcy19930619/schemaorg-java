@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class Physician extends MedicalOrganization {
-    public Physician() {
+    {
         setId("schema:Physician");
         setType("rdfs:Class");
 

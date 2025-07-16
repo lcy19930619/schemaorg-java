@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ClaimReview extends Review {
-    public ClaimReview() {
+    {
         setId("schema:ClaimReview");
         setType("rdfs:Class");
 

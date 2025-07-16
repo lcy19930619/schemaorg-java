@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Seat extends Intangible {
-    public Seat() {
+    {
         setId("schema:Seat");
         setType("rdfs:Class");
 

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MediaReview extends Review {
-    public MediaReview() {
+    {
         setId("schema:MediaReview");
         setType("rdfs:Class");
 

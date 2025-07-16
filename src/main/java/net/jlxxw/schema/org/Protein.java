@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Protein extends BioChemEntity {
-    public Protein() {
+    {
         setId("schema:Protein");
         setType("rdfs:Class");
 

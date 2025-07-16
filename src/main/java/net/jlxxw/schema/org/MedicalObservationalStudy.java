@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MedicalObservationalStudy extends MedicalStudy {
-    public MedicalObservationalStudy() {
+    {
         setId("schema:MedicalObservationalStudy");
         setType("rdfs:Class");
 

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class LocationFeatureSpecification extends PropertyValue {
-    public LocationFeatureSpecification() {
+    {
         setId("schema:LocationFeatureSpecification");
         setType("rdfs:Class");
 

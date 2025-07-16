@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class TVSeason extends CreativeWorkSeason {
-    public TVSeason() {
+    {
         setId("schema:TVSeason");
         setType("rdfs:Class");
 

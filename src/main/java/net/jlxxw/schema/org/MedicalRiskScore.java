@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MedicalRiskScore extends MedicalRiskEstimator {
-    public MedicalRiskScore() {
+    {
         setId("schema:MedicalRiskScore");
         setType("rdfs:Class");
 

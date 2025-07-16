@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class TVClip extends Clip {
-    public TVClip() {
+    {
         setId("schema:TVClip");
         setType("rdfs:Class");
 

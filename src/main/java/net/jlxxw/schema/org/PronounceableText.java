@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class PronounceableText extends Text {
-    public PronounceableText() {
+    {
         setId("schema:PronounceableText");
         setType("rdfs:Class");
 

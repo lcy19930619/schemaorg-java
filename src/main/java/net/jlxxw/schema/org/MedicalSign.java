@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MedicalSign extends MedicalSignOrSymptom {
-    public MedicalSign() {
+    {
         setId("schema:MedicalSign");
         setType("rdfs:Class");
 

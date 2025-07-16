@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class MusicRecording extends CreativeWork {
-    public MusicRecording() {
+    {
         setId("schema:MusicRecording");
         setType("rdfs:Class");
 

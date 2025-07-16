@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class MonetaryAmountDistribution extends QuantitativeValueDistribution {
-    public MonetaryAmountDistribution() {
+    {
         setId("schema:MonetaryAmountDistribution");
         setType("rdfs:Class");
 

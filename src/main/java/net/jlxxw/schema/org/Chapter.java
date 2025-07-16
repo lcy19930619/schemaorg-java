@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Chapter extends CreativeWork {
-    public Chapter() {
+    {
         setId("schema:Chapter");
         setType("rdfs:Class");
 

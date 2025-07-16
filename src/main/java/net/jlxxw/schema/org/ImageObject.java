@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ImageObject extends MediaObject {
-    public ImageObject() {
+    {
         setId("schema:ImageObject");
         setType("rdfs:Class");
 

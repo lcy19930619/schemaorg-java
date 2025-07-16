@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class GeoCircle extends GeoShape {
-    public GeoCircle() {
+    {
         setId("schema:GeoCircle");
         setType("rdfs:Class");
 

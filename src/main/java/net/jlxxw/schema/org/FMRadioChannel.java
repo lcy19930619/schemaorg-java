@@ -1,7 +1,9 @@
 package net.jlxxw.schema.org;
 
+
+
 public class FMRadioChannel extends RadioChannel {
-    public FMRadioChannel() {
+    {
         setId("schema:FMRadioChannel");
         setType("rdfs:Class");
 

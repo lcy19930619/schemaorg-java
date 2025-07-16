@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class TypeAndQuantityNode extends StructuredValue {
-    public TypeAndQuantityNode() {
+    {
         setId("schema:TypeAndQuantityNode");
         setType("rdfs:Class");
 

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class SeekToAction extends Action {
-    public SeekToAction() {
+    {
         setId("schema:SeekToAction");
         setType("rdfs:Class");
 

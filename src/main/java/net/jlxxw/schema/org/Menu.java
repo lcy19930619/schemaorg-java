@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Menu extends CreativeWork {
-    public Menu() {
+    {
         setId("schema:Menu");
         setType("rdfs:Class");
     }

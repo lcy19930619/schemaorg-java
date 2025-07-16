@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class VideoObject extends MediaObject {
-    public VideoObject() {
+    {
         setId("schema:VideoObject");
         setType("rdfs:Class");
 

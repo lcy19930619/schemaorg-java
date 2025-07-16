@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class CompoundPriceSpecification extends PriceSpecification {
-    public CompoundPriceSpecification() {
+    {
         setId("schema:CompoundPriceSpecification");
         setType("rdfs:Class");
 

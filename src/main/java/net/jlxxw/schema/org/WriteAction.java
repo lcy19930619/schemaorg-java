@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class WriteAction extends CreateAction {
-    public WriteAction() {
+    {
         setId("schema:WriteAction");
         setType("rdfs:Class");
 

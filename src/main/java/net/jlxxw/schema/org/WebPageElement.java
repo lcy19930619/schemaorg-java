@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class WebPageElement extends CreativeWork {
-    public WebPageElement() {
+    {
         setId("schema:WebPageElement");
         setType("rdfs:Class");
 

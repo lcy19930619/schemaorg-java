@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class TouristTrip extends Trip {
-    public TouristTrip() {
+    {
         setId("schema:TouristTrip");
         setType("rdfs:Class");
 

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class IndividualProduct extends Product {
-    public IndividualProduct() {
+    {
         setId("schema:IndividualProduct");
         setType("rdfs:Class");
 

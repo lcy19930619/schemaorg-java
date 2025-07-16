@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ScreeningEvent extends Event {
-    public ScreeningEvent() {
+    {
         setId("schema:ScreeningEvent");
         setType("rdfs:Class");
 

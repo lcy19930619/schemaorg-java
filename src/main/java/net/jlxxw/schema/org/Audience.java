@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class Audience extends Intangible {
-    public Audience() {
+    {
         setId("schema:Audience");
         setType("rdfs:Class");
     }

@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class DataDownload extends MediaObject {
-    public DataDownload() {
+    {
         setId("schema:DataDownload");
         setType("rdfs:Class");
 

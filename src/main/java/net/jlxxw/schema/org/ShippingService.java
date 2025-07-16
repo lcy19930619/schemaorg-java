@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class ShippingService extends StructuredValue {
-    public ShippingService() {
+    {
         setId("schema:ShippingService");
         setType("rdfs:Class");
 

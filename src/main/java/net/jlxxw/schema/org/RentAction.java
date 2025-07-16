@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class RentAction extends TradeAction {
-    public RentAction() {
+    {
         setId("schema:RentAction");
         setType("rdfs:Class");
 

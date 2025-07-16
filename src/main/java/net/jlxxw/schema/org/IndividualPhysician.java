@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class IndividualPhysician extends Physician {
-    public IndividualPhysician() {
+    {
         setId("schema:IndividualPhysician");
         setType("rdfs:Class");
 

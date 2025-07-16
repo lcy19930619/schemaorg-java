@@ -1,11 +1,13 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+
 public class CreativeWork extends AbstractSchema {
-    public CreativeWork() {
+    {
         setId("schema:CreativeWork");
         setType("rdfs:Class");
     }

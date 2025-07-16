@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class HealthInsurancePlan extends Intangible {
-    public HealthInsurancePlan() {
+    {
         setId("schema:HealthInsurancePlan");
         setType("rdfs:Class");
 

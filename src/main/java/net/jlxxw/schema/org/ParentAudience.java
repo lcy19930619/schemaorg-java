@@ -1,9 +1,11 @@
 package net.jlxxw.schema.org;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class ParentAudience extends PeopleAudience {
-    public ParentAudience() {
+    {
         setId("schema:ParentAudience");
         setType("rdfs:Class");
 
