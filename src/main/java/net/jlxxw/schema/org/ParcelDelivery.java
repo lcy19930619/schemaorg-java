@@ -6,6 +6,9 @@ import java.util.List;
 
 public class ParcelDelivery extends Intangible {
     public ParcelDelivery() {
+        setId("schema:ParcelDelivery");
+        setType("rdfs:Class");
+
     }
 
     /**

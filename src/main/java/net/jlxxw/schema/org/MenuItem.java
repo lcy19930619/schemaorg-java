@@ -6,6 +6,9 @@ import java.util.List;
 
 public class MenuItem extends Intangible {
     public MenuItem() {
+        setId("schema:MenuItem");
+        setType("rdfs:Class");
+
     }
 
     /**

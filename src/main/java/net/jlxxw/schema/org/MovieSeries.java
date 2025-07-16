@@ -6,6 +6,9 @@ import java.util.List;
 
 public class MovieSeries extends CreativeWorkSeries {
     public MovieSeries() {
+        setId("schema:MovieSeries");
+        setType("rdfs:Class");
+
     }
 
     /**

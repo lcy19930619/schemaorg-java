@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class OccupationalExperienceRequirements extends Intangible {
     public OccupationalExperienceRequirements() {
+        setId("schema:OccupationalExperienceRequirements");
+        setType("rdfs:Class");
+
     }
 
     /**

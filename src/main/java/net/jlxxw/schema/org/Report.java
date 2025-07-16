@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Report extends Article {
     public Report() {
+        setId("schema:Report");
+        setType("rdfs:Class");
+
     }
 
     /**

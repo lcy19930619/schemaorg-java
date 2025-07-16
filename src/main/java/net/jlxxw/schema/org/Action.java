@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Action extends AbstractSchema {
     public Action() {
+        setId("schema:Action");
+        setType("rdfs:Class");
+
     }
 
     /**

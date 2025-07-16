@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ListItem extends Intangible {
     public ListItem() {
+        setId("schema:ListItem");
+        setType("rdfs:Class");
+
     }
 
     /**

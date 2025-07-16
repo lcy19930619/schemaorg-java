@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class CDCPMDRecord extends StructuredValue {
     public CDCPMDRecord() {
+        setId("schema:CDCPMDRecord");
+        setType("rdfs:Class");
+
     }
 
     /**

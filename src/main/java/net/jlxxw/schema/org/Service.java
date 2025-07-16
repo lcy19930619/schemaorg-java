@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Service extends Intangible {
     public Service() {
+        setId("schema:Service");
+        setType("rdfs:Class");
+
     }
 
     /**

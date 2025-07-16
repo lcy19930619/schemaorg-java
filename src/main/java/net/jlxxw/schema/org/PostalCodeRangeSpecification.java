@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PostalCodeRangeSpecification extends StructuredValue {
     public PostalCodeRangeSpecification() {
+        setId("schema:PostalCodeRangeSpecification");
+        setType("rdfs:Class");
+
     }
 
     /**

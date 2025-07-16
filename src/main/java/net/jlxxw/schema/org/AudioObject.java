@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class AudioObject extends MediaObject {
     public AudioObject() {
+        setId("schema:AudioObject");
+        setType("rdfs:Class");
+
     }
 
     /**

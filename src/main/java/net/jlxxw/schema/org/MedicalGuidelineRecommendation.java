@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MedicalGuidelineRecommendation extends MedicalGuideline {
     public MedicalGuidelineRecommendation() {
+        setId("schema:MedicalGuidelineRecommendation");
+        setType("rdfs:Class");
+
     }
 
     /**

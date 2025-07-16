@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class FinancialService extends LocalBusiness {
     public FinancialService() {
+        setId("schema:FinancialService");
+        setType("rdfs:Class");
+
     }
 
     /**

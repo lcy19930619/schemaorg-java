@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PaymentCard extends FinancialProduct {
     public PaymentCard() {
+        setId("schema:PaymentCard");
+        setType("rdfs:Class");
+
     }
 
     /**

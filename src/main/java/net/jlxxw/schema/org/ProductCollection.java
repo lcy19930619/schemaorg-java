@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ProductCollection extends Collection {
     public ProductCollection() {
+        setId("schema:ProductCollection");
+        setType("rdfs:Class");
+
     }
 
     /**

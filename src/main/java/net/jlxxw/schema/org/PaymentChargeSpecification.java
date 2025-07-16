@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PaymentChargeSpecification extends PriceSpecification {
     public PaymentChargeSpecification() {
+        setId("schema:PaymentChargeSpecification");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class EndorseAction extends ReactAction {
     public EndorseAction() {
+        setId("schema:EndorseAction");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SomeProducts extends Product {
     public SomeProducts() {
+        setId("schema:SomeProducts");
+        setType("rdfs:Class");
+
     }
 
     /**

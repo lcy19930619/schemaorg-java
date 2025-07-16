@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Artery extends Vessel {
     public Artery() {
+        setId("schema:Artery");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class OrganizationRole extends Role {
     public OrganizationRole() {
+        setId("schema:OrganizationRole");
+        setType("rdfs:Class");
+
     }
 
     /**

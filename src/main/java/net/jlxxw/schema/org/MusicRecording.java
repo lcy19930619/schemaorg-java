@@ -6,6 +6,9 @@ import java.util.List;
 
 public class MusicRecording extends CreativeWork {
     public MusicRecording() {
+        setId("schema:MusicRecording");
+        setType("rdfs:Class");
+
     }
 
     /**

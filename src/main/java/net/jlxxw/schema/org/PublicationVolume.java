@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PublicationVolume extends CreativeWork {
     public PublicationVolume() {
+        setId("schema:PublicationVolume");
+        setType("rdfs:Class");
+
     }
 
     /**

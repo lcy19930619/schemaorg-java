@@ -6,6 +6,9 @@ import java.util.List;
 
 public class MedicalCondition extends MedicalEntity {
     public MedicalCondition() {
+        setId("schema:MedicalCondition");
+        setType("rdfs:Class");
+
     }
 
     /**

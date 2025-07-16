@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SingleFamilyResidence extends House {
     public SingleFamilyResidence() {
+        setId("schema:SingleFamilyResidence");
+        setType("rdfs:Class");
+
     }
 
     /**

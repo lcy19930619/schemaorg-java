@@ -6,6 +6,9 @@ import java.util.List;
 
 public class MusicGroup extends PerformingGroup {
     public MusicGroup() {
+        setId("schema:MusicGroup");
+        setType("rdfs:Class");
+
     }
 
     /**

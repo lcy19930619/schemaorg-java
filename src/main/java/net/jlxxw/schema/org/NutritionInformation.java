@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class NutritionInformation extends StructuredValue {
     public NutritionInformation() {
+        setId("schema:NutritionInformation");
+        setType("rdfs:Class");
+
     }
 
     /**

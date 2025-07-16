@@ -6,6 +6,9 @@ import java.util.List;
 
 public class SellAction extends TradeAction {
     public SellAction() {
+        setId("schema:SellAction");
+        setType("rdfs:Class");
+
     }
 
     /**

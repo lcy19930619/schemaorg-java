@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class HotelRoom extends Room {
     public HotelRoom() {
+        setId("schema:HotelRoom");
+        setType("rdfs:Class");
+
     }
 
     /**

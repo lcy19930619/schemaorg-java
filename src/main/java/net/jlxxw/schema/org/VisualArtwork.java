@@ -6,6 +6,9 @@ import java.util.List;
 
 public class VisualArtwork extends CreativeWork {
     public VisualArtwork() {
+        setId("schema:VisualArtwork");
+        setType("rdfs:Class");
+
     }
 
     /**

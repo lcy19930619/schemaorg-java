@@ -6,6 +6,9 @@ import java.util.List;
 
 public class EducationalOccupationalProgram extends Intangible {
     public EducationalOccupationalProgram() {
+        setId("schema:EducationalOccupationalProgram");
+        setType("rdfs:Class");
+
     }
 
     /**

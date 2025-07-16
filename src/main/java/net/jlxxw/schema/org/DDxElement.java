@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DDxElement extends MedicalIntangible {
     public DDxElement() {
+        setId("schema:DDxElement");
+        setType("rdfs:Class");
+
     }
 
     /**

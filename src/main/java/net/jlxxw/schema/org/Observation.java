@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Observation extends QuantitativeValue {
     public Observation() {
+        setId("schema:Observation");
+        setType("rdfs:Class");
+
     }
 
     /**

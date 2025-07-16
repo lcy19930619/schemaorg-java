@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class RepaymentSpecification extends StructuredValue {
     public RepaymentSpecification() {
+        setId("schema:RepaymentSpecification");
+        setType("rdfs:Class");
+
     }
 
     /**

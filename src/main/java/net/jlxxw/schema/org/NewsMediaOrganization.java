@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class NewsMediaOrganization extends Organization {
     public NewsMediaOrganization() {
+        setId("schema:NewsMediaOrganization");
+        setType("rdfs:Class");
+
     }
 
     /**

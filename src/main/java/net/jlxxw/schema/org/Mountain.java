@@ -2,5 +2,8 @@ package net.jlxxw.schema.org;
 
 public class Mountain extends Landform {
     public Mountain() {
+        setId("schema:Mountain");
+        setType("rdfs:Class");
+
     }
 }

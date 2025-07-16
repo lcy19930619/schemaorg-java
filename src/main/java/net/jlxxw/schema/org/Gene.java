@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Gene extends BioChemEntity {
     public Gene() {
+        setId("schema:Gene");
+        setType("rdfs:Class");
+
     }
 
     /**

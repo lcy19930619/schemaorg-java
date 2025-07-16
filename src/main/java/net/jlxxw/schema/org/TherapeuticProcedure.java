@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class TherapeuticProcedure extends MedicalProcedure {
     public TherapeuticProcedure() {
+        setId("schema:TherapeuticProcedure");
+        setType("rdfs:Class");
+
     }
 
     /**

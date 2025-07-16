@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MathSolver extends CreativeWork {
     public MathSolver() {
+        setId("schema:MathSolver");
+        setType("rdfs:Class");
+
     }
 
     /**

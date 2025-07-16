@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Order extends Intangible {
     public Order() {
+        setId("schema:Order");
+        setType("rdfs:Class");
+
     }
 
     /**

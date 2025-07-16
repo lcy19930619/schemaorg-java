@@ -6,6 +6,9 @@ import java.util.List;
 
 public class PublicationEvent extends Event {
     public PublicationEvent() {
+        setId("schema:PublicationEvent");
+        setType("rdfs:Class");
+
     }
 
     /**

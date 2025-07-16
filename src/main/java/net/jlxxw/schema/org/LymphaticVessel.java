@@ -6,6 +6,9 @@ import java.util.List;
 
 public class LymphaticVessel extends Vessel {
     public LymphaticVessel() {
+        setId("schema:LymphaticVessel");
+        setType("rdfs:Class");
+
     }
 
     /**

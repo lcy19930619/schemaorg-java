@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class LegislationObject extends MediaObject {
     public LegislationObject() {
+        setId("schema:LegislationObject");
+        setType("rdfs:Class");
+
     }
 
     /**

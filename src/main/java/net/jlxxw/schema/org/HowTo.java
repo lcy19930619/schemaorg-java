@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class HowTo extends CreativeWork {
     public HowTo() {
+        setId("schema:HowTo");
+        setType("rdfs:Class");
+
     }
 
     /**

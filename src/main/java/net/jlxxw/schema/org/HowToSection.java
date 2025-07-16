@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class HowToSection extends ItemList {
     public HowToSection() {
+        setId("schema:HowToSection");
+        setType("rdfs:Class");
+
     }
 
     /**

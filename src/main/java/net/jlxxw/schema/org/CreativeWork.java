@@ -6,6 +6,8 @@ import java.util.List;
 
 public class CreativeWork extends AbstractSchema {
     public CreativeWork() {
+        setId("schema:CreativeWork");
+        setType("rdfs:Class");
     }
 
     /**

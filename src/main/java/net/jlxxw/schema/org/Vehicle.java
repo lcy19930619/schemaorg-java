@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Vehicle extends Product {
     public Vehicle() {
+        setId("schema:Vehicle");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class LoseAction extends AchieveAction {
     public LoseAction() {
+        setId("schema:LoseAction");
+        setType("rdfs:Class");
+
     }
 
     /**

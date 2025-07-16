@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PlanAction extends OrganizeAction {
     public PlanAction() {
+        setId("schema:PlanAction");
+        setType("rdfs:Class");
+
     }
 
     /**

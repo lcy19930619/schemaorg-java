@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Muscle extends AnatomicalStructure {
     public Muscle() {
+        setId("schema:Muscle");
+        setType("rdfs:Class");
+
     }
 
     /**

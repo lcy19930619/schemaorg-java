@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Ticket extends Intangible {
     public Ticket() {
+        setId("schema:Ticket");
+        setType("rdfs:Class");
+
     }
 
     /**

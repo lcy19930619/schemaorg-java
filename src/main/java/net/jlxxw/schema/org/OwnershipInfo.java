@@ -6,6 +6,9 @@ import java.util.List;
 
 public class OwnershipInfo extends StructuredValue {
     public OwnershipInfo() {
+        setId("schema:OwnershipInfo");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MonetaryAmount extends StructuredValue {
     public MonetaryAmount() {
+        setId("schema:MonetaryAmount");
+        setType("rdfs:Class");
+
     }
 
     /**

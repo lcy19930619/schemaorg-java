@@ -6,6 +6,9 @@ import java.util.List;
 
 public class PayAction extends TradeAction {
     public PayAction() {
+        setId("schema:PayAction");
+        setType("rdfs:Class");
+
     }
 
     /**

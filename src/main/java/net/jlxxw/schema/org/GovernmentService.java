@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class GovernmentService extends Service {
     public GovernmentService() {
+        setId("schema:GovernmentService");
+        setType("rdfs:Class");
+
     }
 
     /**

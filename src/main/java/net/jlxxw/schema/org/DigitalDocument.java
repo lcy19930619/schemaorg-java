@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DigitalDocument extends CreativeWork {
     public DigitalDocument() {
+        setId("schema:DigitalDocument");
+        setType("rdfs:Class");
+
     }
 
     /**

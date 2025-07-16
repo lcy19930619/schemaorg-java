@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class QuantitativeValueDistribution extends StructuredValue {
     public QuantitativeValueDistribution() {
+        setId("schema:QuantitativeValueDistribution");
+        setType("rdfs:Class");
+
     }
 
     /**

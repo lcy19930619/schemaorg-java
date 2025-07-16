@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ServiceChannel extends Intangible {
     public ServiceChannel() {
+        setId("schema:ServiceChannel");
+        setType("rdfs:Class");
+
     }
 
     /**

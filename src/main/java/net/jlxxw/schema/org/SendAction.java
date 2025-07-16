@@ -6,6 +6,9 @@ import java.util.List;
 
 public class SendAction extends TransferAction {
     public SendAction() {
+        setId("schema:SendAction");
+        setType("rdfs:Class");
+
     }
 
     /**

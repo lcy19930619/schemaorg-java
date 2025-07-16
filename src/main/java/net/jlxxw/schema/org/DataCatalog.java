@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DataCatalog extends CreativeWork {
     public DataCatalog() {
+        setId("schema:DataCatalog");
+        setType("rdfs:Class");
+
     }
 
     /**

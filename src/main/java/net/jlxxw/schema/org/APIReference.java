@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class APIReference extends TechArticle {
     public APIReference() {
+        setId("schema:APIReference");
+        setType("rdfs:Class");
+
     }
 
     /**

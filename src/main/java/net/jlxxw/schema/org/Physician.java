@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Physician extends MedicalOrganization {
     public Physician() {
+        setId("schema:Physician");
+        setType("rdfs:Class");
+
     }
 
     /**

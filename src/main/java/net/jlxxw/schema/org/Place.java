@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Place extends AbstractSchema {
     public Place() {
+        setId("schema:Place");
+        setType("rdfs:Class");
+
     }
 
     /**

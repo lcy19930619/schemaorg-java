@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ExchangeRateSpecification extends StructuredValue {
     public ExchangeRateSpecification() {
+        setId("schema:ExchangeRateSpecification");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class InteractionCounter extends StructuredValue {
     public InteractionCounter() {
+        setId("schema:InteractionCounter");
+        setType("rdfs:Class");
+
     }
 
     /**

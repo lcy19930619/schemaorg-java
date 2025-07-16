@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class HealthTopicContent extends WebContent {
     public HealthTopicContent() {
+        setId("schema:HealthTopicContent");
+        setType("rdfs:Class");
+
     }
 
     /**

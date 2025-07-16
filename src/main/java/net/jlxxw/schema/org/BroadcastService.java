@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class BroadcastService extends Service {
     public BroadcastService() {
+        setId("schema:BroadcastService");
+        setType("rdfs:Class");
+
     }
 
     /**

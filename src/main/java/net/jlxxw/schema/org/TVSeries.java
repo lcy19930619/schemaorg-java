@@ -6,6 +6,9 @@ import java.util.List;
 
 public class TVSeries extends CreativeWork {
     public TVSeries() {
+        setId("schema:TVSeries");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class CreativeWorkSeason extends CreativeWork {
     public CreativeWorkSeason() {
+        setId("schema:CreativeWorkSeason");
+        setType("rdfs:Class");
+
     }
 
     /**

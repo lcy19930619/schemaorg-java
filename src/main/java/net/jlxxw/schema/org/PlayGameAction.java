@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PlayGameAction extends ConsumeAction {
     public PlayGameAction() {
+        setId("schema:PlayGameAction");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MedicalRiskEstimator extends MedicalEntity {
     public MedicalRiskEstimator() {
+        setId("schema:MedicalRiskEstimator");
+        setType("rdfs:Class");
+
     }
 
     /**

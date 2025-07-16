@@ -6,6 +6,9 @@ import java.util.List;
 
 public class FinancialIncentive extends Intangible {
     public FinancialIncentive() {
+        setId("schema:FinancialIncentive");
+        setType("rdfs:Class");
+
     }
 
     /**

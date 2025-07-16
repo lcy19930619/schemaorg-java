@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Person extends AbstractSchema {
     public Person() {
+        setId("schema:Person");
+        setType("rdfs:Class");
+
     }
 
     /**

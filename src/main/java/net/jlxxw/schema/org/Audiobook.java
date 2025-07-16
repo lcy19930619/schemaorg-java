@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Audiobook extends AudioObject {
     public Audiobook() {
+        setId("schema:Audiobook");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class CommunicateAction extends InteractAction {
     public CommunicateAction() {
+        setId("schema:CommunicateAction");
+        setType("rdfs:Class");
+
     }
 
     /**

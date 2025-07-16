@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class QualitativeValue extends Enumeration {
     public QualitativeValue() {
+        setId("schema:QualitativeValue");
+        setType("rdfs:Class");
+
     }
 
     /**

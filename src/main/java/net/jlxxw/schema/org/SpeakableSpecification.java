@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SpeakableSpecification extends Intangible {
     public SpeakableSpecification() {
+        setId("schema:SpeakableSpecification");
+        setType("rdfs:Class");
+
     }
 
     /**

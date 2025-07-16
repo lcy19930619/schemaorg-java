@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class EducationalOrganization extends Organization {
     public EducationalOrganization() {
+        setId("schema:EducationalOrganization");
+        setType("rdfs:Class");
+
     }
 
     /**

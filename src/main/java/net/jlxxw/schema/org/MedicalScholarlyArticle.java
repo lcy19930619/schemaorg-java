@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MedicalScholarlyArticle extends ScholarlyArticle {
     public MedicalScholarlyArticle() {
+        setId("schema:MedicalScholarlyArticle");
+        setType("rdfs:Class");
+
     }
 
     /**

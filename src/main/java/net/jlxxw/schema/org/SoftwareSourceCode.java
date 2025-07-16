@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SoftwareSourceCode extends CreativeWork {
     public SoftwareSourceCode() {
+        setId("schema:SoftwareSourceCode");
+        setType("rdfs:Class");
+
     }
 
     /**

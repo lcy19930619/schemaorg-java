@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DataFeed extends Dataset {
     public DataFeed() {
+        setId("schema:DataFeed");
+        setType("rdfs:Class");
+
     }
 
     /**

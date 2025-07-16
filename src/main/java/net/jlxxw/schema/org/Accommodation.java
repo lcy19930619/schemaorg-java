@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Accommodation extends Place {
     public Accommodation() {
+        setId("schema:Accommodation");
+        setType("rdfs:Class");
+
     }
 
     /**

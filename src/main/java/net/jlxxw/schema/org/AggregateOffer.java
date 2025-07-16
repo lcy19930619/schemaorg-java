@@ -6,6 +6,9 @@ import java.util.List;
 
 public class AggregateOffer extends Offer {
     public AggregateOffer() {
+        setId("schema:AggregateOffer");
+        setType("rdfs:Class");
+
     }
 
     /**

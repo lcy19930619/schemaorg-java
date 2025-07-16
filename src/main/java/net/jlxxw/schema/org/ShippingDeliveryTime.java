@@ -6,6 +6,9 @@ import java.util.List;
 
 public class ShippingDeliveryTime extends StructuredValue {
     public ShippingDeliveryTime() {
+        setId("schema:ShippingDeliveryTime");
+        setType("rdfs:Class");
+
     }
 
     /**

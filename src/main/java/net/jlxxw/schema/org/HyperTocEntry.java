@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class HyperTocEntry extends CreativeWork {
     public HyperTocEntry() {
+        setId("schema:HyperTocEntry");
+        setType("rdfs:Class");
+
     }
 
     /**

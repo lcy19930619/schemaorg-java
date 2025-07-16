@@ -6,6 +6,9 @@ import java.util.List;
 
 public class VideoObject extends MediaObject {
     public VideoObject() {
+        setId("schema:VideoObject");
+        setType("rdfs:Class");
+
     }
 
     /**

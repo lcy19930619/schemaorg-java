@@ -6,6 +6,9 @@ import java.util.List;
 
 public class AuthorizeAction extends AllocateAction {
     public AuthorizeAction() {
+        setId("schema:AuthorizeAction");
+        setType("rdfs:Class");
+
     }
 
     /**

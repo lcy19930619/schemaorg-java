@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Organization extends AbstractSchema {
     public Organization() {
+        setId("schema:Organization");
+        setType("rdfs:Class");
+
     }
 
     /**

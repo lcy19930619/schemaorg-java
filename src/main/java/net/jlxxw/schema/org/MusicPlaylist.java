@@ -6,6 +6,9 @@ import java.util.List;
 
 public class MusicPlaylist extends CreativeWork {
     public MusicPlaylist() {
+        setId("schema:MusicPlaylist");
+        setType("rdfs:Class");
+
     }
 
     /**

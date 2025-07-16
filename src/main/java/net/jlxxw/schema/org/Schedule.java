@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Schedule extends Intangible {
     public Schedule() {
+        setId("schema:Schedule");
+        setType("rdfs:Class");
+
     }
 
     /**

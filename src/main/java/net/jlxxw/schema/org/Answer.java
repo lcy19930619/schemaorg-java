@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Answer extends Comment {
     public Answer() {
+        setId("schema:Answer");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class PodcastSeries extends CreativeWorkSeries {
     public PodcastSeries() {
+        setId("schema:PodcastSeries");
+        setType("rdfs:Class");
+
     }
 
     /**

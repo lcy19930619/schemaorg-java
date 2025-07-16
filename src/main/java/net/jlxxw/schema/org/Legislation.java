@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Legislation extends CreativeWork {
     public Legislation() {
+        setId("schema:Legislation");
+        setType("rdfs:Class");
+
     }
 
     /**

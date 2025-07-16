@@ -6,6 +6,9 @@ import java.util.List;
 
 public class GeospatialGeometry extends Intangible {
     public GeospatialGeometry() {
+        setId("schema:GeospatialGeometry");
+        setType("rdfs:Class");
+
     }
 
     /**

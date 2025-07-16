@@ -6,6 +6,9 @@ import java.util.List;
 
 public class TipAction extends TradeAction {
     public TipAction() {
+        setId("schema:TipAction");
+        setType("rdfs:Class");
+
     }
 
     /**

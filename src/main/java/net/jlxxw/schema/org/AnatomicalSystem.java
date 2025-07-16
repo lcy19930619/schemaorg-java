@@ -6,6 +6,9 @@ import java.util.List;
 
 public class AnatomicalSystem extends MedicalEntity {
     public AnatomicalSystem() {
+        setId("schema:AnatomicalSystem");
+        setType("rdfs:Class");
+
     }
 
     /**

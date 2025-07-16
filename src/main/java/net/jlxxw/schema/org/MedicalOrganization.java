@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MedicalOrganization extends Organization {
     public MedicalOrganization() {
+        setId("schema:MedicalOrganization");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class LinkRole extends Role {
     public LinkRole() {
+        setId("schema:LinkRole");
+        setType("rdfs:Class");
+
     }
 
     /**

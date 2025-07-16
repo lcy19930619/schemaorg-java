@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class TrackAction extends FindAction {
     public TrackAction() {
+        setId("schema:TrackAction");
+        setType("rdfs:Class");
+
     }
 
     /**

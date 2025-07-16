@@ -6,6 +6,9 @@ import java.util.List;
 
 public class MonetaryGrant extends Grant {
     public MonetaryGrant() {
+        setId("schema:MonetaryGrant");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Patient extends Person {
     public Patient() {
+        setId("schema:Patient");
+        setType("rdfs:Class");
+
     }
 
     /**

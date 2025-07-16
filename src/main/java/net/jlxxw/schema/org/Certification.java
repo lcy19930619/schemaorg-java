@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Certification extends CreativeWork {
     public Certification() {
+        setId("schema:Certification");
+        setType("rdfs:Class");
+
     }
 
     /**

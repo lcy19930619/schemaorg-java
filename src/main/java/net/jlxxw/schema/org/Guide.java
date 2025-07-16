@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Guide extends CreativeWork {
     public Guide() {
+        setId("schema:Guide");
+        setType("rdfs:Class");
+
     }
 
     /**

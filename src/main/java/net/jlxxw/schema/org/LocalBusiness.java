@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class LocalBusiness extends Place {
     public LocalBusiness() {
+        setId("schema:LocalBusiness");
+        setType("rdfs:Class");
+
     }
 
     /**

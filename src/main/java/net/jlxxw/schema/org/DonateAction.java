@@ -6,6 +6,9 @@ import java.util.List;
 
 public class DonateAction extends TransferAction {
     public DonateAction() {
+        setId("schema:DonateAction");
+        setType("rdfs:Class");
+
     }
 
     /**

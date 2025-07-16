@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class RentalCarReservation extends Reservation {
     public RentalCarReservation() {
+        setId("schema:RentalCarReservation");
+        setType("rdfs:Class");
+
     }
 
     /**

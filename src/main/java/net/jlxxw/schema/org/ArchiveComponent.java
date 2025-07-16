@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ArchiveComponent extends CreativeWork {
     public ArchiveComponent() {
+        setId("schema:ArchiveComponent");
+        setType("rdfs:Class");
+
     }
 
     /**

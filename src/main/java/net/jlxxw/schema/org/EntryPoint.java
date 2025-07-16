@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class EntryPoint extends Intangible {
     public EntryPoint() {
+        setId("schema:EntryPoint");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class BedDetails extends Intangible {
     public BedDetails() {
+        setId("schema:BedDetails");
+        setType("rdfs:Class");
+
     }
 
     /**

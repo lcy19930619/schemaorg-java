@@ -6,6 +6,9 @@ import java.util.List;
 
 public class FollowAction extends InteractAction {
     public FollowAction() {
+        setId("schema:FollowAction");
+        setType("rdfs:Class");
+
     }
 
     /**

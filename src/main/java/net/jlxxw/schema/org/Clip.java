@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Clip extends CreativeWork {
     public Clip() {
+        setId("schema:Clip");
+        setType("rdfs:Class");
+
     }
 
     /**

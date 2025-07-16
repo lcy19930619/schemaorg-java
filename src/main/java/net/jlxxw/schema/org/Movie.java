@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Movie extends CreativeWork {
     public Movie() {
+        setId("schema:Movie");
+        setType("rdfs:Class");
+
     }
 
     /**

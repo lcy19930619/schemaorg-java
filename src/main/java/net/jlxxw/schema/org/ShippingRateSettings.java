@@ -6,6 +6,9 @@ import java.util.List;
 
 public class ShippingRateSettings extends StructuredValue {
     public ShippingRateSettings() {
+        setId("schema:ShippingRateSettings");
+        setType("rdfs:Class");
+
     }
 
     /**

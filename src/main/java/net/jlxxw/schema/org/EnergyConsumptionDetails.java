@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class EnergyConsumptionDetails extends Intangible {
     public EnergyConsumptionDetails() {
+        setId("schema:EnergyConsumptionDetails");
+        setType("rdfs:Class");
+
     }
 
     /**

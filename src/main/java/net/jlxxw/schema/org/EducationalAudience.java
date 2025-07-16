@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class EducationalAudience extends Audience {
     public EducationalAudience() {
+        setId("schema:EducationalAudience");
+        setType("rdfs:Class");
+
     }
 
     /**

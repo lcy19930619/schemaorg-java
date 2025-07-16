@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DrugStrength extends MedicalIntangible {
     public DrugStrength() {
+        setId("schema:DrugStrength");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class TradeAction extends Action {
     public TradeAction() {
+        setId("schema:TradeAction");
+        setType("rdfs:Class");
+
     }
 
     /**

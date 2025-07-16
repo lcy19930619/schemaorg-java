@@ -6,6 +6,9 @@ import java.util.List;
 
 public class UserComments extends UserInteraction {
     public UserComments() {
+        setId("schema:UserComments");
+        setType("rdfs:Class");
+
     }
 
     /**

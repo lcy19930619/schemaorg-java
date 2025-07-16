@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Enumeration extends Intangible {
     public Enumeration() {
+        setId("schema:Enumeration");
+        setType("rdfs:Class");
+
     }
 
     /**

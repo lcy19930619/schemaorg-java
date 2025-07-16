@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ActionAccessSpecification extends Intangible {
     public ActionAccessSpecification() {
+        setId("schema:ActionAccessSpecification");
+        setType("rdfs:Class");
+
     }
 
     /**

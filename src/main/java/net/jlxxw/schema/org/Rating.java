@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Rating extends Intangible {
     public Rating() {
+        setId("schema:Rating");
+        setType("rdfs:Class");
+
     }
 
     /**

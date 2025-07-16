@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class WinAction extends AchieveAction {
     public WinAction() {
+        setId("schema:WinAction");
+        setType("rdfs:Class");
+
     }
 
     /**

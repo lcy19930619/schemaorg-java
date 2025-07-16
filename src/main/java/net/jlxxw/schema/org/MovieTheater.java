@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MovieTheater extends EntertainmentBusiness {
     public MovieTheater() {
+        setId("schema:MovieTheater");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class BroadcastEvent extends PublicationEvent {
     public BroadcastEvent() {
+        setId("schema:BroadcastEvent");
+        setType("rdfs:Class");
+
     }
 
     /**

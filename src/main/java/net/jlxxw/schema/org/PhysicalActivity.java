@@ -6,6 +6,9 @@ import java.util.List;
 
 public class PhysicalActivity extends LifestyleModification {
     public PhysicalActivity() {
+        setId("schema:PhysicalActivity");
+        setType("rdfs:Class");
+
     }
 
     /**

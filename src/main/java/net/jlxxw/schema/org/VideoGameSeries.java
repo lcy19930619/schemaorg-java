@@ -6,6 +6,9 @@ import java.util.List;
 
 public class VideoGameSeries extends CreativeWorkSeries {
     public VideoGameSeries() {
+        setId("schema:VideoGameSeries");
+        setType("rdfs:Class");
+
     }
 
     /**

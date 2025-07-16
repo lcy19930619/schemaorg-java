@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Claim extends CreativeWork {
     public Claim() {
+        setId("schema:Claim");
+        setType("rdfs:Class");
+
     }
 
     /**

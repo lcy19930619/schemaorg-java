@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Property extends Intangible {
     public Property() {
+        setId("schema:Property");
+        setType("rdfs:Class");
+
     }
 
     /**

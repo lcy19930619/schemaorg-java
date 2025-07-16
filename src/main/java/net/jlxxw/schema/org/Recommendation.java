@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Recommendation extends Review {
     public Recommendation() {
+        setId("schema:Recommendation");
+        setType("rdfs:Class");
+
     }
 
     /**

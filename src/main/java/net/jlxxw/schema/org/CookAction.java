@@ -6,6 +6,9 @@ import java.util.List;
 
 public class CookAction extends CreateAction {
     public CookAction() {
+        setId("schema:CookAction");
+        setType("rdfs:Class");
+
     }
 
     /**

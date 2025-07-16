@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class CourseInstance extends Event {
     public CourseInstance() {
+        setId("schema:CourseInstance");
+        setType("rdfs:Class");
+
     }
 
     /**

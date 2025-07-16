@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PropertyValueSpecification extends Intangible {
     public PropertyValueSpecification() {
+        setId("schema:PropertyValueSpecification");
+        setType("rdfs:Class");
+
     }
 
     /**

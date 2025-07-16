@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DataFeedItem extends Intangible {
     public DataFeedItem() {
+        setId("schema:DataFeedItem");
+        setType("rdfs:Class");
+
     }
 
     /**

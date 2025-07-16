@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class BioChemEntity extends AbstractSchema {
     public BioChemEntity() {
+        setId("schema:BioChemEntity");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Product extends AbstractSchema {
     public Product() {
+        setId("schema:Product");
+        setType("rdfs:Class");
+
     }
 
     /**

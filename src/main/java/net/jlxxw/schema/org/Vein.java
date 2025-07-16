@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Vein extends Vessel {
     public Vein() {
+        setId("schema:Vein");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Flight extends Trip {
     public Flight() {
+        setId("schema:Flight");
+        setType("rdfs:Class");
+
     }
 
     /**

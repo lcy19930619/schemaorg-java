@@ -6,6 +6,9 @@ import java.util.List;
 
 public class BorrowAction extends TransferAction {
     public BorrowAction() {
+        setId("schema:BorrowAction");
+        setType("rdfs:Class");
+
     }
 
     /**

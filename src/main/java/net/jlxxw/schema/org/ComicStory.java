@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ComicStory extends CreativeWork {
     public ComicStory() {
+        setId("schema:ComicStory");
+        setType("rdfs:Class");
+
     }
 
     /**

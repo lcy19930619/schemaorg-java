@@ -6,6 +6,9 @@ import java.util.List;
 
 public class VideoGame extends SoftwareApplication {
     public VideoGame() {
+        setId("schema:VideoGame");
+        setType("rdfs:Class");
+
     }
 
     /**

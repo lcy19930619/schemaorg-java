@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class WebApplication extends SoftwareApplication {
     public WebApplication() {
+        setId("schema:WebApplication");
+        setType("rdfs:Class");
+
     }
 
     /**

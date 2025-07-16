@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DefinedRegion extends StructuredValue {
     public DefinedRegion() {
+        setId("schema:DefinedRegion");
+        setType("rdfs:Class");
+
     }
 
     /**

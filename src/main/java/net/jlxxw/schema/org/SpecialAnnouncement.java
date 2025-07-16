@@ -6,6 +6,9 @@ import java.util.List;
 
 public class SpecialAnnouncement extends CreativeWork {
     public SpecialAnnouncement() {
+        setId("schema:SpecialAnnouncement");
+        setType("rdfs:Class");
+
     }
 
     /**

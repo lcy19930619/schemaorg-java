@@ -6,6 +6,9 @@ import java.util.List;
 
 public class ProductModel extends Product {
     public ProductModel() {
+        setId("schema:ProductModel");
+        setType("rdfs:Class");
+
     }
 
     /**

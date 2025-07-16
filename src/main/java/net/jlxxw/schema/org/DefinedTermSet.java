@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DefinedTermSet extends CreativeWork {
     public DefinedTermSet() {
+        setId("schema:DefinedTermSet");
+        setType("rdfs:Class");
+
     }
 
     /**

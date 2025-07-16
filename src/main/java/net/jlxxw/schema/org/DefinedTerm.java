@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DefinedTerm extends Intangible {
     public DefinedTerm() {
+        setId("schema:DefinedTerm");
+        setType("rdfs:Class");
+
     }
 
     /**

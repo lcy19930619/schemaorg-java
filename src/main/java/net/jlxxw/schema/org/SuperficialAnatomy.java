@@ -6,6 +6,9 @@ import java.util.List;
 
 public class SuperficialAnatomy extends MedicalEntity {
     public SuperficialAnatomy() {
+        setId("schema:SuperficialAnatomy");
+        setType("rdfs:Class");
+
     }
 
     /**

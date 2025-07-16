@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Message extends CreativeWork {
     public Message() {
+        setId("schema:Message");
+        setType("rdfs:Class");
+
     }
 
     /**

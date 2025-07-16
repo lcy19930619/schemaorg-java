@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class DietarySupplement extends Product {
     public DietarySupplement() {
+        setId("schema:DietarySupplement");
+        setType("rdfs:Class");
+
     }
 
     /**

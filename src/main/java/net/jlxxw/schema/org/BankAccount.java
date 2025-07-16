@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class BankAccount extends FinancialProduct {
     public BankAccount() {
+        setId("schema:BankAccount");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class JobPosting extends Intangible {
     public JobPosting() {
+        setId("schema:JobPosting");
+        setType("rdfs:Class");
+
     }
 
     /**

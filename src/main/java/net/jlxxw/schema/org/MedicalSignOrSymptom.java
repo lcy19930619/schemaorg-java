@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MedicalSignOrSymptom extends MedicalCondition {
     public MedicalSignOrSymptom() {
+        setId("schema:MedicalSignOrSymptom");
+        setType("rdfs:Class");
+
     }
 
     /**

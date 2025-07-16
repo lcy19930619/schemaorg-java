@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class EducationalOccupationalCredential extends CreativeWork {
     public EducationalOccupationalCredential() {
+        setId("schema:EducationalOccupationalCredential");
+        setType("rdfs:Class");
+
     }
 
     /**

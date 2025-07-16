@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Demand extends Intangible {
     public Demand() {
+        setId("schema:Demand");
+        setType("rdfs:Class");
+
     }
 
     /**

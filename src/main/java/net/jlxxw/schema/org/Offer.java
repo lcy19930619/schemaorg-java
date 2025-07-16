@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Offer extends Intangible {
     public Offer() {
+        setId("schema:Offer");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Invoice extends Intangible {
     public Invoice() {
+        setId("schema:Invoice");
+        setType("rdfs:Class");
+
     }
 
     /**

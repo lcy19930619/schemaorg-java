@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MedicalDevice extends MedicalEntity {
     public MedicalDevice() {
+        setId("schema:MedicalDevice");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -6,6 +6,9 @@ import java.util.List;
 
 public class ProgramMembership extends Intangible {
     public ProgramMembership() {
+        setId("schema:ProgramMembership");
+        setType("rdfs:Class");
+
     }
 
     /**

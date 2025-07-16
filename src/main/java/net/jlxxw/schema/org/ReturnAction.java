@@ -6,6 +6,9 @@ import java.util.List;
 
 public class ReturnAction extends TransferAction {
     public ReturnAction() {
+        setId("schema:ReturnAction");
+        setType("rdfs:Class");
+
     }
 
     /**

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class WebSite extends CreativeWork {
     public WebSite() {
+        setId("schema:WebSite");
+        setType("rdfs:Class");
+
     }
 
     /**

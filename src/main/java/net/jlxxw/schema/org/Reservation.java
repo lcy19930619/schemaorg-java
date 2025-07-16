@@ -6,6 +6,9 @@ import java.util.List;
 
 public class Reservation extends Intangible {
     public Reservation() {
+        setId("schema:Reservation");
+        setType("rdfs:Class");
+
     }
 
     /**

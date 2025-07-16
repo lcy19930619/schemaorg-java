@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class BroadcastFrequencySpecification extends Intangible {
     public BroadcastFrequencySpecification() {
+        setId("schema:BroadcastFrequencySpecification");
+        setType("rdfs:Class");
+
     }
 
     /**

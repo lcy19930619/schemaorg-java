@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class RsvpAction extends InformAction {
     public RsvpAction() {
+        setId("schema:RsvpAction");
+        setType("rdfs:Class");
+
     }
 
     /**

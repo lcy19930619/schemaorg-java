@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class UnitPriceSpecification extends PriceSpecification {
     public UnitPriceSpecification() {
+        setId("schema:UnitPriceSpecification");
+        setType("rdfs:Class");
+
     }
 
     /**

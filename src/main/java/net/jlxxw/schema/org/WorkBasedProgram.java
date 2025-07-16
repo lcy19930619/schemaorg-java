@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class WorkBasedProgram extends EducationalOccupationalProgram {
     public WorkBasedProgram() {
+        setId("schema:WorkBasedProgram");
+        setType("rdfs:Class");
+
     }
 
     /**

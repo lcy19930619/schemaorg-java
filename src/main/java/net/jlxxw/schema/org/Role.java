@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Role extends Intangible {
     public Role() {
+        setId("schema:Role");
+        setType("rdfs:Class");
+
     }
 
     /**
