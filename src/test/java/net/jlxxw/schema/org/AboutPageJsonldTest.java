@@ -1,5 +1,6 @@
 package net.jlxxw.schema.org;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -66,7 +67,7 @@ public class AboutPageJsonldTest {
     }
 
     @Test
-    public void testDefaultIdAndType() {
+    public void testDefaultIdAndType() throws JsonProcessingException {
         AboutPage obj = new AboutPage();
         assertEquals("schema:AboutPage", obj.getId());
         assertEquals("rdfs:Class", obj.getType());
