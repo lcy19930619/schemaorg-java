@@ -6,7 +6,7 @@
 
     <groupId>net.jlxxw</groupId>
     <artifactId>schema-org-java</artifactId>
-    <version>1.0.1-cursor-build</version>
+    <version>1.0.1.cursor</version>
     <packaging>jar</packaging>
 
     <name>schemaorg-java</name>
@@ -26,6 +26,10 @@
             <email>lcy19930619@163.com</email>
             <name>冷春阳</name>
             <url>https://github.com/lcy19930619</url>
+        </developer>
+        <developer>
+            <name>Cursor</name>
+            <url>https://cursor.com/cn/agents</url>
         </developer>
     </developers>
     <issueManagement>
