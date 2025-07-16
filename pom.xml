@@ -27,10 +27,6 @@
             <name>冷春阳</name>
             <url>https://github.com/lcy19930619</url>
         </developer>
-        <developer>
-            <name>Cursor</name>
-            <url>https://cursor.com/cn/agents</url>
-        </developer>
     </developers>
     <issueManagement>
         <system>Github Issue</system>
