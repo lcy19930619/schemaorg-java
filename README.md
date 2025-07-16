@@ -1,18 +1,25 @@
-# 使用 cursor ai 自动生成相关代码
-# 项目灵感来自 google 
+# Use Cursor AI to automatically generate relevant code
+# The project was inspired by https://github.com/google/schemaorg-java
 
-# 使用方式
-```java
-     String jsonLdString = Accommodation
-        .builder()
-        .accommodationCategory("test")
-        .bed("test")
-        .build().toJsonLdString();
-```
+# How to use
 
 ```java
-      String jsonLdString = "";
-      try {
-          jsonLdString = Accommodation.
-              }
+import net.jlxxw.schema.org.AbstractSchema;
+import net.jlxxw.schema.org.Accommodation;
+
+public class Demo() {
+    public static void main(String[] args) throws JsonProcessingException {
+
+        Accommodation accommodation = new Accommodation();
+        accommodation.setAccommodationCategory("test");
+        accommodation.setBed("test");
+        String jsonLdString = accommodation.toJsonLdString();
+
+        Accommodation accommodation2 = new Accommodation();
+        AbstractSchema abstractSchema = accommodation2.parseToObject(jsonLdString);
+
+    }
+}
+
 ```
+
