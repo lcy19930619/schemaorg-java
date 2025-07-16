@@ -1,12 +1,14 @@
 package net.jlxxw.schema.org;
+
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import net.jlxxw.schema.org.JsonLdType;
+
 public class JsonLdTypeDeserializer extends JsonDeserializer<JsonLdType> {
     @Override
     public JsonLdType deserialize(JsonParser p, DeserializationContext ctxt) throws IOException {

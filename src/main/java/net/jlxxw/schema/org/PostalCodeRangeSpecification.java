@@ -1,19 +1,35 @@
 package net.jlxxw.schema.org;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
-import net.jlxxw.schema.org.JsonLdType;
+
 public class PostalCodeRangeSpecification extends StructuredValue {
     public PostalCodeRangeSpecification() {
-}
-    /** Last postal code in the range (included). Needs to be after [[postalCodeBegin]]. */
+    }
+
+    /**
+     * Last postal code in the range (included). Needs to be after [[postalCodeBegin]].
+     */
     @JsonProperty("postalCodeEnd")
     private String postalCodeEnd;
-    /** First postal code in a range (included). */
+    /**
+     * First postal code in a range (included).
+     */
     @JsonProperty("postalCodeBegin")
     private String postalCodeBegin;
 
-    public String getPostalCodeEnd() { return postalCodeEnd; }
-    public void setPostalCodeEnd(String postalCodeEnd) { this.postalCodeEnd = postalCodeEnd; }
-    public String getPostalCodeBegin() { return postalCodeBegin; }
-    public void setPostalCodeBegin(String postalCodeBegin) { this.postalCodeBegin = postalCodeBegin; }
+    public String getPostalCodeEnd() {
+        return postalCodeEnd;
+    }
+
+    public void setPostalCodeEnd(String postalCodeEnd) {
+        this.postalCodeEnd = postalCodeEnd;
+    }
+
+    public String getPostalCodeBegin() {
+        return postalCodeBegin;
+    }
+
+    public void setPostalCodeBegin(String postalCodeBegin) {
+        this.postalCodeBegin = postalCodeBegin;
+    }
 }

@@ -1,19 +1,35 @@
 package net.jlxxw.schema.org;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
-import net.jlxxw.schema.org.JsonLdType;
+
 public class TouristDestination extends Place {
     public TouristDestination() {
-}
-    /** Attraction suitable for type(s) of tourist. E.g. children, visitors from a particular country, etc.  */
+    }
+
+    /**
+     * Attraction suitable for type(s) of tourist. E.g. children, visitors from a particular country, etc.
+     */
     @JsonProperty("touristType")
     private String touristType;
-    /** Attraction located at destination. */
+    /**
+     * Attraction located at destination.
+     */
     @JsonProperty("includesAttraction")
     private TouristAttraction includesAttraction;
 
-    public String getTouristType() { return touristType; }
-    public void setTouristType(String touristType) { this.touristType = touristType; }
-    public TouristAttraction getIncludesAttraction() { return includesAttraction; }
-    public void setIncludesAttraction(TouristAttraction includesAttraction) { this.includesAttraction = includesAttraction; }
+    public String getTouristType() {
+        return touristType;
+    }
+
+    public void setTouristType(String touristType) {
+        this.touristType = touristType;
+    }
+
+    public TouristAttraction getIncludesAttraction() {
+        return includesAttraction;
+    }
+
+    public void setIncludesAttraction(TouristAttraction includesAttraction) {
+        this.includesAttraction = includesAttraction;
+    }
 }

@@ -1,20 +1,37 @@
 package net.jlxxw.schema.org;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
-import net.jlxxw.schema.org.JsonLdType;
+
 public class DigitalDocumentPermission extends Intangible {
     public DigitalDocumentPermission() {
-}
-    /** The type of permission granted the person, organization, or audience. */
+    }
+
+    /**
+     * The type of permission granted the person, organization, or audience.
+     */
     @JsonProperty("permissionType")
     private DigitalDocumentPermissionType permissionType;
-    /** The person, organization, contact point, or audience that has been granted this permission. */
+    /**
+     * The person, organization, contact point, or audience that has been granted this permission.
+     */
     @JsonProperty("grantee")
     private List<AbstractSchema> grantee;
 
-    public DigitalDocumentPermissionType getPermissionType() { return permissionType; }
-    public void setPermissionType(DigitalDocumentPermissionType permissionType) { this.permissionType = permissionType; }
-    public List<AbstractSchema> getGrantee() { return grantee; }
-    public void setGrantee(List<AbstractSchema> grantee) { this.grantee = grantee; }
+    public DigitalDocumentPermissionType getPermissionType() {
+        return permissionType;
+    }
+
+    public void setPermissionType(DigitalDocumentPermissionType permissionType) {
+        this.permissionType = permissionType;
+    }
+
+    public List<AbstractSchema> getGrantee() {
+        return grantee;
+    }
+
+    public void setGrantee(List<AbstractSchema> grantee) {
+        this.grantee = grantee;
+    }
 }

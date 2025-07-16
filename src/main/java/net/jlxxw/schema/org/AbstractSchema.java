@@ -1,41 +1,20 @@
 package net.jlxxw.schema.org;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import net.jlxxw.schema.org.JsonLdType;
-import net.jlxxw.schema.org.LangString;
+
 public abstract class AbstractSchema {
     @JsonProperty("@id")
     private String id;
     @JsonProperty("@type")
-    @JsonDeserialize(using = JsonLdTypeDeserializer.class)
-    private JsonLdType type;
+    private String type;
     @JsonProperty("rdfs:label")
-    @JsonDeserialize(using = LangStringDeserializer.class)
-    private LangString label;
+    private String label;
     @JsonProperty("rdfs:comment")
-    @JsonDeserialize(using = LangStringDeserializer.class)
-    private LangString comment;
+    private String comment;
     @JsonProperty("name")
     private String name;
     @JsonProperty("description")
     private String description;
-
-    /**
-     * Ensure meta fields are set for strict round-trip compliance.
-     * Subclasses should call this in their constructors or after deserialization.
-     */
-    protected void ensureMetaFields(String className, String labelText, String commentText) {
-        if (type == null) {
-            // Use schema:ClassName as default type
-            this.type = new JsonLdType("schema:" + className);
-        }
-        if (label == null && labelText != null) {
-            this.label = new LangString(labelText);
-        }
-        if (comment == null && commentText != null) {
-            this.comment = new LangString(commentText);
-        }
-    }
 
     public String getId() {
         return id;
@@ -45,51 +24,35 @@ public abstract class AbstractSchema {
         this.id = id;
     }
 
-    public JsonLdType getType() {
-        if (type == null) {
-            // 默认补齐
-            this.type = new JsonLdType("schema:" + this.getClass().getSimpleName());
-        }
+    public String getType() {
         return type;
     }
 
-    public void setType(JsonLdType type) {
-        if (type == null) {
-            this.type = new JsonLdType("schema:" + this.getClass().getSimpleName());
-        } else {
-            this.type = type;
-        }
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public LangString getLabel() {
-        if (label == null) {
-            this.label = new LangString(this.getClass().getSimpleName());
-        }
+    public String getLabel() {
         return label;
     }
 
-    public void setLabel(LangString label) {
-        if (label == null) {
-            this.label = new LangString(this.getClass().getSimpleName());
-        } else {
-            this.label = label;
-        }
+    public void setLabel(String label) {
+        this.label = label;
     }
 
-    public LangString getComment() {
-        if (comment == null) {
-            this.comment = new LangString("");
-        }
+    public String getComment() {
         return comment;
     }
 
-    public void setComment(LangString comment) {
-        if (comment == null) {
-            this.comment = new LangString("");
-        } else {
-            this.comment = comment;
-        }
+    public void setComment(String comment) {
+        this.comment = comment;
     }
+
+    /**
+     * Ensure meta fields are set for strict round-trip compliance.
+     * Subclasses should call this in their constructors or after deserialization.
+     */
+
 
     public String getName() {
         return name;

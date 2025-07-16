@@ -1,5 +1,5 @@
 package net.jlxxw.schema.org;
-import net.jlxxw.schema.org.JsonLdType;
+
 public class Text extends AbstractSchema {
     public Text() {
     }

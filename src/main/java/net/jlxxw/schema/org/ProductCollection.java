@@ -1,14 +1,22 @@
 package net.jlxxw.schema.org;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
-import net.jlxxw.schema.org.JsonLdType;
+
 public class ProductCollection extends Collection {
     public ProductCollection() {
-}
-    /** This links to a node or nodes indicating the exact quantity of the products included in  an [[Offer]] or [[ProductCollection]]. */
+    }
+
+    /**
+     * This links to a node or nodes indicating the exact quantity of the products included in  an [[Offer]] or [[ProductCollection]].
+     */
     @JsonProperty("includesObject")
     private TypeAndQuantityNode includesObject;
 
-    public TypeAndQuantityNode getIncludesObject() { return includesObject; }
-    public void setIncludesObject(TypeAndQuantityNode includesObject) { this.includesObject = includesObject; }
+    public TypeAndQuantityNode getIncludesObject() {
+        return includesObject;
+    }
+
+    public void setIncludesObject(TypeAndQuantityNode includesObject) {
+        this.includesObject = includesObject;
+    }
 }

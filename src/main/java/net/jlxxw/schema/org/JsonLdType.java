@@ -1,7 +1,8 @@
 package net.jlxxw.schema.org;
+
 import java.util.List;
 import java.util.Objects;
-import net.jlxxw.schema.org.JsonLdType;
+
 public class JsonLdType {
     private String singleType;
     private List<String> typeList;

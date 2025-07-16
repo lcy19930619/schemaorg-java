@@ -1,19 +1,35 @@
 package net.jlxxw.schema.org;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
-import net.jlxxw.schema.org.JsonLdType;
+
 public class MedicalSign extends MedicalSignOrSymptom {
     public MedicalSign() {
-}
-    /** A physical examination that can identify this sign. */
+    }
+
+    /**
+     * A physical examination that can identify this sign.
+     */
     @JsonProperty("identifyingExam")
     private PhysicalExam identifyingExam;
-    /** A diagnostic test that can identify this sign. */
+    /**
+     * A diagnostic test that can identify this sign.
+     */
     @JsonProperty("identifyingTest")
     private MedicalTest identifyingTest;
 
-    public PhysicalExam getIdentifyingExam() { return identifyingExam; }
-    public void setIdentifyingExam(PhysicalExam identifyingExam) { this.identifyingExam = identifyingExam; }
-    public MedicalTest getIdentifyingTest() { return identifyingTest; }
-    public void setIdentifyingTest(MedicalTest identifyingTest) { this.identifyingTest = identifyingTest; }
+    public PhysicalExam getIdentifyingExam() {
+        return identifyingExam;
+    }
+
+    public void setIdentifyingExam(PhysicalExam identifyingExam) {
+        this.identifyingExam = identifyingExam;
+    }
+
+    public MedicalTest getIdentifyingTest() {
+        return identifyingTest;
+    }
+
+    public void setIdentifyingTest(MedicalTest identifyingTest) {
+        this.identifyingTest = identifyingTest;
+    }
 }
