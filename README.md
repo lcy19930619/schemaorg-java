@@ -3,6 +3,13 @@
 
 # How to use
 
+# pom.xml
+```xml
+<groupId>net.jlxxw</groupId>
+<artifactId>schema-org-java</artifactId>
+<version>1.0.1.cursor</version>
+```
+
 ```java
 import net.jlxxw.schema.org.AbstractSchema;
 import net.jlxxw.schema.org.Accommodation;
